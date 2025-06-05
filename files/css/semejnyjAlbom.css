@@ -11,13 +11,13 @@
 }
 @font-face {
   font-family: 'VASEK';
-  src:  url(../../fonts/VASEK.ttf);
+  src:  url(../VASEK.ttf);
        font-style: normal;
        font-weight: normal;
 }
 @font-face {
   font-family: 'ARNO';
-  src:  url(../../fonts/ARNO.ttf);
+  src:  url(../ARNO.ttf);
        font-style: normal;
        font-weight: normal;
 }
