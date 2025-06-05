@@ -1,0 +1,5061 @@
+#spring .App__main {
+  overflow: hidden;
+}
+
+#spring .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+#spring .theme-button-1 {
+    background-color: #f4dfe6; /* светло-серый цвет */
+}
+
+#spring .theme-button-2 {
+    background-color: blue; /* зеленый цвет */
+}
+#spring .theme-button-3 {
+  background-color: #e5eaf4; /* синий цвет */
+}
+#spring .theme-button-4 {
+  background-color: orange; 
+}
+#spring.white-gray-theme {
+    --primary-color: #333;
+    --secondary-color: #555;
+    --background-color: #f0f0f0;
+    --header-color: #782379;
+    --text-color: black;
+}
+
+#spring.blue-theme {
+    --primary-color: #bbc6e4;
+    --secondary-color: #bbc6e4;
+    --background-color: #fdf9f4;
+     --header-color: #5b6a93;
+    --text-color: black;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  #spring .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+#spring {
+    /*--primary-color: #333;*/
+    --secondary-color: #772982;
+    --background-color: white;
+    --header-color: #4a494a;
+    --text-color: black;
+    --main-font: 'Gotham', sans-serif; /* Основной шрифт */
+     --beauty-font: 'WonderScript', sans-serif; /* Шрифт для заголовков */
+    --secondary-font: 'Hagin', sans-serif; /* Второй шрифт */
+}
+
+#spring {
+    font-family: var(--main-font);
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--text-color);
+}
+
+    #spring .title__title {
+        font-family: var(--beauty-font);
+        font-size: 124px;
+        line-height: 120%;
+        color: var(--header-color);
+    }
+
+ #spring .descr_text{
+    font-family: var(--main-font);
+    color: var(--text-color);
+}
+ #spring p{
+    margin: 0;
+    }
+#spring .main-date__title{
+    color: var(--secondary-color);
+}
+
+#spring .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#spring .App-link {
+  color: #61dafb;
+}
+
+#spring @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+#spring .burger-menu {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 0%;
+  background-color: #f8e6ee;
+  z-index: 3;
+  height: 100vh;
+  transition: visibility .5s, width .5s ease-in;
+  padding: 100px 20px;
+  box-sizing: border-box;
+}
+
+#spring .burger-menu_visible {
+  width: 100%;
+  visibility: visible;
+}
+
+#spring .burger-menu__links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  box-sizing: border-box;
+  gap: 25px;
+  margin: 0;
+}
+
+#spring .burger-menu__link {
+  visibility: hidden;
+  font-size: 18px;
+  color: black;
+  transition: color .4s;
+  background-color: inherit;
+  border: none;
+  width: 0%;
+  transition: visibility .5s, width .5s ease-in;
+}
+
+#spring .burger-menu__link_visible {
+  visibility: visible;
+  width: 100%;
+}
+
+#spring .burger-menu__ancor {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  transition: color .4s;
+}
+
+#spring .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 0 0 150px;
+}
+
+#spring .details__header {
+  padding: 150px 0 0;
+  height: 100px;
+  object-fit: contain;
+}
+
+#spring .details__text {
+  font-size: 30px;
+  line-height: 37px;
+  width: 40%;
+  margin: 50px 0 0 0;
+}
+
+#spring .details__flowers {
+  height: 500px;
+  position: absolute;
+  top: -60px;
+  left: 300px;
+}
+
+#spring .details__stone {
+  height: 1000px;
+  object-fit: contain;
+  position: absolute;
+  top: 300px;
+  left: -500px;
+  z-index: -1;
+}
+#spring .place__title-left{
+            text-align: left;
+}
+@media screen and (max-width: 1700px) {
+  #spring .details {
+    height: 100%;
+    padding: 0 0 100px;
+  }
+
+  #spring .details__header {
+    height: 90px;
+    padding: 120px 0 0;
+  }
+
+  #spring .details__text {
+    font-size: 26px;
+    line-height: 32px;
+    width: 55%;
+    margin: 50px 0 0 0;
+  }
+
+  #spring .details__flowers {
+    height: 400px;
+    top: 0;
+    left: 70px;
+  }
+
+  #spring .details__stone {
+    height: 800px;
+    top: 300px;
+    left: -400px;
+  }
+  #spring .place__title-left{
+            text-align: left;
+}
+}
+
+@media screen and (max-width: 1300px) {
+  #spring .details {
+    padding: 80px 0;
+    height: 100%;
+  }
+   #spring .title__title {
+    font-family: var(--beauty-font);
+    font-size: 124px;
+    line-height: 120%;
+    color: var(--header-color);
+}
+ #spring .place__title {
+    font-family: var(--beauty-font);
+    font-size: 84px;
+    line-height: 120%;
+            color: var(--header-color);
+}
+
+#spring .place__title-left{
+            text-align: left;
+}
+  #spring .details__header {
+    height: 60px;
+    padding: 0;
+    margin: 0 0 20px;
+  }
+  
+  #spring .details__text {
+    font-size: 22px;
+    line-height: 28px;
+    width: 60%;
+    margin: 30px 0 0 0;
+  }
+
+  #spring .details__flowers {
+    height: 350px;
+    top: -40px;
+    left: 40px;
+  }
+
+  #spring .details__stone {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #spring .details {
+    padding: 60px 0;
+  }
+
+  #spring .details__header {
+    height: 50px;
+    margin: 0 0 15px;
+  }
+
+  #spring .details__flowers {
+    top: -50px;
+        width: 100%;
+        left: -20%;
+                height: auto;
+  }
+
+  #spring .details__text {
+    font-size: 20px;
+    line-height: 26px;
+    width: 80%;
+    margin: 15px 0;
+  }
+
+  #spring .details__stone {
+    display: block;
+    height: 600px;
+    top: 0;
+    left: -300px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #spring .details__text {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 10px 0;
+  }
+
+  #spring .details__stone {
+    height: 500px;
+    top: -25px;
+    left: -250px;
+  }
+}
+
+#spring .dresscode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 0 0 150px;
+}
+
+#spring .dresscode__header {
+  height: 100px;
+  object-fit: contain;
+  padding: 150px 0 0;
+}
+
+#spring .dresscode__description {
+  font-size: 26px;
+  line-height: 40px;
+  width: 40%;
+  margin: 60px 0 0;
+}
+
+#spring .dresscode__flowers {
+  height: 400px;
+  position: absolute;
+  top: 0;
+  right: 250px;
+}
+
+#spring .dresscode__colors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px 0;
+  min-width: 25%;
+}
+
+#spring .dresscode__color {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border: 1px solid rgba(53, 53, 53, 0.259);
+}
+
+#spring .dresscode__color_var_one {
+  background-color: #917d85;
+}
+
+#spring .dresscode__color_var_two {
+  background-color: #dfb7c6;
+}
+
+#spring .dresscode__color_var_three {
+  background-color: #fdf4ed;
+}
+
+#spring .dresscode__color_var_four {
+  background-color: #e1cebe;
+}
+
+#spring .dresscode__color_var_five {
+  background-color: #666766;
+}
+
+#spring .dresscode__stone {
+  display: none;
+}
+
+
+@media screen and (max-width: 1700px) {
+  #spring .dresscode {
+    height: 100%;
+    padding: 0;
+  }
+
+  #spring .dresscode__description {
+    font-size: 26px;
+    line-height: 36px;
+    width: 50%;
+    margin: 70px 0 0;
+  }
+
+  #spring .dresscode__header {
+    height: 90px;
+    padding: 130px 0 0;
+  }
+
+  #spring .dresscode__colors {
+    min-width: 30%;
+  }
+
+  #spring .dresscode__flowers {
+    height: 300px;
+    top: -20px;
+    right: 100px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #spring .dresscode {
+    padding: 80px 0;
+    height: 100%;
+  }
+
+  #spring .dresscode__header {
+    height: 60px;
+    padding: 0;
+  }
+
+  #spring .dresscode__description {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 40px 0 0;
+    width: 40%;
+  }
+
+  #spring .dresscode__colors {
+    margin: 30px 0 0;
+    gap: 20px;
+  }
+
+  #spring .dresscode__color {
+    width: 55px;
+    height: 55px;
+  }
+
+  #spring .dresscode__flowers {
+    height: 250px;
+    top: -20px;
+    right: 100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #spring .dresscode {
+    padding: 60px 0 70px;
+  }
+
+  #spring .dresscode__header {
+    height: 50px;
+  }
+
+  #spring .dresscode__cloud {
+    width: 400px;
+    height: 300px;
+    top: -150px;
+    left: 0;
+  }
+
+  #spring .dresscode__description {
+    font-size: 18px;
+    line-height: 26px;
+    width: 80%;
+    margin: 30px 0 0;
+  }
+
+  #spring .dresscode__colors {
+    margin: 30px 0 0;
+    gap: 15px;
+  }
+
+  #spring .dresscode__color {
+    width: 37px;
+    height: 37px;
+  }
+
+  #spring .dresscode__flowers {
+   top: -50px;
+    width: 100%;
+    right: 0%;
+    height: auto;
+    transform: translate(30%, 0px);
+  }
+
+  #spring .dresscode__stone {
+    display: block;
+    position: absolute;
+    transform: rotate(180deg);
+    height: 400px;
+    top: -100px;
+    right: -200px;
+    z-index: -1;
+  }
+}
+#spring .footer {
+  margin: 0;
+  position: relative;
+}
+
+#spring .footer__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  
+}
+
+#spring .footer__text {
+  font-size: 30px;
+  margin: 0px 0 0;
+  font-weight: bold;
+}
+
+#spring .footer__names {
+  height: 200px;
+  object-fit: contain;
+  margin: 100px 0 0;
+}
+
+#spring .footer__flowers {
+    object-fit: contain;
+    width: 60%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1700px) {
+  #spring .footer {
+    margin: 70px 0 0;
+  }
+
+  #spring .footer__text {
+    font-size: 24px;
+    margin: 0px 0 0;
+  }
+
+  #spring .footer__names {
+    height: 160px;
+    margin: 30px 0 0;
+  }
+
+  #spring .footer__flowers {
+    width: 65%;
+  }
+}
+
+ @media screen and (max-width: 1300px) {
+  #spring .footer {
+    margin: 80px 0 0;
+  }
+
+  #spring .footer__text {
+    font-size: 20px;
+    margin: 0px 0 0;
+  }
+
+  #spring .footer__names {
+    height: 120px;
+  }
+}
+@media screen and (max-width: 800px) {
+  #spring .footer {
+    margin: 70px 0 0;
+  }
+  
+  #spring .footer__text {
+    font-size: 18px;
+    margin: 40px 0 0;
+  }
+
+  #spring .footer__names {
+    height: 90px;
+    margin: 0;
+  }
+
+  #spring .footer__flowers {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #spring .footer {
+    margin: 70px 0 0;
+  }
+
+  #spring .footer__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  #spring .footer__text {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  #spring .footer__names {
+    height: 105px;
+    margin: 0;
+  }
+
+  #spring .footer__flowers {
+    width: 100%;
+  }
+}
+
+
+ @keyframes hello {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#spring .header {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: calc(100vh - 100px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#spring .header__flower {
+  margin: calc(((100vh - 100px) - (80vh - 100px)) / 2) 0 0;
+  object-fit: contain;
+  height: 80%;
+  animation: hello 3s forwards ease;
+}
+
+@media screen and (max-width: 1700px) {
+  #spring .header {
+    height: calc(100vh - 70px);
+  }
+
+  #spring .header__flower {
+    height: 95%;
+    animation: hello 3s forwards ease;
+    margin: calc(((100vh - 100px) - (95vh - 70px)) / 2) 0 0;
+  }
+}
+
+@media screen and (max-width: 1300px) and (orientation:landscape) {
+  #spring .header {
+    height: calc(100vh - 60px);
+  }
+
+  #spring .header__flower {
+    height: 95%;
+    animation: hello 3s forwards ease;
+    margin: calc(((100vh - 100px) - (95vh - 60px)) / 2) 0 0;
+  }
+}
+
+@media screen and (max-width: 1300px) and (orientation:portrait) {
+  #spring .header {
+    height: calc(100vh - 60px);
+  }
+
+  #spring .header__flower {
+    animation: hello 3s forwards ease;
+    max-height: 95vw;
+    height: 80%;
+    margin: calc(((100vh - 100px) - (95vh - 60px)) / 2) 0 0;
+  }
+}
+
+@media screen and (max-width: 800px) and (orientation:landscape){
+  #spring .header {
+    height: calc(100vh - 50px);
+  }
+
+  #spring .header__flower {
+    height: 95%;
+    animation: hello 3s forwards ease;
+    margin: calc(((100vh - 100px) - (80vh - 50px)) / 2) 0 0;
+  }
+}
+
+@media screen and (max-width: 850px) and (orientation:portrait){
+  #spring .header {
+    height: 100vh;
+  }
+
+  #spring .header__flower {
+    height: 80%;
+    animation: hello 3s forwards ease;
+    min-height: 70vh;
+    margin: 12vh 0 0;
+  }
+}
+
+
+#spring .info-date {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#spring .info-date__invitation {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+#spring .info-date__who {
+  width: 600px;
+  object-fit: contain;
+  margin: 100px 0 0;
+}
+
+#spring .info-date__info {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  margin: 250px 0 0;
+}
+
+#spring .info-date__description {
+  font-size: 34px;
+  line-height: 50px;
+  margin: 70px 0 0;
+  width: 60%;
+}
+
+#spring .info-date__text {
+  font-size: 30px;
+  line-height: 30px;
+  margin: 0;
+}
+
+#spring .info-date__date {
+  color: #782379;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 0;
+}
+
+#spring .info-date__block-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#spring .info-date__where_position_left {
+  width: min-content;
+}
+
+#spring .info-date__flower {
+  height: 700px;
+  object-fit: contain;
+  position: absolute;
+  bottom: 0;
+  right: 200px;
+}
+
+#spring .info-date__stone {
+  height: 1000px;
+  object-fit: contain;
+  position: absolute;
+  bottom: 200px;
+  left: -500px;
+  z-index: -1;
+}
+
+#spring .info-date__place {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+#spring .info-date__check-in {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 400px;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  padding: 150px 0;
+}
+
+#spring .info-date__where {
+  height: 110px;
+  object-fit: contain;
+}
+
+#spring .info-date__map {
+  width: 600px;
+  height: 600px;
+  margin: 0;
+  z-index: 3;
+}
+
+#spring .info-date__with-map {
+  position: relative;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+}
+
+#spring .info-date__flower-map {
+  position: absolute;
+  top: 0;
+  left: -220px;
+  height: 600px;
+  object-fit: contain;
+}
+
+#spring .info-date__flower-map-white {
+  position: absolute;
+  top: 0;
+  right: -325px;
+  height: 500px;
+  object-fit: contain;
+}
+
+#spring .info-date__text_position_right {
+  text-align: end;
+  font-size: 34px;
+  line-height: 50px;
+  margin: 30px 0 0;
+}
+
+#spring .info-date__text_position_left {
+  text-align: start;
+  font-size: 34px;
+  line-height: 50px;
+  margin: 30px 0 0;
+}
+
+#spring .info-date__text-nomargin {
+  margin: 0;
+}
+
+@media screen and (max-width: 1700px) {
+  #spring .info-date__who {
+    width: 450px;
+    margin: 120px 0 30px;
+  }
+  
+  #spring .info-date__text {
+    font-size: 26px;
+    line-height: 32px;
+    margin: 20px 0 0;
+    z-index: 5;
+  }
+
+  #spring .info-date__description {
+    font-size: 26px;
+    line-height: 36px;
+    margin: 20px 0 0;
+    width: 70%;
+  }
+
+  #spring .info-date__date {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  #spring .info-date__info {
+    gap: 30px;
+    margin: 70px 0 0;
+  }
+
+  #spring .info-date__text_position_right {
+    font-size: 24px;
+  }
+  
+  #spring .info-date__text_position_left {
+    font-size: 24px;
+  }
+  
+  #spring .info-date__check-in {
+    gap: 300px;
+    padding: 150px 0 50px;
+  }
+
+  #spring .info-date__where {
+    height: 85px;
+  }
+
+  #spring .info-date__map {
+    width: 400px;
+    height: 400px;
+  }
+
+  #spring .info-date__with-map {
+    height: 400px;
+  }
+
+  #spring .info-date__flower-map {
+    left: -165px;
+    height: 450px;
+  }
+
+  #spring .info-date__flower-map-white {
+    right: -245px;
+    height: 380px;
+  }
+
+  #spring .info-date__stone {
+    height: 800px;
+    bottom: 0;
+    left: -400px;
+  }
+
+  #spring .info-date__flower {
+    height: 450px;
+    bottom: -150px;
+    right: 50px;
+  }
+
+  #spring .info-date__text-nomargin {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #spring .info-date__who {
+    width: 430px;
+    margin: 100px 0 40px;
+  }
+
+  #spring .info-date__invitation {
+    height: 100%;
+  }
+
+  #spring .info-date__text {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 10px 0 0;
+  }
+
+  #spring .info-date__description {
+    font-size: 24px;
+    line-height: 34px;
+    margin: 10px 0 0;
+    width: 65%;
+  }
+
+  #spring .info-date__place {
+    gap: 150px;
+    padding-top: 200px;
+  }
+
+  #spring .info-date__text_position_right {
+    font-size: 20px;
+  }
+  
+  #spring .info-date__text_position_left {
+    font-size: 20px;
+  }
+
+  #spring .info-date__info {
+    gap: 30px;
+    margin: 50px 0 0;
+  }
+  
+  #spring .info-date__check-in {
+    gap: 150px;
+    padding: 0;
+    height: 100%;
+  }
+
+  #spring .info-date__map {
+    width: 350px;
+    height: 350px;
+  }
+
+  #spring .info-date__with-map {
+    height: 350px;
+  }
+
+  #spring .info-date__flower-map {
+    left: -128px;
+    height: 350px;
+  }
+
+  #spring .info-date__flower-map-white {
+    right: -190px;
+    height: 300px;
+    top: -20px;
+  }
+
+  #spring .info-date__where {
+    height: 70px;
+  }
+
+  #spring .info-date__stone {
+    height: 600px;
+    bottom: 0;
+    left: -300px;
+  }
+
+  #spring .info-date__flower {
+    height: 350px;
+    bottom: -150px;
+    right: 50px;
+  }
+
+  #spring .info-date__text-nomargin {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1300px) and (orientation:portrait) {
+  #spring .info-date__invitation {
+    max-height: 800px;
+  }
+
+  #spring .info-date__info {
+    margin: 150px 0 0;
+  }
+
+  #spring .info-date__check-in {
+    max-height: 800px;
+    gap: 110px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #spring .info-date__who {
+    width: 300px;
+    margin: 30px 0 20px;
+  }
+
+  #spring .info-date__description {
+    font-size: 20px;
+    line-height: 30px;
+    width: 70%;
+  }
+
+  #spring .info-date__text {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  #spring .info-date__text_position_right {
+    font-size: 18px;
+  }
+  
+  #spring .info-date__text_position_left {
+    font-size: 18px;
+  }
+
+  #spring .info-date__flower {
+    height: 300px;
+    right: -30px;
+  }
+  
+  #spring .info-date__check-in {
+    gap: 130px;
+  }
+
+  #spring .info-date__map {
+    width: 300px;
+    height: 300px;
+  }
+
+  #spring .info-date__with-map {
+    height: 300px;
+  }
+
+  #spring .info-date__flower-map {
+    left: -110px;
+    height: 300px;
+  }
+
+  #spring .info-date__flower-map-white {
+    right: -175px;
+    height: 270px;
+    top: 0;
+  }
+
+  #spring .info-date__where {
+    height: 60px;
+  }
+
+  #spring .info-date__date {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #spring .info-date__check-in {
+    flex-direction: column-reverse;
+    height: 100%;
+    padding: 50px 0;
+    gap: 40px;
+  }
+
+  #spring .info-date__check-in_color_white {
+    flex-direction: column;
+  }
+
+  #spring .info-date__text_position_right {
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  #spring .info-date__text_position_left {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  #spring .info-date__check-in_color_grey {
+    flex-direction: column-reverse;
+  }
+
+  #spring .info-date__info {
+    flex-direction: column;
+    margin: 100px 0 0;
+    gap: 35px;
+  }
+
+  #spring .info-date__place {
+    gap: 0;
+    padding-top: 50px;
+  }
+
+  #spring .info-date__block-text {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #spring .info-date__who {
+    width: 300px;
+    margin: 0 0 20px;
+  }
+
+  #spring .info-date__where {
+    height: 45px;
+  }
+
+  #spring .info-date__description {
+    font-size: 18px;
+    line-height: 28px;
+    width: 70%;
+  }
+
+  #spring .info-date__check-in {
+    padding: 20px 0;
+  }
+}
+  @media screen and (max-width: 500px) {
+  #spring .info-date__who {
+    width: 300px;
+    margin: 0 0 20px;
+  }
+
+  #spring .info-date__where {
+    height: 45px;
+  }
+
+  #spring .info-date__description {
+    font-size: 18px;
+    line-height: 28px;
+    width: 70%;
+  }
+
+  #spring .info-date__check-in {
+    padding: 20px 0;
+  }
+
+  #spring .info-date__where_position_left {
+    height: 55px;
+  }
+
+  #spring .info-date__flower {
+    display: none;
+  }
+
+  #spring .info-date__info {
+    margin: 80px 0 0;
+    gap: 20px;
+  }
+
+  #spring .info-date__map {
+    width: 240px;
+    height: 240px;
+    transform: translateX(25px);
+  }
+
+  #spring .info-date__map-left {
+    transform: translateX(-25px);
+  }
+
+  #spring .info-date__with-map {
+    height: 240px;
+  }
+
+  #spring .info-date__flower-map {
+    left: -63px;
+    height: 240px;
+  }
+
+  #spring .info-date__flower-map-white {
+    right: -105px;
+    height: 200px;
+  }
+
+  #spring .info-date__text {
+    margin: 15px 0 0;
+  }
+}
+#spring .menu {
+  height: 100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: background-color 1s ease;
+  background-color: transparent;
+}
+
+#spring .menu__background {
+  background-color: #f8e6ee;
+  transition: background-color 1s ease;
+}
+
+#spring .menu__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 70%;
+}
+
+#spring .menu__link {
+  list-style: none;
+  transition: transform .4s;
+  cursor: pointer;
+}
+
+#spring .menu__link:hover {
+  transform: scale(110%);
+}
+
+#spring .menu__ancor {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  transition: color .4s;
+}
+
+#spring .menu__ancor:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#spring .menu__button {
+  width: 40px;
+  height: 30px;
+  position: relative;
+  margin: 30px auto;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+} 
+
+#spring .menu__span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #7b335d;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .3s ease-in-out;
+}
+#spring .menu__button .menu__span:nth-child(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+#spring .menu__button .menu__span:nth-child(2) {
+  top: 12px;
+  transform-origin: left center;
+}
+#spring .menu__button .menu__span:nth-child(3) {
+  top: 24px;
+  transform-origin: left center;
+}
+
+#spring .menu__button_open .menu__span:nth-child(1) {
+  transform: rotate(45deg);
+  top: -3px;
+  left: 8px;
+}
+#spring .menu__button_open .menu__span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#spring .menu__button_open .menu__span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 25px;
+  left: 8px;
+}
+
+@media screen and (max-width: 1700px) {
+  #spring .menu {
+    height: 70px;
+    margin: 0;
+  }
+
+  #spring .menu__ancor {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #spring .menu {
+    height: 60px;
+  }
+
+  #spring .menu__ancor {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #spring .menu {
+    height: 50px;
+  }
+
+  #spring .menu__links {
+    width: 80%;
+  }
+
+  #spring .menu__ancor {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #spring .menu {
+    justify-content: flex-end;
+    width: 0;
+    height: 0;
+    padding: 0;
+  }
+
+  #spring .menu__button {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 3;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+  }
+}
+#spring .question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 0;
+  position: relative;
+  overflow: visible;
+}
+
+#spring .question__flower {
+  position: absolute;
+  object-fit: contain;
+  height: 1000px;
+  transform: rotate(180deg);
+  left: 0;
+  top: 440px;
+}
+
+#spring .question__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 40%;
+  margin: 0;
+}
+
+#spring .question__header {
+  height: 130px;
+  object-fit: contain;
+}
+
+#spring .question__text {
+  font-size: 30px;
+  line-height: 40px;
+  margin: 30px 0 0;
+  width: 100%;
+}
+
+#spring .question__text-span {
+  font-size: 20px;
+  line-height: 37px;
+  margin: 30px 0 0;
+}
+
+#spring .question__form {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 0;
+  background-color: #f8e6ee;
+  padding: 60px 100px;
+  border-radius: 30px;
+}
+
+#spring .question__string {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 30px;
+  border: none;
+  font-size: 30px;
+  align-items: flex-start;
+  padding: 0;
+}
+
+#spring .question__label {
+  margin: 20px 0 0 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#spring .question__label-input {
+  margin: 0 0 20px 0;
+  font-weight: bold;
+}
+
+#spring .question__text-span {
+  font-size: 24px;
+  line-height: 37px;
+  margin: 0;
+  font-weight: bold;
+}
+
+#spring .question__input {
+  width: 600px;
+  height: 55px;
+  border-radius: 3.5px;
+  border: .5px solid #7b335d;
+  font-size: 30px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+#spring .question__button {
+  width: 300px;
+  height: 70px;
+  font-size: 20px;
+  border: none;
+  align-self: center;
+  border-radius: 3.5px;
+  cursor: pointer;
+  color: white;
+  font-weight: 200;
+  background-color: #7b335d;
+  margin: 10px 0 0;
+}
+
+#spring .question__button:disabled {
+  opacity: .7;
+}
+
+#spring .question__unvisible {
+  font-family: inherit;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(0 0 0 0);
+}
+
+#spring .question__visible-radio {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.645);
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+#spring .question__unvisible:checked + .question__visible-radio {
+ 
+    background-color: var(--secondary-color);
+}
+
+#spring .question__unvisible:disabled + .question__visible-radio {
+  border: 1px solid  var(--secondary-color);;
+  background-color: #fbf8ec;
+}
+
+#spring .question__unvisible:disabled:checked+ .question__visible-radio {
+  background-color: #fbf8ec;
+}
+
+#spring .question__unvisible:focus + .question__visible-radio {
+    box-shadow: 0 0 5px #f8f7f0;
+}
+
+#spring .question__visible-checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.645);
+  cursor: pointer;
+  background-color: #fff;
+}
+
+#spring .question__unvisible:checked + .question__visible-checkbox {
+ 
+    background-color: var(--secondary-color);
+}
+
+#spring .question__unvisible:disabled + .question__visible-checkbox {
+  border: 1px solid var(--secondary-color);
+  background-color: #fbf8ec;
+}
+
+#spring .question__unvisible:disabled:checked+ .question__visible-checkbox {
+  background-color: #fbf8ec;
+}
+
+#spring .question__unvisible:focus + .question__visible-checkbox {
+  box-shadow: 0 0 5px #f8f7f0;
+}
+
+#spring .question__answer {
+  font-size: 20px;
+  line-height: 37px;
+  margin: 70px 0;
+}
+
+ @media screen and (max-width: 1700px) {
+  #spring .question {
+    padding: 100px 0 0;
+  }
+
+  #spring .question__bloks {
+    gap: 150px;
+  }
+
+  #spring .question__container {
+    max-width: 50%;
+  }
+
+  #spring .question__header {
+    height: 110px;
+  }
+
+  #spring .question__flower {
+    height: 800px;
+    top: 150px;
+  }
+
+  #spring .question__text {
+    font-size: 26px;
+    line-height: 33px;
+    margin: 25px 0 0;
+  }
+
+  #spring .question__form {
+    margin: 40px 0 60px;
+    padding: 40px 100px;
+  }
+
+  #spring .question__text-span {
+    font-size: 20px;
+    line-height: 33px;
+  }
+
+  #spring .question__string {
+    margin: 0 0 20px;
+    font-size: 22px;
+  }
+
+  #spring .question__label {
+    margin: 10px 0 0 0;
+  }
+
+  #spring .question__label-input {
+    margin: 0 0 15px 0;
+  }
+
+  #spring .question__input {
+    padding: 7px;
+    width: 450px;
+    font-size: 22px;
+  }
+
+  #spring .question__button {
+    font-size: 18px;
+    height: 60px;
+  }
+
+  #spring .question__answer {
+    font-size: 18px;
+    line-height: 33px;
+    margin: 50px 0;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #spring .question {
+    padding: 80px 0;
+  }
+
+  #spring .question__header {
+    height: 85px;
+  }
+
+  #spring .question__text {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  #spring .question__flower {
+    height: 600px;
+    top: 100px;
+  }
+
+  #spring .question__text-span {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  #spring .question__form {
+    margin: 40px 0 0;
+    padding: 40px 80px;
+  }
+
+  #spring .question__string {
+    margin: 0 0 20px;
+    font-size: 20px;
+    padding: 0;
+  }
+
+  #spring .question__label {
+    margin: 10px 0 0;
+  }
+
+  #spring .question__label-input {
+    margin: 0 0 10px 0;
+  }
+
+  #spring .question__button {
+    width: 180px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  #spring .question__input {
+    font-size: 22px;
+    height: 45px;
+    width: 400px;
+  }
+
+  #spring .question__answer {
+    font-size: 14px;
+    line-height: 28px;
+    margin: 15px 0 5px 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  #spring .question {
+    padding: 60px 0;
+  }
+
+  #spring .question__bloks {
+    width: 100%;
+    gap: 0;
+  }
+
+  #spring .question__container {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  #spring .question__flower {
+    display: none;
+  }
+
+  #spring .question__header {
+    height: 70px;
+  }
+
+  #spring .question__text {
+    font-size: 20px;
+    line-height: 26px;
+    width: 80%;
+    margin: 20px 0 0;
+  }
+
+  #spring .question__text-span {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  #spring .question__visible-radio {
+    width: 14px;
+    height: 14px;
+  }
+
+  #spring .question__visible-checkbox {
+    width: 14px;
+    height: 14px;
+  }
+
+  #spring .question__form {
+    margin: 30px 0 0;
+  }
+
+  #spring .question__string {
+    margin: 0 0 15px;
+    font-size: 18px;
+  }
+
+  #spring .question__label {
+    margin: 10px 0 0;
+  }
+
+  #spring .question__input {
+    height: 45px;
+    font-size: 16px;
+    width: 270px;
+  }
+
+  #spring .question__button {
+    width: 155px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  #spring .question__answer {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+ @media screen and (max-width: 500px) {
+  #spring .question__text {
+    font-size: 18px;
+  }
+
+  #spring .question__form {
+    margin: 20px 0 0;
+    padding: 30px calc((85vw - 270px) / 2);
+    box-sizing: border-box;
+  }
+}
+#spring .rsvp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 0 0 150px;
+}
+
+#spring .rsvp__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#spring .rsvp__header {
+  height: 100px;
+  object-fit: contain;
+  padding: 150px 0 0;
+}
+
+#spring .rsvp__text {
+  font-size: 30px;
+  line-height: 40px;
+  width: 55%;
+  margin: 70px 0 0;
+}
+
+#spring .rsvp__answer {
+  font-size: 20px;
+  line-height: 37px;
+  margin: 70px 0;
+}
+
+#spring .rsvp__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 50px 0 0;
+}
+
+#spring .rsvp__string {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 35px;
+}
+
+#spring .rsvp__label {
+  font-size: 26px;
+  line-height: 37px;
+  margin: 0 25px 0 0;
+  display: flex;
+  align-items: center;
+}
+
+#spring .rsvp__input {
+  width: 340px;
+  height: 55px;
+  border-radius: 3.5px;
+  border: .5px solid #7b335d;
+  font-size: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+#spring .rsvp__buttons {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  gap: 30px;
+  align-self: center;
+  margin: 7px 0 0;
+}
+
+#spring .rsvp__button {
+  width: 240px;
+  height: 70px;
+  background-color: #7b335d;
+  font-size: 20px;
+  border: none;
+  align-self: center;
+  border-radius: 3.5px;
+  cursor: pointer;
+  color: white;
+  font-weight: 200;
+}
+
+#spring .rsvp__button:disabled {
+  opacity: .7;
+}
+
+#spring .rsvp__flowers {
+  position: absolute;
+  height: 1100px;
+  right: 0;
+  top: -500px;
+  object-fit: contain;
+}
+
+#spring .rsvp__stone {
+  display: none;
+}
+
+ @media screen and (max-width: 1700px) {
+  #spring .rsvp {
+    padding: 0;
+  }
+
+  #spring .rsvp__text {
+    font-size: 26px;
+    line-height: 36px;
+    margin: 50px 0 0;
+  }
+
+  #spring .rsvp__header {
+    height: 80px;
+    padding: 120px 0 0;
+  }
+
+  #spring .rsvp__form {
+    margin: 40px 0 0;
+  }
+
+  #spring .rsvp__return {
+    font-size: 14px;
+    line-height: 33px;
+    padding: 0;
+  }
+
+  #spring .rsvp__answer {
+    font-size: 18px;
+    line-height: 33px;
+    margin: 50px 0;
+  }
+
+  #spring .rsvp__label {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  #spring .rsvp__input {
+    font-size: 20px;
+    padding: 7px;
+  }
+  #spring .rsvp__button {
+    font-size: 18px;
+    height: 60px;
+  }
+
+  #spring .rsvp__flowers {
+    height: 900px;
+    top: -400px;
+  }
+}
+ @media screen and (max-width: 1300px) {
+  #spring .rsvp {
+    padding: 80px 0 30px;
+    height: 100%;
+  }
+
+  #spring .rsvp__header {
+    height: 60px;
+    padding: 0;
+    margin: 0 0 20px;
+  }
+
+  #spring .rsvp__text {
+    font-size: 22px;
+    line-height: 32px;
+    margin: 30px 0 0;
+  }
+
+  #spring .rsvp__return {
+    font-size: 10px;
+    line-height: 28px;
+  }
+
+  #spring .rsvp__answer {
+    font-size: 14px;
+    line-height: 28px;
+    margin: 15px 0 5px 0;
+  }
+
+  #spring .rsvp__form {
+    min-width: 40%;
+    margin: 30px 0 0;
+  }
+
+  #spring .rsvp__string {
+    margin: 0 0 25px;
+  }
+
+  #spring .rsvp__label {
+    font-size: 18px;
+  }
+
+  #spring .rsvp__input {
+    width: 300px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  #spring .rsvp__buttons {
+    gap: 20px;
+  }
+
+  #spring .rsvp__button {
+    width: 180px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  #spring .rsvp__flowers {
+    height: 700px;
+    top: -250px;
+  }
+}
+ @media screen and (max-width: 800px) {
+  #spring .rsvp {
+    padding: 60px 0;
+  }
+
+  #spring .rsvp__header {
+    height: 50px;
+  }
+
+  #spring .rsvp__text {
+    font-size: 20px;
+    line-height: 26px;
+    width: 80%;
+    margin: 20px 0 10px;
+  }
+
+  #spring .rsvp__return {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  #spring .rsvp__answer {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  #spring .rsvp__form {
+    min-width: 40%;
+    margin: 28px 0 0;
+  }
+
+  #spring .rsvp__string {
+    margin: 0 0 15px;
+  }
+
+  #spring .rsvp__label {
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0 10px 0 0;
+  }
+
+  #spring .rsvp__input {
+    width: 175px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  #spring .rsvp__buttons {
+    gap: 15px;
+  }
+
+  #spring .rsvp__button {
+    width: 140px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  #spring .rsvp__flowers {
+    display: none;
+  }
+
+  #spring .rsvp__stone {
+    display: block;
+    position: absolute;
+    transform: rotate(180deg);
+    height: 400px;
+    top: 100px;
+    right: -200px;
+    z-index: -1;
+  }
+}
+
+ @media screen and (max-width: 800px) {
+  #spring .rsvp {
+    padding: 30px 0;
+  }
+
+  #spring .rsvp__text {
+    font-size: 18px;
+    margin: 15px 0 10px;
+  }
+
+  #spring .rsvp__label {
+    font-size: 16px;
+  }
+}
+#spring .timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+  position: relative;
+      gap: 30px;
+      font-weight: bold;
+}
+
+#spring .timer__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#spring .timer__title {
+  font-size: 34px;
+  line-height: 37px;
+}
+
+#spring .timer__bloks {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  justify-content: space-between;
+}
+
+#spring .timer__block-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 105px;
+}
+
+#spring .timer__number {
+  font-size: 28px;
+      color: #000000;
+  width: 72px;
+  height: 72px;
+  margin: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+}
+
+#spring .timer__number_var_day {
+      background-color: #f4dfe6;
+}
+
+#spring .timer__number_var_hour {
+    background-color: #f4dfe6;
+}
+
+#spring .timer__number_var_min {
+    background-color: #f4dfe6;
+}
+
+#spring .timer__number_var_sec {
+    background-color: #f4dfe6;
+}
+
+#spring .timer__text {
+  font-size: 28px;
+  margin: 10px 0 0;
+}
+
+ @media screen and (max-width: 1700px) {
+  #spring .timer {
+    padding: 50px 0;
+  }
+  
+  #spring .timer__title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  
+  #spring .timer__number {
+    font-size: 28px;
+  }
+
+  #spring .timer__text {
+    font-size: 24px;
+    margin: 7px 0 0;
+  }
+}
+
+ @media screen and (max-width: 1300px) {
+  #spring .timer {
+    padding: 40px 0;
+  }
+
+  #spring .timer__title {
+    font-size: 20px;
+  }
+
+  #spring .timer__text {
+    font-size: 18px;
+  }
+
+  #spring .timer__number {
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+  }
+
+  #spring .timer__bloks {
+    gap: 7px;
+  }
+
+  #spring .timer__block-info {
+    width: 80px;
+  }
+}
+
+ @media screen and (max-width: 700px) {
+  #spring .timer {
+    padding: 0;
+  }
+
+  #spring .timer__title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  #spring .timer__bloks {
+    gap: 14px;
+  }
+
+  #spring .timer__number {
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+  }
+
+  #spring .timer__text {
+    font-size: 16px;
+  }
+
+  #spring .timer__block-info {
+    width: 55px;
+  }
+}
+
+#spring .timetable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 0 200px;
+  position: relative;
+}
+
+#spring .timetable__header {
+  height: 140px;
+  object-fit: contain;
+}
+
+#spring .timetable__block {
+  display: grid;
+  grid-template-columns: repeat(7, 150px);
+  grid-template-rows: repeat(3, max-content);
+  grid-template-areas:
+    "rings text-foto glasses text-plate cake text-music car"
+    "line-rings line-foto line-glasses line-plate line-cake line-music line-car"
+    "text-rings foto text-glasses plate text-cake music text-car";
+  margin-top: 70px;
+  align-items: center;
+  justify-items: center;
+  column-gap: 0;
+  row-gap: 15px;
+}
+
+#spring .timetable__pic {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  filter: invert(10%) sepia(37%) saturate(1897%) hue-rotate(275deg) brightness(85%) contrast(80%);
+  
+}
+
+#spring .timetable__pic_visual_rings {
+  grid-area: rings;
+}
+
+#spring .timetable__pic_visual_foto {
+  grid-area: foto;
+}
+
+#spring .timetable__pic_visual_glasses {
+  grid-area: glasses;
+}
+
+#spring .timetable__pic_visual_plate {
+  grid-area: plate;
+}
+
+#spring .timetable__pic_visual_cake {
+  grid-area: cake;
+}
+
+#spring .timetable__pic_visual_music {
+  grid-area: music;
+}
+
+#spring .timetable__pic_visual_car {
+  grid-area: car;
+}
+
+#spring .timetable__line {
+  width: 151px;
+  object-fit: contain;
+  filter: invert(10%) sepia(37%) saturate(1897%) hue-rotate(275deg) brightness(85%) contrast(80%);
+}
+
+#spring .timetable__line-start {
+  grid-area: line-rings;
+  object-fit: contain;
+  width: 84px;
+  object-position: right;
+  justify-self: flex-end;
+  filter: invert(10%) sepia(37%) saturate(1897%) hue-rotate(275deg) brightness(85%) contrast(80%);
+}
+
+#spring .timetable__line-end {
+  grid-area: line-car;
+  object-fit: contain;
+  width: 95px;
+  object-position: left;
+  justify-self: flex-start;
+  filter: invert(10%) sepia(37%) saturate(1897%) hue-rotate(275deg) brightness(85%) contrast(80%);
+}
+
+#spring .timetable__line_center_foto {
+  grid-area: line-foto
+  }
+  
+  #spring .timetable__line_center_glasses {
+  grid-area: line-glasses;
+}
+
+#spring .timetable__line_center_plate {
+  grid-area: line-plate;
+}
+
+#spring .timetable__line_center_cake {
+  grid-area: line-cake;
+}
+
+#spring .timetable__line_center_music {
+  grid-area: line-music;
+}
+
+#spring .timetable__text {
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0;
+  font-weight: bold;
+}
+
+#spring .timetable__text_about_rings {
+  grid-area: text-rings;
+}
+
+#spring .timetable__text_about_foto {
+  grid-area: text-foto;
+}
+
+#spring .timetable__text_about_glasses {
+  grid-area: text-glasses;
+}
+
+#spring .timetable__text_about_plate {
+  grid-area: text-plate;
+}
+
+#spring .timetable__text_about_cake {
+  grid-area: text-cake;
+}
+
+#spring .timetable__text_about_music {
+  grid-area: text-music;
+}
+
+#spring .timetable__text_about_car {
+  grid-area: text-car;
+}
+@media screen and (max-width: 1700px) {
+  #spring .timetable {
+    padding: 0;
+  }
+
+  #spring .timetable__header {
+    padding: 120px 0 0;
+    height: 100px;
+  }
+
+  #spring .timetable__block {
+    margin-top: 70px;
+}
+
+  #spring .timetable__pic {
+    width: 90px;
+    height: 90px;
+  }
+
+  #spring .timetable__text {
+    font-size: 18px;
+  }
+}
+
+ @media screen and (max-width: 1300px) {
+  #spring .timetable {
+    padding: 80px 0;
+    height: 100%;
+  }
+
+  #spring .timetable__header {
+    height: 80px;
+    padding: 0;
+  }
+
+  #spring .timetable__block {
+    grid-template-columns: repeat(7, 100px);
+    margin-top: 40px;
+  }
+
+  #spring .timetable__pic {
+    width: 70px;
+    height: 70px;
+  }
+
+  #spring .timetable__line {
+    width: 101px;
+  }
+
+  #spring .timetable__line-start {
+    height: 11.4px;
+    object-position: right;
+  }
+
+  #spring .timetable__line-end {
+    height: 11.4px;
+    object-position: left;
+  }
+
+  #spring .timetable__text {
+    font-size: 16px;
+    width: 110px;
+  }
+}
+
+ @media screen and (max-width: 750px) {
+  #spring .timetable__header {
+    height: 70px;
+  }
+
+  #spring .timetable {
+    padding: 50px 0;
+  }
+
+  #spring .timetable__text {
+    width: 120px;
+  }
+
+  #spring .timetable__block {
+    grid-template-rows: repeat(7, 99px);
+    grid-template-columns: 1fr 30px 1fr;
+    grid-template-areas:
+      "rings line-rings text-rings"
+      "text-foto line-foto foto"
+      "glasses line-glasses text-glasses"
+      "text-plate line-plate plate"
+      "cake line-cake text-cake"
+      "text-music line-music music"
+      "car line-car text-car";
+    margin-top: 30px;
+    column-gap: 15px;
+    row-gap: 0;
+  }
+
+  #spring .timetable__line {
+    transform: rotate(90deg);
+    width: 115px;
+    justify-content: center;
+    align-items: center;
+  }
+
+    #spring .timetable__line-start {
+    height: 13px;
+    padding-right: 45px;
+    transform: rotate(90deg);
+    justify-self: center;
+    align-self: flex-end;
+  }
+
+  #spring .timetable__line-end {
+    height: 13px;
+    padding-left: 45px;
+    transform: rotate(90deg);
+    justify-self: center;
+    align-self: flex-start;
+  }
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+#spring html {
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.15
+}
+
+#spring body {
+    margin: 0
+}
+
+#spring main {
+    display: block
+}
+
+#spring h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+#spring hr {
+    box-sizing: initial;
+    height: 0;
+    overflow: visible
+}
+
+#spring pre {
+    font-family: monospace,monospace;
+    font-size: 1em
+}
+
+#spring a {
+    background-color: initial
+}
+
+#spring abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted
+}
+
+#spring b,#spring strong {
+    font-weight: bolder
+}
+
+#spring code,#spring kbd,#spring samp {
+    font-family: monospace,monospace;
+    font-size: 1em
+}
+
+#spring small {
+    font-size: 80%
+}
+
+#spring sub,#spring sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: initial
+}
+
+#spring sub {
+    bottom: -.25em
+}
+
+#spring sup {
+    top: -.5em
+}
+
+#spring img {
+    border-style: none
+}
+
+#spring button,#spring input,#spring optgroup,#spring select,#spring textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+}
+
+#spring button,#spring input {
+    overflow: visible
+}
+
+#spring button,#spring select {
+    text-transform: none
+}
+
+#spring [type=button],#spring [type=reset],#spring [type=submit],#spring button {
+    -webkit-appearance: button
+}
+
+#spring [type=button]::-moz-focus-inner,#spring [type=reset]::-moz-focus-inner,#spring [type=submit]::-moz-focus-inner,#spring button::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+#spring [type=button]:-moz-focusring,#spring [type=reset]:-moz-focusring,#spring [type=submit]:-moz-focusring,#spring button:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+#spring fieldset {
+    padding: .35em .75em .625em
+}
+
+#spring legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+#spring progress {
+    vertical-align: initial
+}
+
+#spring textarea {
+    overflow: auto
+}
+
+#spring [type=checkbox],#spring [type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+#spring [type=number]::-webkit-inner-spin-button,#spring [type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+#spring [type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+#spring [type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+#spring ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+#spring details {
+    display: block
+}
+
+#spring summary {
+    display: list-item
+}
+
+#spring [hidden],#spring template {
+    display: none
+}
+
+@font-face {
+    font-family: WonderGarden;
+    font-style: normal;
+    font-weight: 200;
+    src: url(/static/media/WonderGardenScript-Regular.a828455e7c42b1d7b6ea.ttf) format("ttf"),url(/static/media/WonderGardenScript-Regular.ef0e6869b23d98d83484.woff) format("woff"),url(/static/media/WonderGardenScript-Regular.9072b92b6f7de7fbbc34.woff2) format("woff")
+}
+
+ @font-face {
+    font-family: Calisto;
+    font-style: normal;
+    font-weight: 200;
+    src: url(/static/media/Calisto.2c44c652f9223405eee4.TTF) format("ttf"),url(/static/media/Calisto.8b94347787ce50644bf0.woff) format("woff"),url(/static/media/Calisto.8de25cabd2a5c28af125.woff2) format("woff2")
+}
+
+ @font-face {
+    font-family: Gotham;
+    font-style: normal;
+    font-weight: 200;
+    src: url(/static/media/Gotham.d6ded4f04b4c49022337.ttf) format("ttf"),url(/static/media/Gotham.5f528c5eecd99a103124.woff) format("woff"),url(/static/media/Gotham.cae2ce165d05eb6f1e3a.woff2) format("woff2")
+}
+
+#spring body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fff;
+    font-family: Gotham,Arial,sans-serif;
+    font-weight: 200;
+    margin: 0 auto;
+    max-width: 2700px
+}
+
+#spring html {
+    scroll-behavior: smooth
+}
+
+#spring a,#spring button,#spring input,#spring select,#spring textarea {
+    -webkit-tap-highlight-color: transparent
+}
+
+#spring .menu {
+    align-items: center;
+    background-color: initial;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10
+}
+
+#spring .menu,#spring .menu__background {
+    transition: background-color 1s ease
+}
+
+#spring .menu__background {
+    background-color: #f8e6ee
+}
+
+#spring .menu__links {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 70%
+}
+
+#spring .menu__link {
+    cursor: pointer;
+    list-style: none;
+    transition: -webkit-transform .4s;
+    transition: transform .4s;
+    transition: transform .4s,-webkit-transform .4s
+}
+
+#spring .menu__link:hover {
+    -webkit-transform: scale(110%);
+    transform: scale(110%)
+}
+
+#spring .menu__ancor {
+    color: #000;
+    font-size: 30px;
+    text-decoration: none;
+    transition: color .4s
+}
+
+#spring .menu__ancor:hover {
+    color: rgba(0,0,0,.6)
+}
+
+#spring .menu__button {
+    cursor: pointer;
+    height: 30px;
+    margin: 30px auto;
+    position: relative;
+    transition: .5s ease-in-out;
+    width: 40px
+}
+
+#spring .menu__button,#spring .menu__span {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+}
+
+#spring .menu__span {
+    background: #7b335d;
+    border-radius: 9px;
+    display: block;
+    height: 5px;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    transition: .3s ease-in-out;
+    width: 100%
+}
+
+#spring .menu__button .menu__span:first-child {
+    top: 0;
+    -webkit-transform-origin: left center;
+    transform-origin: left center
+}
+
+#spring .menu__button .menu__span:nth-child(2) {
+    top: 12px;
+    -webkit-transform-origin: left center;
+    transform-origin: left center
+}
+
+#spring .menu__button .menu__span:nth-child(3) {
+    top: 24px;
+    -webkit-transform-origin: left center;
+    transform-origin: left center
+}
+
+#spring .menu__button_open .menu__span:first-child {
+    left: 8px;
+    top: -3px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+#spring .menu__button_open .menu__span:nth-child(2) {
+    opacity: 0;
+    width: 0
+}
+
+#spring .menu__button_open .menu__span:nth-child(3) {
+    left: 8px;
+    top: 25px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+ @media screen and (max-width: 1700px) {
+    #spring .menu {
+        height:70px;
+        margin: 0
+    }
+
+    #spring .menu__ancor {
+        font-size: 24px
+    }
+}
+
+ @media screen and (max-width: 1300px) {
+    #spring .menu {
+        height:60px
+    }
+
+    #spring .menu__ancor {
+        font-size: 20px
+    }
+}
+ @media screen and (max-width: 800px) {
+    #spring .menu {
+        height:50px
+    }
+
+    #spring .menu__links {
+        width: 80%
+    }
+
+    #spring .menu__ancor {
+        font-size: 18px
+    }
+}
+
+ @media screen and (max-width: 700px) {
+    #spring .menu {
+        height:0;
+        justify-content: flex-end;
+        padding: 0;
+        width: 0
+    }
+
+    #spring .menu__button {
+        background-color: initial;
+        border: none;
+        margin: 0;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        z-index: 3
+    }
+}
+
+ @-webkit-keyframes hello {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+ @keyframes hello {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+#spring .header {
+    display: flex;
+    height: calc(100vh - 100px);
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 100%
+}
+
+#spring .header__flower {
+    -webkit-animation: hello 3s ease forwards;
+    animation: hello 3s ease forwards;
+    height: 80%;
+    margin: 10vh 0 0;
+    object-fit: contain
+}
+
+ @media screen and (max-width: 1700px) {
+    #spring .header {
+        height:calc(100vh - 70px)
+    }
+
+    #spring .header__flower {
+        -webkit-animation: hello 3s ease forwards;
+        animation: hello 3s ease forwards;
+        height: 95%;
+        margin: calc(2.5vh - 15px) 0 0
+    }
+}
+
+ @media screen and (max-width: 1300px) and (orientation:landscape) {
+    #spring .header {
+        height: calc(100vh - 60px);
+    }
+
+    #spring .header__flower {      
+        animation: hello 3s ease forwards;
+        height: 80vh;
+        margin: calc(10vh - 30px) 0;
+    }
+    #spring .main-circle{
+        position: absolute;
+        top: 36vh;
+        width: auto;
+        margin: auto;
+        left: calc(50% - 12vw);
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+   #spring .main-names__title{
+               line-height: 60%;
+        font-family: var(--beauty-font);
+        font-size: 120px;
+        color: var(--header-color);
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+        justify-content: flex-start;
+    }
+    
+    #spring .main-name-second__title{
+           text-align: right;
+    margin: 0;
+    }
+    #spring .main-name-first__title{
+      width: auto;
+    text-align: left;
+    margin: 0;
+    }
+}
+
+ @media screen and (max-width: 1300px) and (orientation:portrait) {
+    #spring .header {
+        height:calc(100vh - 60px);
+    }
+
+    #spring .header__flower {
+        -webkit-animation: hello 3s ease forwards;
+        animation: hello 3s ease forwards;
+        height: 80%;
+        margin: calc(2.5vh - 20px) 0 0;
+        max-height: 95vw
+    }
+   
+    
+}
+
+ @media screen and (max-width: 800px) and (orientation:landscape) {
+    #spring .header {
+        height:calc(100vh - 50px)
+    }
+
+    #spring .header__flower {
+        -webkit-animation: hello 3s ease forwards;
+        animation: hello 3s ease forwards;
+        height: 95%;
+        margin: calc(10vh - 25px) 0 0
+    }
+}
+ @media screen and (max-width: 850px) and (orientation:portrait) {
+    #spring .header {
+        height:100vh
+    }
+
+    #spring .header__flower {
+        -webkit-animation: hello 3s ease forwards;
+        animation: hello 3s ease forwards;
+        height: 80%;
+        margin: 12vh 0 0;
+        min-height: 70vh
+    }
+}
+
+#spring .info-date,#spring .info-date__invitation {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative
+}
+
+#spring .info-date__invitation {
+    height: 100vh;
+    justify-content: flex-start
+}
+
+#spring .info-date__who {
+    margin: 100px 0 0;
+    object-fit: contain;
+    width: 600px
+}
+
+#spring .info-date__info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    margin: 250px 0 0
+}
+
+#spring .info-date__description {
+    font-size: 34px;
+    line-height: 50px;
+    margin: 70px 0 0;
+    width: 60%
+}
+
+#spring .info-date__text {
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0
+}
+
+#spring .info-date__date {
+    color: #782379;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0
+}
+
+#spring .info-date__block-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start
+}
+
+#spring .info-date__where_position_left {
+    width: -webkit-min-content;
+    width: min-content
+}
+
+#spring .info-date__flower {
+    bottom: 0;
+    height: 700px;
+    object-fit: contain;
+    position: absolute;
+    right: 200px
+}
+
+#spring .info-date__stone {
+    bottom: 200px;
+    height: 1000px;
+    left: -500px;
+    object-fit: contain;
+    position: absolute;
+    z-index: -1
+}
+
+#spring .info-date__place {
+    flex-direction: column
+}
+
+#spring .info-date__check-in,#spring .info-date__place {
+    align-items: center;
+    display: flex;
+    position: relative;
+    width: 100%
+}
+
+#spring .info-date__check-in {
+    flex-direction: row;
+    gap: 400px;
+    justify-content: center;
+    margin: 0;
+    padding: 150px 0
+}
+
+#spring .info-date__where {
+    height: 110px;
+    object-fit: contain
+}
+
+#spring .info-date__map {
+    height: 600px;
+    margin: 0;
+    width: 600px;
+    z-index: 3
+}
+
+#spring .info-date__with-map {
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    position: relative
+}
+
+#spring .info-date__flower-map {
+    height: 600px;
+    left: -220px;
+    object-fit: contain;
+    position: absolute;
+    top: 0
+}
+
+#spring .info-date__flower-map-white {
+    height: 500px;
+    object-fit: contain;
+    position: absolute;
+    right: -325px;
+    top: 0
+}
+
+#spring .info-date__text_position_right {
+    font-size: 34px;
+    line-height: 50px;
+    margin: 30px 0 0;
+    text-align: end
+}
+
+#spring .info-date__text_position_left {
+    font-size: 34px;
+    line-height: 50px;
+    margin: 30px 0 0;
+    text-align: start
+}
+
+#spring .info-date__text-nomargin {
+    margin: 0
+}
+
+ @media screen and (max-width: 1700px) {
+    #spring .info-date__who {
+        margin:120px 0 30px;
+        width: 450px
+    }
+
+    #spring .info-date__text {
+        font-size: 26px;
+        line-height: 32px;
+        margin: 20px 0 0;
+        z-index: 5
+    }
+
+    #spring .info-date__description {
+        font-size: 26px;
+        line-height: 36px;
+        margin: 20px 0 0;
+        width: 70%
+    }
+
+    #spring .info-date__date {
+        font-size: 50px;
+        line-height: 50px
+    }
+
+    #spring .info-date__info {
+        gap: 30px;
+        margin: 70px 0 0
+    }
+
+    #spring .info-date__text_position_left,#spring .info-date__text_position_right {
+        font-size: 24px
+    }
+
+    #spring .info-date__check-in {
+        gap: 300px;
+        padding: 150px 0 50px
+    }
+
+    #spring .info-date__where {
+        height: 85px
+    }
+
+    #spring .info-date__map {
+        height: 400px;
+        width: 400px
+    }
+
+    #spring .info-date__with-map {
+        height: 400px
+    }
+
+    #spring .info-date__flower-map {
+        height: 450px;
+        left: -165px
+    }
+
+    #spring .info-date__flower-map-white {
+        height: 380px;
+        right: -245px
+    }
+
+    #spring .info-date__stone {
+        bottom: 0;
+        height: 800px;
+        left: -400px
+    }
+
+    #spring .info-date__flower {
+        bottom: -150px;
+        height: 450px;
+        right: 50px
+    }
+
+    #spring .info-date__text-nomargin {
+        margin: 0
+    }
+}
+@media screen and (max-width: 1300px) {
+    #spring .info-date__who {
+        margin:100px 0 40px;
+        width: 430px
+    }
+
+    #spring .info-date__invitation {
+        height: 100%
+    }
+
+    #spring .info-date__text {
+        font-size: 24px;
+        line-height: 30px;
+        margin: 10px 0 10px;
+    }
+
+    #spring .info-date__description {
+        font-size: 24px;
+        line-height: 34px;
+        margin: 10px 0 0;
+        width: 85%;
+    }
+
+    #spring .info-date__place {
+        gap: 150px;
+        padding-top: 200px
+    }
+
+    #spring .info-date__text_position_left,#spring .info-date__text_position_right {
+        font-size: 20px
+    }
+
+    #spring .info-date__info {
+        gap: 30px;
+        margin: 50px 0 0
+    }
+
+    #spring .info-date__check-in {
+        gap: 150px;
+        height: 100%;
+        padding: 0
+    }
+
+    #spring .info-date__map {
+        height: 350px;
+        width: 350px
+    }
+
+    #spring .info-date__with-map {
+        height: 350px
+    }
+
+    #spring .info-date__flower-map {
+        height: 350px;
+        left: -128px
+    }
+
+    #spring .info-date__flower-map-white {
+        height: 300px;
+        right: -190px;
+        top: -20px
+    }
+
+    #spring .info-date__where {
+        height: 70px
+    }
+
+    #spring .info-date__stone {
+        bottom: 0;
+        height: 600px;
+        left: -300px
+    }
+
+    #spring .info-date__flower {
+        bottom: -150px;
+        height: 350px;
+        right: 50px
+    }
+
+    #spring .info-date__text-nomargin {
+        margin: 0
+    }
+}
+
+ @media screen and (max-width: 1300px) and (orientation:portrait) {
+    #spring .info-date__invitation {
+        max-height:800px
+    }
+
+    #spring .info-date__info {
+        margin: 150px 0 0
+    }
+
+    #spring .info-date__check-in {
+        gap: 110px;
+        max-height: 800px
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #spring .info-date__who {
+        margin:30px 0 20px;
+        width: 300px
+    }
+
+    #spring .info-date__description {
+        font-size: 20px;
+        line-height: 30px;
+        width: 70%
+    }
+
+    #spring .info-date__text {
+        font-size: 20px;
+        line-height: 26px
+    }
+
+    #spring .info-date__text_position_left,#spring .info-date__text_position_right {
+        font-size: 18px
+    }
+
+    #spring .info-date__flower {
+        height: 300px;
+        right: -30px
+    }
+
+    #spring .info-date__check-in {
+        gap: 130px
+    }
+
+    #spring .info-date__map {
+        height: 300px;
+        width: 300px
+    }
+
+    #spring .info-date__with-map {
+        height: 300px
+    }
+
+    #spring .info-date__flower-map {
+        height: 300px;
+        left: -110px
+    }
+
+    #spring .info-date__flower-map-white {
+        height: 270px;
+        right: -175px;
+        top: 0
+    }
+
+    #spring .info-date__where {
+        height: 60px
+    }
+
+    #spring .info-date__date {
+        font-size: 40px;
+        line-height: 40px
+    }
+}
+
+ @media screen and (max-width: 950px) {
+    #spring .info-date__check-in {
+        flex-direction:column-reverse;
+        gap: 40px;
+        height: 100%;
+        padding: 50px 0
+    }
+
+    #spring .info-date__check-in_color_white {
+        flex-direction: column
+    }
+
+    #spring .info-date__text_position_left,#spring .info-date__text_position_right {
+        font-size: 16px;
+        text-align: center
+    }
+
+    #spring .info-date__check-in_color_grey {
+        flex-direction: column-reverse
+    }
+
+    #spring .info-date__info {
+        flex-direction: column;
+        gap: 35px;
+        margin: 100px 0 0
+    }
+
+    #spring .info-date__place {
+        gap: 0;
+        padding-top: 50px
+    }
+
+    #spring .info-date__block-text {
+        align-items: center;
+        justify-content: center
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #spring .info-date__who {
+        margin:0 0 20px;
+        width: 300px
+    }
+
+    #spring .info-date__where {
+        height: 45px
+    }
+
+    #spring .info-date__description {
+        font-size: 18px;
+        line-height: 28px;
+        width: 70%
+    }
+
+    #spring .info-date__check-in {
+        padding: 20px 0
+    }
+
+    #spring .info-date__where_position_left {
+        height: 55px
+    }
+
+    #spring .info-date__flower {
+        display: none
+    }
+
+    #spring .info-date__info {
+        gap: 20px;
+        margin: 80px
+    }
+        
+        @media screen and (max-width: 500px) {
+    #spring .info-date__who {
+        margin:0 0 20px;
+        width: 300px
+    }
+
+    #spring .info-date__where {
+        height: 45px
+    }
+
+    #spring .info-date__description {
+        font-size: 18px;
+        line-height: 28px;
+        width: 70%
+    }
+
+    #spring .info-date__check-in {
+        padding: 20px 0
+    }
+
+    #spring .info-date__where_position_left {
+        height: 55px
+    }
+
+    #spring .info-date__flower {
+        display: none
+    }
+
+    #spring .info-date__info {
+        gap: 20px;
+        margin: 80px 0 0
+    }
+
+    #spring .info-date__map {
+        height: 240px;
+        -webkit-transform: translateX(25px);
+        transform: translateX(25px);
+        width: 240px
+    }
+
+    #spring .info-date__map-left {
+        -webkit-transform: translateX(-25px);
+        transform: translateX(-25px)
+    }
+
+    #spring .info-date__with-map {
+        height: 240px
+    }
+
+    #spring .info-date__flower-map {
+        height: 240px;
+        left: -63px
+    }
+
+    #spring .info-date__flower-map-white {
+        height: 200px;
+        right: -105px
+    }
+
+    #spring .info-date__text {
+        margin: 15px 0 0
+    }
+}
+#spring .menu {
+    align-items: center;
+    background-color: initial;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10
+}
+
+#spring .menu,#spring .menu__background {
+    transition: background-color 1s ease
+}
+
+#spring .menu__background {
+    background-color: #f8e6ee
+}
+
+#spring .menu__links {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 70%
+}
+
+#spring .menu__link {
+    cursor: pointer;
+    list-style: none;
+    transition: -webkit-transform .4s;
+    transition: transform .4s;
+    transition: transform .4s,-webkit-transform .4s
+}
+
+#spring .menu__link:hover {
+    -webkit-transform: scale(110%);
+    transform: scale(110%)
+}
+
+#spring .menu__ancor {
+    color: #000;
+    font-size: 30px;
+    text-decoration: none;
+    transition: color .4s
+}
+
+#spring .menu__ancor:hover {
+    color: rgba(0,0,0,.6)
+}
+
+#spring .menu__button {
+    cursor: pointer;
+    height: 30px;
+    margin: 30px auto;
+    position: relative;
+    transition: .5s ease-in-out;
+    width: 40px
+}
+
+#spring .menu__button,#spring .menu__span {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+}
+
+#spring .menu__span {
+    background: #7b335d;
+    border-radius: 9px;
+    display: block;
+    height: 5px;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    transition: .3s ease-in-out;
+    width: 100%
+}
+
+#spring .menu__button .menu__span:first-child {
+    top: 0;
+    -webkit-transform-origin: left center;
+    transform-origin: left center
+}
+
+#spring .menu__button .menu__span:nth-child(2) {
+    top: 12px;
+    -webkit-transform-origin: left center;
+    transform-origin: left center
+}
+
+#spring .menu__button .menu__span:nth-child(3) {
+    top: 24px;
+    -webkit-transform-origin: left center;
+    transform-origin: left center
+}
+
+#spring .menu__button_open .menu__span:first-child {
+    left: 8px;
+    top: -3px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+#spring .menu__button_open .menu__span:nth-child(2) {
+    opacity: 0;
+    width: 0
+}
+
+#spring .menu__button_open .menu__span:nth-child(3) {
+    left: 8px;
+    top: 25px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+}
+
+@media screen and (max-width: 1700px) {
+    #spring .menu {
+        height:70px;
+        margin: 0
+    }
+
+    #spring .menu__ancor {
+        font-size: 24px
+    }
+}
+
+ @media screen and (max-width: 1300px) {
+    #spring .menu {
+        height:60px;
+        display: none;
+    }
+
+    #spring .menu__ancor {
+        font-size: 20px
+    }
+}
+
+ @media screen and (max-width: 800px) {
+    #spring .menu {
+        height:50px
+    }
+
+    #spring .menu__links {
+        width: 80%
+    }
+
+    #spring .menu__ancor {
+        font-size: 18px
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #spring .menu {
+        height:0;
+        justify-content: flex-end;
+        padding: 0;
+        width: 0;
+        display: none;
+    }
+
+    #spring .menu__button {
+        background-color: initial;
+        border: none;
+        margin: 0;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        z-index: 3
+    }
+}
+
+ @-webkit-keyframes hello {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes hello {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+#spring .header {
+    display: flex;
+    height: calc(100vh - 100px);
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 100%
+}
+
+#spring .header__flower {
+    -webkit-animation: hello 3s ease forwards;
+    animation: hello 3s ease forwards;
+    height: 80%;
+    margin: 10vh 0 0;
+    object-fit: contain
+}
+
+ @media screen and (max-width: 1700px) {
+    #spring .header {
+        height:calc(100vh - 70px)
+    }
+
+    #spring .header__flower {
+        -webkit-animation: hello 3s ease forwards;
+        animation: hello 3s ease forwards;
+        height: 95%;
+        margin: calc(2.5vh - 15px) 0 0
+    }
+}
+
+ @media screen and (max-width: 1300px) and (orientation:landscape) {
+    #spring .header {
+        height: calc(100vh - 60px);
+    }
+
+    #spring .header__flower {      
+        animation: hello 3s ease forwards;
+        height: 80vh;
+        margin: calc(10vh - 30px) 0;
+    }
+    #spring .main-circle{
+        position: absolute;
+        top: 36vh;
+        width: auto;
+        margin: auto;
+        left: calc(50% - 12vw);
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+   #spring .main-names__title{
+               line-height: 60%;
+        font-family: var(--beauty-font);
+        font-size: 120px;
+        color: var(--header-color);
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+        justify-content: flex-start;
+    }
+    
+    #spring .main-name-second__title{
+           text-align: right;
+    margin: 0;
+    }
+    #spring .main-name-first__title{
+      width: auto;
+    text-align: left;
+    margin: 0;
+    }
+}
+
+ @media screen and (max-width: 1300px) and (orientation:portrait) {
+    #spring .header {
+        height:calc(100vh - 60px);
+    }
+
+    #spring .header__flower {
+        -webkit-animation: hello 3s ease forwards;
+        animation: hello 3s ease forwards;
+        height: 80%;
+        margin: calc(2.5vh - 20px) 0 0;
+        max-height: 95vw
+    }
+   
+    
+}
+
+ @media screen and (max-width: 800px) and (orientation:landscape) {
+    #spring .header {
+        height:calc(100vh - 50px)
+    }
+
+    #spring .header__flower {
+        -webkit-animation: hello 3s ease forwards;
+        animation: hello 3s ease forwards;
+        height: 95%;
+        margin: calc(10vh - 25px) 0 0
+    }
+}
+
+@media screen and (max-width: 850px) and (orientation:portrait) {
+    #spring .header {
+        height:100vh
+    }
+
+    #spring .header__flower {
+       -webkit-animation: hello 3s ease forwards;
+        animation: hello 3s ease forwards;
+        height: 100%;
+        top: 50%;
+        /* margin: 12vh 0 0; */
+        /* min-height: 70vh; */
+        position: relative;
+        transform: translate(-0%, -50%);
+    }
+}
+
+#spring .info-date,#spring .info-date__invitation {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative
+}
+
+#spring .info-date__invitation {
+    height: 100vh;
+    justify-content: flex-start
+}
+
+#spring .info-date__who {
+    margin: 100px 0 0;
+    object-fit: contain;
+    width: 600px
+}
+
+#spring .info-date__info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    margin: 250px 0 0;
+}
+
+#spring .info-date__description {
+    font-size: 34px;
+    line-height: 50px;
+    margin: 70px 0 0;
+    width: 60%;
+            font-weight: bold;
+}
+
+#spring .info-date__text {
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0;
+    font-weight: bold;
+}
+
+#spring .info-date__date {
+    color: #782379;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0
+}
+
+#spring .info-date__block-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start
+}
+
+#spring .info-date__where_position_left {
+    width: -webkit-min-content;
+    width: min-content
+}
+
+#spring .info-date__flower {
+    bottom: 0;
+    height: 700px;
+    object-fit: contain;
+    position: absolute;
+    right: 200px
+}
+
+#spring .info-date__stone {
+    bottom: 200px;
+    height: 1000px;
+    left: -500px;
+    object-fit: contain;
+    position: absolute;
+    z-index: -1
+}
+
+#spring .info-date__place {
+    flex-direction: column
+}
+
+#spring .info-date__check-in,#spring .info-date__place {
+    align-items: center;
+    display: flex;
+    position: relative;
+    width: 100%
+}
+
+#spring .info-date__check-in {
+    flex-direction: row;
+    gap: 400px;
+    justify-content: center;
+    margin: 0;
+    padding: 150px 0
+}
+
+#spring .info-date__where {
+    height: 110px;
+    object-fit: contain
+}
+
+#spring .info-date__map {
+    height: 600px;
+    margin: 0;
+    width: 600px;
+    z-index: 3
+}
+
+#spring .info-date__with-map {
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    position: relative
+}
+
+#spring .info-date__flower-map {
+    height: 600px;
+    left: -220px;
+    object-fit: contain;
+    position: absolute;
+    top: 0
+}
+
+#spring .info-date__flower-map-white {
+    height: 500px;
+    object-fit: contain;
+    position: absolute;
+    right: -325px;
+    top: 0
+}
+
+#spring .info-date__text_position_right {
+    font-size: 34px;
+    line-height: 50px;
+    margin: 30px 0 0;
+    text-align: end
+}
+
+#spring .info-date__text_position_left {
+    font-size: 34px;
+    line-height: 50px;
+    margin: 30px 0 0;
+    text-align: start
+}
+
+#spring .info-date__text-nomargin {
+    margin: 0
+}
+
+ @media screen and (max-width: 1700px) {
+    #spring .info-date__who {
+        margin:120px 0 30px;
+        width: 450px
+    }
+
+    #spring .info-date__text {
+        font-size: 26px;
+        line-height: 32px;
+        margin: 20px 0 0;
+        z-index: 5
+    }
+
+    #spring .info-date__description {
+        font-size: 26px;
+        line-height: 36px;
+        margin: 20px 0 0;
+        width: 70%
+    }
+
+    #spring .info-date__date {
+        font-size: 50px;
+        line-height: 50px
+    }
+
+    #spring .info-date__info {
+        gap: 30px;
+        margin: 70px 0 0
+    }
+
+    #spring .info-date__text_position_left,#spring .info-date__text_position_right {
+        font-size: 24px
+    }
+
+    #spring .info-date__check-in {
+        gap: 300px;
+        padding: 150px 0 50px
+    }
+
+    #spring .info-date__where {
+        height: 85px
+    }
+
+    #spring .info-date__map {
+        height: 400px;
+        width: 400px
+    }
+
+    #spring .info-date__with-map {
+        height: 400px
+    }
+
+    #spring .info-date__flower-map {
+        height: 450px;
+        left: -165px
+    }
+
+    #spring .info-date__flower-map-white {
+        height: 380px;
+        right: -245px
+    }
+
+    #spring .info-date__stone {
+        bottom: 0;
+        height: 800px;
+        left: -400px
+    }
+
+    #spring .info-date__flower {
+        bottom: -150px;
+        height: 450px;
+        right: 50px
+    }
+
+    #spring .info-date__text-nomargin {
+        margin: 0
+    }
+}
+
+ @media screen and (max-width: 1300px) {
+    #spring .info-date__who {
+        margin:100px 0 40px;
+        width: 430px
+    }
+
+    #spring .info-date__invitation {
+        height: 100%
+    }
+
+    #spring .info-date__text {
+        font-size: 24px;
+        line-height: 30px;
+        margin: 10px 0 0
+    }
+
+    #spring .info-date__description {
+        font-size: 24px;
+        line-height: 34px;
+        margin: 10px 0 0;
+        width: 65%
+    }
+
+    #spring .info-date__place {
+        gap: 150px;
+        padding-top: 200px
+    }
+
+    #spring .info-date__text_position_left,#spring .info-date__text_position_right {
+        font-size: 20px
+    }
+
+    #spring .info-date__info {
+        gap: 30px;
+        margin: 50px 0 0
+    }
+
+    #spring .info-date__check-in {
+        gap: 150px;
+        height: 100%;
+        padding: 0
+    }
+
+    #spring .info-date__map {
+        height: 350px;
+        width: 350px
+    }
+
+    #spring .info-date__with-map {
+        height: 350px
+    }
+
+    #spring .info-date__flower-map {
+        height: 350px;
+        left: -128px
+    }
+
+    #spring .info-date__flower-map-white {
+        height: 300px;
+        right: -190px;
+        top: -20px
+    }
+
+    #spring .info-date__where {
+        height: 70px
+    }
+
+    #spring .info-date__stone {
+        bottom: 0;
+        height: 600px;
+        left: -300px
+    }
+
+    #spring .info-date__flower {
+        bottom: -150px;
+        height: 350px;
+        right: 50px
+    }
+
+    #spring .info-date__text-nomargin {
+        margin: 0
+    }
+}
+
+ @media screen and (max-width: 1300px) and (orientation:portrait) {
+    #spring .info-date__invitation {
+        max-height:800px
+    }
+
+    #spring .info-date__info {
+        margin: 150px 0 0
+    }
+
+    #spring .info-date__check-in {
+        gap: 110px;
+        max-height: 800px
+    }
+}
+
+ @media screen and (max-width: 900px) {
+    #spring .info-date__who {
+        margin:30px 0 20px;
+        width: 300px
+    }
+
+    #spring .info-date__description {
+        font-size: 20px;
+        line-height: 30px;
+        width: 70%
+    }
+
+    #spring .info-date__text {
+        font-size: 20px;
+        line-height: 26px
+    }
+
+    #spring .info-date__text_position_left,#spring .info-date__text_position_right {
+        font-size: 18px
+    }
+
+    #spring .info-date__flower {
+        height: 300px;
+        right: -30px
+    }
+
+    #spring .info-date__check-in {
+        gap: 130px
+    }
+
+    #spring .info-date__map {
+        height: 300px;
+        width: 300px
+    }
+
+    #spring .info-date__with-map {
+        height: 300px
+    }
+
+    #spring .info-date__flower-map {
+        height: 300px;
+        left: -110px
+    }
+
+    #spring .info-date__flower-map-white {
+        height: 270px;
+        right: -175px;
+        top: 0
+    }
+
+    #spring .info-date__where {
+        height: 60px
+    }
+
+    #spring .info-date__date {
+        font-size: 40px;
+        line-height: 40px
+    }
+}
+
+ @media screen and (max-width: 950px) {
+    #spring .info-date__check-in {
+        flex-direction:column-reverse;
+        gap: 40px;
+        height: 100%;
+        padding: 50px 0
+    }
+
+    #spring .info-date__check-in_color_white {
+        flex-direction: column
+    }
+
+    #spring .info-date__text_position_left,#spring .info-date__text_position_right {
+        font-size: 16px;
+        text-align: center
+    }
+
+    #spring .info-date__check-in_color_grey {
+        flex-direction: column-reverse
+    }
+
+    #spring .info-date__info {
+        flex-direction: column;
+        gap: 35px;
+        margin: 100px 0 0
+    }
+
+    #spring .info-date__place {
+        gap: 0;
+        padding-top: 50px
+    }
+
+    #spring .info-date__block-text {
+        align-items: center;
+        justify-content: center
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #spring .info-date__who {
+        margin:0 0 20px;
+        width: 300px
+    }
+
+    #spring .info-date__where {
+        height: 45px
+    }
+
+    #spring .info-date__description {
+        font-size: 18px;
+            line-height: 22px;
+            width: 90%;
+            text-align: center;
+            margin: 10px auto;
+    }
+
+    #spring .info-date__check-in {
+        padding: 20px 0
+    }
+
+    #spring .info-date__where_position_left {
+        height: 55px
+    }
+
+    #spring .info-date__flower {
+        display: none
+    }
+
+    #spring .info-date__info {
+        gap: 20px;
+        margin: 80px 0 0
+    }
+
+    #spring .info-date__map {
+        height: 240px;
+        -webkit-transform: translateX(25px);
+        transform: translateX(25px);
+        width: 240px
+    }
+
+    #spring .info-date__map-left {
+        -webkit-transform: translateX(-25px);
+        transform: translateX(-25px)
+    }
+
+    #spring .info-date__with-map {
+        height: 240px
+    }
+
+    #spring .info-date__flower-map {
+        height: 240px;
+        left: -63px
+    }
+
+    #spring .info-date__flower-map-white {
+        height: 200px;
+        right: -105px
+    }
+
+    #spring .info-date__text {
+        margin: 15px 0 0
+    }
+}
+
+#spring .timetable {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 100px;
+    position: relative
+}
+
+#spring .timetable__header {
+    height: 140px;
+    object-fit: contain
+}
+
+#spring .timetable__block {
+    grid-column-gap: 0;
+    grid-row-gap: 15px;
+    align-items: center;
+    -webkit-column-gap: 0;
+    column-gap: 0;
+    display: grid;
+    grid-template-areas: "rings text-foto glasses text-plate cake text-music car" "line-rings line-foto line-glasses line-plate line-cake line-music line-car" "text-rings foto text-glasses plate text-cake music text-car";
+    grid-template-columns: repeat(7,150px);
+    grid-template-rows: repeat(3,-webkit-max-content);
+    grid-template-rows: repeat(3,max-content);
+    justify-items: center;
+    margin-top: 70px;
+    row-gap: 15px
+}
+
+#spring .timetable__pic {
+    height: 100px;
+    object-fit: contain;
+    width: 100px;
+    filter: invert(10%) sepia(37%) saturate(1897%) hue-rotate(275deg) brightness(85%) contrast(80%);
+}
+
+#spring .timetable__pic_visual_rings {
+    grid-area: rings
+}
+
+#spring .timetable__pic_visual_foto {
+    grid-area: foto
+}
+
+#spring .timetable__pic_visual_glasses {
+    grid-area: glasses
+}
+
+#spring .timetable__pic_visual_plate {
+    grid-area: plate
+}
+
+#spring .timetable__pic_visual_cake {
+    grid-area: cake
+}
+
+#spring .timetable__pic_visual_music {
+    grid-area: music
+}
+
+#spring .timetable__pic_visual_car {
+    grid-area: car
+}
+
+#spring .timetable__line {
+    object-fit: contain;
+    width: 151px
+}
+
+#spring .timetable__line-start {
+    grid-area: line-rings;
+    justify-self: flex-end;
+    object-fit: contain;
+    object-position: right;
+    width: 84px
+}
+
+#spring .timetable__line-end {
+    grid-area: line-car;
+    justify-self: flex-start;
+    object-fit: contain;
+    object-position: left;
+    width: 95px
+}
+
+#spring .timetable__line_center_foto {
+    grid-area: line-foto
+}
+
+#spring .timetable__line_center_glasses {
+    grid-area: line-glasses
+}
+
+#spring .timetable__line_center_plate {
+    grid-area: line-plate
+}
+
+#spring .timetable__line_center_cake {
+    grid-area: line-cake
+}
+
+#spring .timetable__line_center_music {
+    grid-area: line-music
+}
+
+#spring .timetable__text {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0
+}
+
+#spring .timetable__text_about_rings {
+    grid-area: text-rings
+}
+
+#spring .timetable__text_about_foto {
+    grid-area: text-foto
+}
+
+#spring .timetable__text_about_glasses {
+    grid-area: text-glasses
+}
+
+#spring .timetable__text_about_plate {
+    grid-area: text-plate
+}
+
+#spring .timetable__text_about_cake {
+    grid-area: text-cake
+}
+
+#spring .timetable__text_about_music {
+    grid-area: text-music
+}
+
+#spring .timetable__text_about_car {
+    grid-area: text-car
+}
+
+@media screen and (max-width: 1700px) {
+    #spring .timetable {
+        padding: 0
+    }
+
+    #spring .timetable__header {
+        height: 100px;
+        padding: 120px 0 0
+    }
+
+    #spring .timetable__block {
+        margin-top: 70px
+    }
+
+    #spring .timetable__pic {
+        height: 90px;
+        width: 90px
+    }
+
+    #spring .timetable__text {
+        font-size: 18px
+    }
+}
+
+ @media screen and (max-width: 1300px) {
+    #spring .timetable {
+        height:100%;
+        padding: 80px 0
+    }
+
+    #spring .timetable__header {
+        height: 80px;
+        padding: 0
+    }
+
+    #spring .timetable__block {
+        grid-template-columns: repeat(7,100px);
+        margin-top: 40px
+    }
+
+    #spring .timetable__pic {
+        height: 70px;
+        width: 70px
+    }
+
+    #spring .timetable__line {
+        width: 101px
+    }
+
+    #spring .timetable__line-start {
+        height: 11.4px;
+        object-position: right
+    }
+
+    #spring .timetable__line-end {
+        height: 11.4px;
+        object-position: left
+    }
+
+    #spring .timetable__text {
+        font-size: 16px;
+        width: 110px
+    }
+}
+
+ @media screen and (max-width: 750px) {
+    #spring .timetable__header {
+        height:70px
+    }
+
+    #spring .timetable {
+        padding: 50px 0
+    }
+
+    #spring .timetable__text {
+        width: 120px
+    }
+
+    #spring .timetable__block {
+        -webkit-column-gap: 15px;
+        column-gap: 15px;
+        grid-template-areas: "rings line-rings text-rings" "text-foto line-foto foto" "glasses line-glasses text-glasses" "text-plate line-plate plate" "cake line-cake text-cake" "text-music line-music music" "car line-car text-car";
+        grid-template-columns: 1fr 30px 1fr;
+        grid-template-rows: repeat(7,99px);
+        margin-top: 30px;
+        row-gap: 0
+    }
+
+    #spring .timetable__line {
+        align-items: center;
+        justify-content: center;
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        width: 115px;
+        max-width: none;
+    }
+
+    #spring .timetable__line-start {
+        height: 13px;
+        padding-right: 45px;
+        transform: rotate(90deg);
+        justify-self: center;
+        align-self: flex-end;
+    }
+
+    #spring .timetable__line-end,#spring .timetable__line-start {
+        height: 13px;
+        justify-self: center;
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg)
+    }
+
+    #spring .timetable__line-end {
+        align-self: flex-start;
+        padding-left: 45px;
+        max-width: none;
+        width: 115px;
+    }
+}
+
+#spring /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+#spring html {
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.15
+}
+
+#spring body {
+    margin: 0
+}
+
+#spring main {
+    display: block
+}
+
+#spring h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+#spring hr {
+    box-sizing: initial;
+    height: 0;
+    overflow: visible
+}
+
+#spring pre {
+    font-family: monospace,monospace;
+    font-size: 1em
+}
+
+#spring a {
+    background-color: initial
+}
+
+#spring #spring abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted
+}
+
+#spring b,#spring strong {
+    font-weight: bolder
+}
+
+#spring code,#spring kbd,#spring samp {
+    font-family: monospace,monospace;
+    font-size: 1em
+}
+
+#spring small {
+    font-size: 80%
+}
+
+#spring sub,#spring sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: initial
+}
+
+#spring sub {
+    bottom: -.25em
+}
+
+#spring sup {
+    top: -.5em
+}
+
+#spring img {
+    border-style: none
+}
+
+#spring button,#spring input,#spring optgroup,#spring select,#spring textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+}
+
+#spring button,#spring input {
+    overflow: visible
+}
+
+#spring button,#spring select {
+    text-transform: none
+}
+
+#spring [type=button],#spring [type=reset],#spring [type=submit],#spring button {
+    -webkit-appearance: button
+}
+
+#spring [type=button]::-moz-focus-inner,#spring [type=reset]::-moz-focus-inner,#spring [type=submit]::-moz-focus-inner,#spring button::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+#spring [type=button]:-moz-focusring,#spring [type=reset]:-moz-focusring,#spring [type=submit]:-moz-focusring,#spring button:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+#spring fieldset {
+    padding: .35em .75em .625em
+}
+
+#spring legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+#spring progress {
+    vertical-align: initial
+}
+
+#spring textarea {
+    overflow: auto
+}
+
+#spring [type=checkbox],#spring [type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+#spring [type=number]::-webkit-inner-spin-button,#spring [type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+#spring [type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+#spring [type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+#spring ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+#spring details {
+    display: block
+}
+
+#spring summary {
+    display: list-item
+}
+
+#spring [hidden],#spring template {
+    display: none
+}
+
+@font-face {
+    font-family: WonderGarden;
+    font-style: normal;
+    font-weight: 200;
+    src: url(/static/media/WonderGardenScript-Regular.a828455e7c42b1d7b6ea.ttf) format("ttf"),url(/static/media/WonderGardenScript-Regular.ef0e6869b23d98d83484.woff) format("woff"),url(/static/media/WonderGardenScript-Regular.9072b92b6f7de7fbbc34.woff2) format("woff")
+}
+
+ @font-face {
+    font-family: Calisto;
+    font-style: normal;
+    font-weight: 200;
+    src: url(/static/media/Calisto.2c44c652f9223405eee4.TTF) format("ttf"),url(/static/media/Calisto.8b94347787ce50644bf0.woff) format("woff"),url(/static/media/Calisto.8de25cabd2a5c28af125.woff2) format("woff2")
+}
+
+ @font-face {
+    font-family: Gotham;
+    font-style: normal;
+    font-weight: 200;
+    src: url(/static/media/Gotham.d6ded4f04b4c49022337.ttf) format("ttf"),url(/static/media/Gotham.5f528c5eecd99a103124.woff) format("woff"),url(/static/media/Gotham.cae2ce165d05eb6f1e3a.woff2) format("woff2")
+}
+
+#spring body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fff;
+    font-family: Gotham,Arial,sans-serif;
+    font-weight: 200;
+    margin: 0 auto;
+    max-width: 2700px
+}
+
+#spring html {
+    scroll-behavior: smooth
+}
+
+#spring a,#spring button,#spring input,#spring select,#spring textarea {
+    -webkit-tap-highlight-color: transparent
+}
+#spring .App {
+    text-align: center
+}
+
+#spring .App__main {
+    overflow: hidden
+}
+
+#spring .App-logo {
+    height: 40vmin;
+    pointer-events: none
+}
+ @media (prefers-reduced-motion:no-preference) {
+    #spring .App-logo {
+        -webkit-animation: App-logo-spin 20s linear infinite;
+        animation: App-logo-spin 20s linear infinite
+    }
+}
+
+#spring .App-header {
+    align-items: center;
+    background-color: #282c34;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: calc(10px + 2vmin);
+    justify-content: center;
+    min-height: 100vh
+}
+
+#spring .App-link {
+    color: #61dafb
+}
+
+ @-webkit-keyframes App-logo-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+@keyframes App-logo-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+#spring .burger-menu {
+    background-color: #f8e6ee;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 100px 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: visibility .5s,width .5s ease-in;
+    visibility: hidden;
+    width: 0;
+    z-index: 3
+}
+
+#spring .burger-menu_visible {
+    visibility: visible;
+    width: 100%
+}
+
+#spring .burger-menu__links {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+#spring .burger-menu__link {
+    background-color: inherit;
+    border: none;
+    color: #000;
+    font-size: 18px;
+    transition: color .4s;
+    transition: visibility .5s,width .5s ease-in;
+    visibility: hidden;
+    width: 0
+}
+
+#spring .burger-menu__link_visible {
+    visibility: visible;
+    width: 100%
+}
+
+#spring .burger-menu__ancor {
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color .4s
+}
+#spring .main-date__title{
+        padding: 15px 0 0;
+    font-size: 20px;
+}
+#spring .main-circle{
+  position: absolute;
+        top: calc(40vh - 20px);
+        left: calc(50vw - 90px);
+}
+#spring .main-names__title{
+        font-family: var(--beauty-font);
+    font-size: 95px;
+    line-height: 55px;
+    color: var(--header-color);
+}
+
+    #spring .main-date__title {
+  padding: 3vw 0 0;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+
+#spring .main-names__title {
+        font-family: var(--beauty-font);
+    font-size: 10vw;
+    line-height: 60%;
+    color: var(--header-color);
+}
+#spring .main-circle {
+      top: calc(50vh - 2vh);
+    left: calc(50vw - 0vw);
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1700px) {
+
+    #spring .main-date__title {
+ padding: 3vw 0 0;
+        font-size: 2vw;
+}
+#spring .main-names__title {
+        font-family: var(--beauty-font);
+        font-size: 9vw;
+        line-height: 60%;
+        color: var(--header-color);
+}
+#spring .main-circle {
+  top: calc(50vh - 4vh);
+        left: calc(50vw - 1vw);
+        transform: translate(-50%, -50%);
+}
+}
+@media screen and (max-width: 1300px) {
+
+    #spring .main-date__title {
+  padding: 4vh 0 0;
+        font-size: 2.5vw;
+}
+#spring .main-names__title {
+       font-family: var(--beauty-font);
+        font-size: 12vw;
+        line-height: 60%;
+        color: var(--header-color);
+}
+#spring .main-circle {
+  top: calc(50vh - 2vh);
+        left: calc(50vw);
+        transform: translate(-50%, -50%);
+}
+}
+
+
+
+@media screen and (max-width: 800px) {
+   #spring  .opros-grup-title{
+        text-align: left;
+    line-height: 100%;
+    }
+    #spring .title__title {
+        font-family: var(--beauty-font);
+        font-size: 92px;
+        line-height: 50%;
+        color: var(--header-color);
+        margin: 0 auto 40px;
+    }
+        #spring .place__title {
+        font-family: var(--beauty-font);
+               font-size: 80px;
+        line-height: 50%;
+                color: var(--header-color);
+    }
+     #spring .main-date__title {
+   padding: 5vw 0 0;
+        font-size: 4vw;
+}
+#spring .main-names__title {
+           font-family: var(--beauty-font);
+        font-size: 20vw;
+        line-height: 60%;
+        color: var(--header-color);
+}
+#spring .main-circle {
+   position: absolute;
+        top: calc(50vh - 12vh);
+        left: calc(50vw - 18vw);
+}
+#spring .timetable__line-start {
+    width: 115px;
+    max-width: none;
+}
+}
+@media screen and (max-width: 700px) {
+
+    #spring .main-date__title {
+   padding: 5vw 0 0;
+        font-size: 4vw;
+}
+#spring .main-names__title {
+           font-family: var(--beauty-font);
+        font-size: 20vw;
+        line-height: 60%;
+        color: var(--header-color);
+}
+#spring .main-circle {
+        position: absolute;
+        top: calc(50vh + 2vh);
+        left: calc(50vw);
+        transform: translate(-50%, -50%);
+}
+}
+@media screen and (max-width: 500px) {
+
+    #spring .main-date__title {
+    padding: 5vw 0 0;
+    font-size: 5vw;
+}
+#spring .main-names__title {
+    font-family: var(--beauty-font);
+    font-size: 18vw;
+    line-height: 60%;
+    color: var(--header-color);
+}
+#spring .main-circle {
+    position: absolute;
+        top: calc(52vh);
+        left: calc(50vw);
+        transform: translate(-50%, -50%);
+}
+}
+#spring #playButton{
+        width: 50px;
+    margin: auto;
+}
+#spring .header-block-small-heart{
+    padding-bottom: 50px;
+}
+#spring #answ_null, #spring #answ_good{
+    font-size: 18px;
+    padding-bottom: 20px;
+    font-weight: lighter;
+}

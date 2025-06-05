@@ -1,0 +1,2774 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: BetterLand;
+  font-display: swap;
+  src: url("/templates/shaper_helixultimate/fonts/BetterLand.otf") format("opentype"), url(" /templates/shaper_helixultimate/fonts/BetterLand.otf") format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NewSerifC";
+    src: url('/templates/shaper_helixultimate/fonts/NewSerifC.otf') format('opentype'), url('/templates/shaper_helixultimate/fonts/NewSerifC.otf') format('opentype');
+       font-style: normal;
+       font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Rosamunda';
+  src:  url(../../fonts/Rosamunda.ttf);
+       font-style: normal;
+       font-weight: normal;
+}
+
+#monochrome {
+   
+      --primary-color: #333;
+    --secondary-color: #555;
+    --background-color: #f0f0f0;
+    --header-color: #555;
+    --text-color: black;
+    --main-font: 'Gotham', sans-serif; /* Основной шрифт */
+    --beauty-font: 'BetterLand', sans-serif; /* Шрифт для заголовков */
+    --secondary-font: 'Hagin', sans-serif; /* Второй шрифт */
+}
+
+#monochrome .header__info_date-mobile{
+font-family: var(--main-font);    
+color: var(--header-color);
+}
+#monochrome .footer__names{
+    display: none;
+}
+#monochrome {
+    color: var(--text-color);
+    overflow: hidden;
+}
+#monochrome .title__trait-mobile{
+    display: none;
+}
+    #monochrome .timer__number {
+  font-size: 30px;
+  color: #fff;
+  width: 72px;
+  height: 72px;
+  margin: 0;
+  background: var(--secondary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+}
+
+#monochrome .timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 0;
+  position: relative;
+}
+
+#monochrome .timer__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#monochrome .timer__title {
+  font-size: 28px;
+  line-height: 37px;
+}
+
+#monochrome .timer__bloks {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  justify-content: space-between;
+      max-width: 400px;
+    width: 70%;
+    margin: auto;
+}
+
+#monochrome .timer__block-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 105px;
+}
+#monochrome  #playButton{
+    width: 10%;
+    max-width: 70px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#monochrome .music-text{
+    font-size: 20px;
+}
+ #monochrome #block-link-body{
+      font-size: 24px;
+    line-height: 120%;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+  }
+
+@media screen and (max-width: 1700px) {
+  #monochrome .timer {
+    padding: 80px 0 0;
+  }
+  
+  #monochrome .timer__title {
+    font-size: 24px;
+    line-height: 27px;
+  }
+  
+  #monochrome .timer__number {
+    font-size: 28px;
+  }
+
+ #monochrome  .timer__text {
+    font-size: 24px;
+    margin: 7px 0 0;
+    font-weight: 600;
+  }
+}
+#monochrome .timer {
+        padding: 50px 0 50px;
+    font-size: 24px;
+  }
+@media screen and (max-width: 1300px) {
+  #monochrome .timer {
+    padding: 50px 0 0;
+    font-size: 24px;
+  }
+
+ #monochrome  .timer__title {
+    font-size: 20px;
+  }
+
+  #monochrome .timer__text {
+    font-size: 18px;
+  }
+
+  #monochrome .timer__number {
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+  }
+
+  #monochrome .timer__bloks {
+    gap: 7px;
+  }
+
+  #monochrome .timer__block-info {
+    width: 80px;
+  }
+}
+
+/*стили для кнопок переключения цветовых схем*/
+/*стили для кнопок*/
+ #theme-switcher-container {
+    position: fixed;
+    top: 80px;
+    left: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+     align-items: flex-end;
+    padding: 15px;
+    background-color: #ffffff8a; /* Добавляем белый фон */
+    border-radius: 2px; /* Скругляем края */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Небольшая тень */
+    max-width: 180px;
+}
+
+ .theme-switcher-title {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-family: var(--main-font);
+        text-align: right;
+}
+#monochrome [class*=__container] {
+    padding: 0;
+}
+ .theme-buttons {
+    display: flex;
+     gap: 10px
+}
+ .theme-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    
+    border: 1px solid #48484863;
+    transition: transform 0.2s ease;
+}
+ .theme-button:hover{
+    transform: scale(1.1)
+}
+#monochrome .theme-button-1 {
+    background-color: #555; /* светло-серый цвет */
+}
+
+#monochrome .theme-button-2 {
+    background-color: #919f88; /* зеленый цвет */
+}
+#monochrome .theme-button-3 {
+  background-color: #5b6a93; /* синий цвет */
+}
+#monochrome .theme-button-4 {
+  background-color: #c39691; 
+}
+#monochrome .detail-text {
+    font-size: 24px;
+    line-height: 30px;
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+#monochrome {
+    transition: background-color 0.3s ease;
+    background-color: var(--background-color)
+}
+
+#monochrome p {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+}
+
+#monochrome #day-week-wedding-date, #monochrome #wedding-date, #monochrome #guests-arrival {
+            text-transform: uppercase;
+}
+#monochrome.white-gray-theme {
+    --primary-color: #333;
+    --secondary-color: #555;
+    --background-color: #f0f0f0;
+    --header-color: #555;
+    --text-color: black;
+}
+
+#monochrome .dresscode__colors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 0 0 0;
+   
+  gap: 15px; /* Расстояние между кружками */
+}
+
+#monochrome .dresscode__color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Круг */
+  display: inline-block; /* Делаем элементы блочными */
+}
+#monochrome.yellow-green-theme {
+    --primary-color: #4f6c45;
+    --secondary-color: #919f88;
+    --background-color: #f0f0ee;
+    --header-color: #4f6c45;
+    --text-color: #1b5e20;
+}
+#monochrome.blue-theme {
+    --primary-color: #bbc6e4;
+    --secondary-color: #bbc6e4;
+    --background-color: #fdf9f4;
+     --header-color: #5b6a93;
+    --text-color: black;
+}
+#monochrome.purple-theme {
+     --primary-color: #c39691;
+    --secondary-color: #90937e;
+    --background-color: #e2d8d7;
+        --header-color: #c39691;
+    --text-color: #4a148c;
+}
+
+/* Стили для темы "white-gray" */
+#monochrome.white-gray-theme .title__header, #monochrome.white-gray-them .font-beauty, #monochrome.white-gray-them .dresscode__title, #monochrome.white-gray-them .info-date__our-wedding-text-title, #monochrome.white-gray-them .title__title, #monochrome.white-gray-them .info-date__our-wedding-text-font-beauty, #monochrome.white-gray-them .footer__name
+ {
+    color: var(--header-color);
+}
+
+#monochrome.white-gray-theme .title__trait {
+    background: var(--header-color);
+}
+/* Стили для темы "yellow-green" */
+#monochrome.yellow-green-theme .title__header, #monochrome.yellow-green-theme .font-beauty, #monochrome.yellow-green-theme .dresscode__title, #monochrome.yellow-green-theme .info-date__our-wedding-text-title, #monochrome.yellow-green-theme .title__title, #monochrome.yellow-green-theme .info-date__our-wedding-text-font-beauty, #monochrome.yellow-green-theme .footer__name {
+    color: var(--header-color);
+}
+#monochrome.blue-theme .title__header, #monochrome.blue-theme .font-beauty, #monochrome.blue-theme .dresscode__title, #monochrome.blue-theme .info-date__our-wedding-text-title, #monochrome.blue-theme .title__title, #monochrome.blue-theme .info-date__our-wedding-text-font-beauty, #monochrome.blue-theme .footer__name {
+    color: var(--header-color);
+}
+
+#monochrome .title__header, #monochrome .font-beauty, #monochrome .dresscode__title, #monochrome .info-date__our-wedding-text-title, #monochrome .title__title, #monochrome .info-date__our-wedding-text-font-beauty, #monochrome .footer__name {
+    color: var(--header-color);
+}
+
+#monochrome .timetable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0 0;
+  position: relative;
+}
+
+#monochrome .title__trait {
+    background: var(--header-color);
+}
+
+
+#monochrome  .header__desctop{
+      max-width: 1500px;
+    margin: auto;
+}
+
+#monochrome  .header {
+    display: block; 
+            margin: 30px 0;
+        height: calc(100vh - 120px);
+    
+}
+#monochrome  .counter__trait{
+       background-color: var(--header-color);  /*цвет полоски между блоками*/
+    height: .75px;
+    width: 100px;
+    margin: 50px auto 10px auto;
+}
+#monochrome  .question__form{
+  margin: auto;
+}
+#monochrome .dresscode__color {
+   max-width: 50px;
+    max-height: 50px;
+    border: 1px solid rgba(53, 53, 53, 0.259);
+}
+#monochrome .question__visible-radio {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.645);
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #fff; /* базовый белый цвет */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Добавляем transition */
+}
+
+#monochrome .question__unvisible:checked + .question__visible-radio {
+  background-color: var(--primary-color); /* Цвет выделения из переменной */
+    border-color: var(--primary-color);
+}
+
+
+#monochrome .question__visible-checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.645);
+    cursor: pointer;
+    background-color: #fff;
+     transition: background-color 0.3s ease, border-color 0.3s ease; /* Добавляем transition */
+}
+#monochrome .question__unvisible:checked + .question__visible-checkbox {
+      background-color: var(--primary-color); /* Цвет выделения из переменной */
+        border-color: var(--primary-color);
+}
+
+
+#monochrome  .error-rsvp{
+       font-size: 18px;
+    color: var(--header-color);
+    text-align: center;
+    margin: 0px auto 10px;
+    display: block;
+}
+#monochrome  .rsvp-message{
+     font-size: 24px;
+    line-height: 24px;
+    padding-bottom: 15px;
+
+ }
+#monochrome .question__unvisible:disabled + .question__visible-radio {
+  border: 1px solid #444444;
+  background-color: #fbf8ec;
+}
+#monochrome .question__unvisible:disabled:checked+ .question__visible-radio {
+    border-color: #fbf8ec;
+     background-color: var(--secondary-color); /* Цвет выделения из переменной */
+}
+
+
+#monochrome .question__unvisible:disabled + .question__visible-checkbox {
+  border: 1px solid #444444;
+  background-color: #fbf8ec;
+}
+
+#monochrome .question__unvisible:disabled:checked+ .question__visible-checkbox {
+   border-color: #fbf8ec;
+       background-color: var(--secondary-color);
+}
+
+
+
+#monochrome .question__unvisible:focus + .question__visible-radio {
+    box-shadow: 0 0 5px var(--primary-color);
+}
+ #monochrome .question__unvisible:focus + .question__visible-checkbox {
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+
+#monochrome .header__desctop-left{
+      display: inline-block;
+    vertical-align: bottom;
+    width: calc(25% - 40px);
+    border-right: 1px solid var(--header-color);
+    padding-right: 20px;
+    padding-top: 50px;
+    margin-right: 20px;
+    font-size: 64px;
+    text-align: right;
+    line-height: 80px;
+}
+
+#monochrome #date-desktop {
+   color: var(--header-color);
+}
+#monochrome .header__desctop-center{
+       display: inline-block;
+    width: 40%;
+    vertical-align: bottom;
+}
+#monochrome .header__desctop-right{
+     display: inline-block;
+    vertical-align: top;
+    width: calc(25% - 40px);
+    text-align: left;
+    border-left: 1px solid var(--header-color);
+    padding-left: 20px;
+    margin-left: 20px;
+    padding-bottom: 50px;
+}
+
+#monochrome .header__info_names{
+    color: var(--header-color);
+font-size: 48px;
+    font-family:  var(--beauty-font);
+}
+
+#monochrome .header__foto {
+     height: calc(100vh - 120px);
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    object-fit: contain;
+    object-position: center;
+    max-height: 1400px;
+}
+#monochrome .rsvp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 0;
+}
+#monochrome  .question__container .title{
+  margin: auto;
+}
+#monochrome .rsvp__line {
+  width: 100px;
+  height: .75px;
+  background-color: #231f20;
+  margin: 150px 0 0;
+}
+
+#monochrome .rsvp__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#monochrome .rsvp__header {
+  height: 100px;
+  object-fit: contain;
+  padding: 150px 0 0;
+}
+
+#monochrome .rsvp__text {
+  font-size: 26px;
+  line-height: 40px;
+
+  margin: 60px 0 0;
+}
+
+#monochrome .question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#monochrome .question__line {
+  width: 100px;
+  height: .75px;
+  background-color: #231f20;
+  margin: 150px 0 0;
+}
+
+#monochrome .question__bloks {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+#monochrome .question__flower {
+  width: 450px;
+  height: 900px;
+}
+
+#monochrome .question__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 40%;
+  margin: 0;
+  font-weight: bold;
+}
+
+#monochrome .question__header {
+  height: 130px;
+  object-fit: contain;
+  align-self: center;
+}
+
+#monochrome .question__text {
+  font-size: 30px;
+  line-height: 37px;
+  margin: 30px 0 0;
+  width: 100%;
+}
+#monochrome .question__text-mini {
+     font-size: 18px;
+    line-height: 20px;
+    color: var(--header-color);
+    margin: 10px auto;
+}
+#monochrome  .dresscode {
+        padding-top: 0px;
+    padding-bottom: 50px;
+    }
+@media screen and (max-width: 850px) {
+
+    #monochrome .question__text-mini {
+     font-size: 12px;
+    line-height: 20px;
+    color: var(--header-color);
+    margin: 5px 0 0;
+}
+    
+}
+
+#monochrome .question__text-span {
+  font-size: 20px;
+  line-height: 37px;
+  margin: 30px 0 0;
+}
+
+#monochrome .question__form {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 0;
+  width: 100%;
+  max-width: 600px;
+  align-self: center;
+}
+
+#monochrome .question__string {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 30px;
+  border: none;
+  font-size: 30px;
+  align-items: flex-start;
+  padding: 0;
+}
+
+#monochrome .question__label {
+  margin: 20px 0 0 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-weight: bold;
+}
+
+#monochrome .question__label-input {
+  margin: 0 0 20px 0;
+  font-weight: bold;
+}
+
+#monochrome .question__text-span {
+  font-size: 24px;
+  line-height: 37px;
+  margin: 0;
+}
+
+#monochrome .question__input {
+  width: 100%;
+  height: 55px;
+  border-radius: 3.5px;
+  border: .5px solid #666766;
+  font-size: 30px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+
+#monochrome .question__unvisible {
+  font-family: inherit;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(0 0 0 0);
+}
+
+
+
+
+
+#monochrome .question__answer {
+  font-size: 20px;
+  line-height: 37px;
+  margin: 10px 0;
+}
+@media screen and (max-width: 1700px) {
+  #monochrome .question {
+    padding: 100px 0 0;
+  }
+
+ #monochrome  .question__line {
+    margin: 100px 0 0;
+  }
+
+ #monochrome  .question__bloks {
+    gap: 150px;
+  }
+
+ #monochrome  .question__container {
+    max-width: 60%;
+  }
+
+  #monochrome .question__header {
+    height: 110px;
+  }
+
+  #monochrome .question__flower {
+    width: 290px;
+    height: 700px;
+  }
+
+ #monochrome  .question__text {
+   font-size: 24px;
+        line-height: 26px;
+        margin: 25px 0 0;
+  }
+
+ #monochrome  .question__form {
+    margin: 40px 0 0;
+    max-width: 450px;
+  }
+
+  #monochrome .question__text-span {
+    font-size: 20px;
+    line-height: 33px;
+  }
+
+  #monochrome .question__string {
+    margin: 0 0 20px;
+    font-size: 22px;
+  }
+
+ #monochrome  .question__label {
+    margin: 0px 0 0 0;
+  }
+
+ #monochrome  .question__label-input {
+    margin: 0 0 5px 0;
+  }
+
+ #monochrome  .question__input {
+    padding: 7px;
+    font-size: 22px;
+  }
+
+  #monochrome .question__button {
+    font-size: 24px;
+    height: 60px;
+  }
+
+ #monochrome  .question__answer {
+    font-size: 18px;
+    line-height: 33px;
+    margin: 7px 0;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+ #monochrome  .question {
+    padding: 80px 0 0;
+  }
+
+  #monochrome .question__line {
+    margin: 80px 0 0;
+  }
+
+  #monochrome .question__flower {
+    width: 210px;
+    height: 500px;
+  }
+
+  #monochrome .question__header {
+    height: 60px;
+  }
+
+  #monochrome .question__text {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  #monochrome .question__text-span {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+ #monochrome  .question__form {
+    margin: 40px 0 0;
+    max-width: 400px;
+  }
+
+ #monochrome  .question__string {
+    margin: 0 0 20px;
+    font-size: 20px;
+    padding: 0;
+  }
+
+  #monochrome .question__label {
+    margin: 10px 0 0;
+  }
+
+ #monochrome  .question__label-input {
+   margin: 0 0 5px 0;
+            text-align: left;
+  }
+
+  #monochrome .question__button {
+    width: 180px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  #monochrome .question__input {
+    font-size: 24px;
+    height: 45px;
+  }
+
+ #monochrome  .question__answer {
+    font-size: 14px;
+    line-height: 28px;
+    margin: 15px 0 5px 0;
+  }
+}
+
+
+#monochrome .timetable__lines {
+  width: 100px;
+  height: .75px;
+  background-color: #231f20;
+}
+
+#monochrome .timetable__header {
+  height: 140px;
+  object-fit: contain;
+  margin-top: 50px;
+}
+
+#monochrome .timetable__block {
+  display: grid;
+  grid-template-columns: repeat(5, 150px);
+  grid-template-rows: repeat(3, max-content);
+  grid-template-areas:
+    "glasses text-glasses plate text-cake text-car"
+    "line-rings line-glasses line-plate line-cake line-car"
+    "text-rings rings text-plate cake car";
+  margin-top: 70px;
+  align-items: center;
+  justify-items: center;
+  column-gap: 0;
+  row-gap: 15px;
+  margin: 60px 0 60px;
+}
+
+.timetable__pic {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.timetable__pic_visual_rings {
+  grid-area: rings;
+}
+
+.timetable__pic_visual_foto {
+  grid-area: foto;
+}
+
+.timetable__pic_visual_glasses {
+  grid-area: glasses;
+}
+
+.timetable__pic_visual_plate {
+  grid-area: plate;
+}
+
+.timetable__pic_visual_maindinner {
+  grid-area: maindinner;
+}
+
+.timetable__pic_visual_cake {
+  grid-area: cake;
+}
+
+.timetable__pic_visual_music {
+  grid-area: music;
+}
+
+.timetable__pic_visual_car {
+  grid-area: car;
+}
+
+.timetable__line {
+  width: 151px;
+  object-fit: contain;
+}
+
+.timetable__line-start {
+  grid-area: line-rings;
+  object-fit: contain;
+  width: 84px;
+  object-position: right;
+  justify-self: flex-end;
+}
+
+.timetable__line-end {
+  grid-area: line-car;
+  object-fit: contain;
+  width: 95px;
+  object-position: left;
+  justify-self: flex-start;
+}
+
+.timetable__line_center_foto {
+  grid-area: line-foto;
+}
+
+.timetable__line_center_glasses {
+  grid-area: line-glasses;
+}
+
+.timetable__line_center_plate {
+  grid-area: line-plate;
+}
+
+.timetable__line_center_cake {
+  grid-area: line-cake;
+}
+
+.timetable__line_center_music {
+  grid-area: line-music;
+}
+
+
+.timetable__line_center_music {
+  grid-area: line-music;
+}
+.timetable__line_center_car {
+  grid-area: line-car;
+}
+.timetable__line_center_maindinner {
+  grid-area: line-maindinner;
+}
+
+#monochrome .timetable__text {
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.timetable__text_about_rings {
+  grid-area: text-rings;
+}
+
+.timetable__text_about_foto {
+  grid-area: text-foto;
+}
+
+.timetable__text_about_glasses {
+  grid-area: text-glasses;
+}
+
+.timetable__text_about_auto {
+  grid-area: text-plate;
+}
+
+.timetable__text_about_cake {
+  grid-area: text-cake;
+}
+
+.timetable__text_about_music {
+  grid-area: text-music;
+}
+
+.timetable__text_about_car {
+  grid-area: text-car;
+}
+.timetable__text_about_maindinner {
+  grid-area: text-maindinner;
+}
+
+
+#monochrome .dresscode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 0 0 150px;
+}
+
+#monochrome .dresscode__line {
+  width: 100px;
+  height: .75px;
+  background-color: #231f20;
+}
+
+#monochrome .dresscode__header {
+  
+  object-fit: contain;
+}
+
+#monochrome .dresscode__description {
+  font-size: 26px;
+  line-height: 40px;
+  width: 40%;
+  margin: 60px 0 100px;
+}
+
+@media screen and (max-width: 1700px) {
+  #monochrome .dresscode {
+    height: 100%;
+    padding: 0;
+  }
+
+ #monochrome  .dresscode__description {
+    font-size: 28px;
+    width: 50%;
+    margin: 70px 0 100px;
+  }
+
+  #monochrome .dresscode__header {
+   
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #monochrome .dresscode {
+    padding: 80px 0;
+    height: 100%;
+  }
+
+ #monochrome  .dresscode__header {
+    
+    padding: 0;
+  }
+
+  #monochrome .dresscode__description {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 30px 0 70px;
+    width: 55%;
+  }
+}
+@media screen and (max-width: 800px) {
+   #monochrome .dresscode__colors {
+        margin: 30px 0 0;
+        gap: 15px;
+    }
+   #monochrome #block-link-body{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    #monochrome .dresscode__colors {
+        margin: 40px 0 0;
+        gap: 15px;
+    }
+}
+@media screen and (max-width: 1700px) {
+   #monochrome .dresscode__colors {
+        margin: 20px 0;
+    }
+}
+ #monochrome .dresscode__description {
+        font-size: 24px;
+        line-height: 30px;
+        margin: 0;
+        font-weight: 600;
+    }
+@media screen and (max-width: 800px) {
+ #monochrome .dresscode {
+    padding: 20px 0 0;
+  }
+
+ 
+
+ #monochrome  .dresscode__description {
+    font-size: 16px;
+    line-height: 24px;
+    width: 90%;
+    margin: 0px 0 10px;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+   #monochrome .menu_site {
+        height: 70px;
+        margin: 0;
+        background: #ffffffb8;
+    }
+}
+
+#monochrome .rsvp__answer {
+  font-size: 20px;
+  line-height: 37px;
+  margin: 10px 0;
+}
+
+#monochrome .rsvp__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 50px 0 0;
+}
+
+#monochrome .rsvp__string {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 30px;
+}
+
+#monochrome .rsvp__label {
+  font-size: 30px;
+  line-height: 37px;
+  margin: 0 25px 0 0;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+#monochrome .rsvp__input {
+  width: 340px;
+  height: 55px;
+  border-radius: 3.5px;
+  border: .5px solid #666766;
+  font-size: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+#monochrome .rsvp__buttons {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  gap: 25px;
+  align-self: center;
+}
+
+#monochrome .rsvp__button {
+  width: 200px;
+  height: 65px;
+  background-color: var(--secondary-color);
+  font-size: 22px;
+  border: none;
+  align-self: center;
+  border-radius: 3.5px;
+  cursor: pointer;
+  color: white;
+  font-weight: 200;
+}
+
+#monochrome .rsvp__button:disabled {
+  opacity: .7;
+}
+#monochrome .header__mobile{
+  display: none;
+}
+
+#monochrome .question__button {
+  width: 300px;
+  height: 65px;
+  background-color: #231f20;
+  font-size: 24px;
+  border: none;
+  align-self: center;
+  border-radius: 3.5px;
+  cursor: pointer;
+  color: white;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 1700px) {
+   #monochrome .dresscode__title, #monochrome .title__title {
+        padding-bottom: 30px;
+    }
+    
+    #monochrome .timer-title{
+        padding-bottom: 20px;
+    font-size: 60px;
+   font-family: var(--beauty-font);    
+    color: var(--header-color);
+    }
+}
+@media screen and (max-width: 1700px) {
+ #monochrome  .timetable {
+    padding: 80px 0 0;
+    height: 100%;
+  }
+
+ #monochrome  .timetable__header {
+    padding: 40px 0 0;
+    height: 100px;
+    margin-top: 0;
+  }
+
+ #monochrome .timetable__block {
+    margin: 20px 0 100px;
+}
+
+ #monochrome .timetable__pic {
+    width: 90px;
+    height: 90px;
+  }
+
+ #monochrome .timetable__text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+ #monochrome  .timetable {
+    padding: 55px 0 0;
+    height: 100%;
+  }
+
+ #monochrome  .timetable__header {
+    padding: 25px 0 0;
+    height: 80px;
+  }
+
+ #monochrome .timetable__block {
+    grid-template-columns: repeat(6, 110px);
+    margin: 40px 0 80px;
+  }
+
+ #monochrome .timetable__pic {
+    width: 70px;
+    height: 70px;
+  }
+
+ #monochrome .timetable__line {
+    width: 111px;
+  }
+
+  #monochrome .timetable__line-start {
+    height: 12.55px;
+    object-position: right;
+  }
+
+  #monochrome .timetable__line-end {
+    height: 12.55px;
+    object-position: left;
+  }
+
+  #monochrome .timetable__text {
+    font-size: 14px;
+    width: 110px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+   #monochrome .dresscode__title, #monochrome .title__title {
+        padding-bottom: 0px;
+    }
+    #monochrome .timer-title{
+        padding-bottom: 10px;
+    font-size: 36px;
+    }
+}
+#monochrome .question__button:disabled {
+  opacity: .7;
+}
+
+  
+@media screen and (max-width: 1700px) {
+    
+#monochrome .timetable {
+        padding: 0;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #monochrome .timetable {
+        padding: 0px 0;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+ #monochrome  .rsvp {
+    height: 100%;
+    padding: 0;
+  }
+
+  #monochrome .rsvp__line {
+    margin: 100px 0 0;
+  }
+#monochrome .header__mobile{
+  display: none;
+}
+ #monochrome  .rsvp__text {
+    font-size: 26px;
+    margin: 50px 0 0;
+  }
+
+  #monochrome .rsvp__header {
+    height: 80px;
+    padding: 120px 0 0;
+  }
+
+ #monochrome  .rsvp__form {
+    margin: 40px 0 0;
+  }
+
+  #monochrome .rsvp__return {
+    font-size: 14px;
+    line-height: 33px;
+    padding: 0;
+  }
+
+ #monochrome  .rsvp__answer {
+    font-size: 18px;
+    line-height: 33px;
+    margin: 7px 0;
+  }
+
+ #monochrome  .rsvp__label {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+ #monochrome  .rsvp__input {
+    font-size: 20px;
+    padding: 7px;
+  }
+  
+  #monochrome .rsvp__button {
+    font-size: 24px;
+    height: 60px;
+  }
+}
+
+
+@media screen and (max-width: 1300px) {
+ #monochrome  .rsvp {
+    padding: 80px 0 0;
+    height: 100%;
+  }
+  
+
+
+ #monochrome  .rsvp__line {
+    margin: 80px 0 0;
+  }
+
+ #monochrome  .rsvp__header {
+    height: 50px;
+    padding: 0;
+  }
+}
+
+
+  #monochrome   .details {
+        padding: 0px 0;
+        height: 100%;
+    }
+#monochrome  .details__text {
+    font-size: 24px;
+    line-height: 30px;
+    width: 40%;
+    margin: 20px 0 20px 0;
+}
+
+
+ #monochrome  .details__line {
+    margin: 10px auto 10px auto;
+   background-color: var(--header-color);
+    height: 30px;
+    width: .75px;
+  }
+
+
+#monochrome  .title__trait{
+      
+    height: .75px;
+    width: 100px;
+    margin: 20px auto 50px auto;
+}
+ #monochrome .info-date__our-wedding-text{
+  font-size: 24px;
+  font-weight: 600;
+    
+}
+ #monochrome .header__mobile{
+  display: none;
+}
+
+ #monochrome  .info-date {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+ height: auto;
+}
+
+  #monochrome  .info-date__invitation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 0 50px;
+}
+
+  #monochrome  .info-date__who {
+  width: 600px;
+  object-fit: contain;
+  margin: 150px 0 0;
+}
+
+  #monochrome  .info-date__text {
+      font-size: 24px;
+    line-height: 30px;
+  margin: 50px 0 70px 0;
+  width: 55%;
+  text-align: center;
+  font-weight: 600;
+}
+
+  #monochrome  .info-date__wedding {
+  width: 700px;
+}
+
+  #monochrome  .info-date__line {
+  width: 100px;
+  height: .75px;
+  background-color: #231f20;
+  display: none;
+}
+
+
+
+@font-face {
+  font-family: qqq;
+  font-display: swap;
+  src: url("../fonts/Calisto MT.woff2") format("woff2"), url("../fonts/Calisto MT.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+ #monochrome .rsvp__text {
+        font-size: 24px;
+        line-height: 30px;
+        width: 60%;
+        margin: 0;
+        font-weight: bold;
+    }
+
+#monochrome .App {
+  text-align: center;
+}
+
+#monochrome  .info-date__who-title{
+  font-size: 42px;
+  margin: 0px 0 0;
+}
+
+#monochrome  {
+  font-family:  var(--main-font);
+}
+#monochrome .font-beauty, #monochrome .dresscode__title, #monochrome .info-date__our-wedding-text-title, #monochrome .title__header, #monochrome .title__title, #monochrome .info-date__our-wedding-text-font-beauty, #monochrome .footer__name {
+        font-size: 60px;
+  font-family: var(--beauty-font);
+    text-align: center;
+    margin: auto;
+}
+#monochrome .info-date__who-title{
+  margin: 70px auto 0;
+}
+
+#monochrome  .info-date__our-wedding-text-font-beauty{
+  margin: 70px auto 50px;
+}
+
+@media screen and (max-width: 850px) and (orientation: portrait) {
+#monochrome .font-beauty, #monochrome .dresscode__title, #monochrome .info-date__our-wedding-text-title, #monochrome .title__header, #monochrome .title__title, #monochrome .info-date__our-wedding-text-font-beauty, #monochrome .footer__name {
+    font-family:  var(--beauty-font);
+    text-align: center;
+    margin: auto;
+    font-size: 36px;    
+    margin-bottom: 10px;
+  
+}
+  #monochrome .title__trait-mobile{
+    display: block;
+}
+
+#theme-switcher-container {
+    top: 20px;
+    right: 20px;
+    left: auto;
+}
+  }
+
+
+#monochrome .block-link__button{
+        background-color: var(--secondary-color);
+    font-size: 16px;
+    border: none;
+    align-self: center;
+    border-radius: 3.5px;
+    cursor: pointer;
+    color: white;
+    padding: 10px 15px;
+}
+
+
+#monochrome .App__main {
+  overflow: hidden;
+}
+
+#monochrome .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #monochrome .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+#monochrome .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#monochrome .App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  #monochrome  .footer {
+      padding: 0 0 50px 
+  }
+
+  #monochrome  .footer__text {
+    font-size: 24px;
+    margin: 120px 0 0;
+    font-weight: 600;
+  }
+
+  #monochrome  .footer__names {
+    margin: 30px 0 0;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #monochrome  .footer {
+  }
+
+  #monochrome  .footer__text {
+    font-size: 20px;
+    margin: 90px 0 0;
+  }
+
+ #monochrome   .footer__names {
+    height: 80px;
+  }
+}
+@media screen and (max-width: 850px) and (orientation: portrait) {
+   #monochrome .info-date {
+        gap: 0px;
+               margin: 0 0 0px;
+        padding: 0px 0 0;
+     }
+        
+
+#monochrome  .header__block_date-mobile{
+
+    position: absolute;
+    top: 0px;
+    left: 30px;
+            padding-top: 30px;
+        padding-right: 10px;
+        padding-bottom: 0px;
+        padding-left: 10px;
+        border-left: 2px solid var(--header-color);
+        font-size: 54px;
+        line-height: 70px;
+        text-shadow: 2px 2px 4px #ffffff;
+        font-weight: bold;
+  
+}
+
+
+
+
+#monochrome .burger-menu {
+         visibility: hidden;
+  background-color: #eaeaea;
+  
+}
+
+#monochrome .burger-menu_visible {
+  width: 100%;
+  visibility: visible;
+}
+
+#monochrome .burger-menu__links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  box-sizing: border-box;
+  gap: 25px;
+  margin: 0;
+}
+
+#monochrome .burger-menu__link {
+  visibility: hidden;
+  font-size: 18px;
+  color: black;
+  transition: color .4s;
+  background-color: inherit;
+  border: none;
+  width: 0%;
+  transition: visibility .5s, width .5s ease-in;
+}
+
+#monochrome .burger-menu__link_visible {
+  
+}
+
+#monochrome .burger-menu__ancor {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  transition: color .4s;
+}
+#monochrome .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 0;
+}
+
+#monochrome .details__line {
+  width: 100px;
+  height: .75px;
+  background-color: var(--header-color);
+  margin: 150px 0 0;
+}
+
+#monochrome .details__lineV {
+  height: 30px;
+  width: .75px;
+  background-color: #231f20;
+}
+
+#monochrome .details__header {
+  padding: 150px 0 25px;
+  height: 100px;
+  object-fit: contain;
+}
+
+#monochrome .details__text {
+  font-size: 30px;
+  line-height: 37px;
+  width: 40%;
+  margin: 25px 0;
+}
+
+@media screen and (max-width: 1700px) {
+ #monochrome  .details {
+    height: 100%;
+    padding: 0;
+  }
+
+#monochrome   .details__line {
+    margin: 100px 0 0;
+  }
+
+  #monochrome .details__header {
+    height: 90px;
+    padding: 120px 0 25px;
+  }
+
+ #monochrome  .details__text {
+    font-size: 24px;
+    line-height: 30px;
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+ #monochrome  .details {
+    padding: 80px 0 0;
+    height: 100%;
+  }
+
+ #monochrome  .details__line {
+    margin: 80px 0 0;
+  }
+  
+ #monochrome  .details__header {
+    height: 60px;
+    padding: 0 0 15px;
+  }
+  
+ #monochrome  .details__cloud {
+    width: 650px;
+    height: 600px;
+    bottom: -300px;
+    right: -100px;
+  }
+  
+ #monochrome  .details__text {
+    font-size: 20px;
+    line-height: 26px;
+    width: 60%;
+    margin: 15px 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+ #monochrome  .details {
+    padding: 40px 0 0;
+  }
+#monochrome .header__desctop{
+  display: none;
+}
+ #monochrome  .info-date__who-title{
+  width: 250px;
+}
+  
+  #monochrome .header__mobile{
+  display: block;
+}
+ #monochrome  .details__line {
+    margin: 10px auto 10px auto;
+   background-color: var(--header-color);
+    height: 30px;
+    width: .75px;
+  }
+
+ #monochrome  .details__header {
+    height: 50px;
+    margin: 0 0 10px;
+  }
+
+ #monochrome  .details__cloud {
+    width: 450px;
+    height: 400px;
+    bottom: 000px;
+    right: -200px;
+  }
+
+  #monochrome .detail-text {
+    font-size: 16px;
+    line-height: 20px;
+    width: 90%;
+    margin: 15px auto;
+  }
+}
+@media screen and (max-width: 800px) {
+    #monochrome .dresscode__title {
+        font-size: 36px;
+        width: 250px;
+        padding-bottom: 30px;
+        line-height: 30px;
+    }
+}
+
+#monochrome  .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin: 0 0 150px;
+  position: relative;
+}
+
+#monochrome  .footer__text {
+  font-size: 30px;
+  margin: 200px 0 0;
+}
+
+#monochrome  .footer__names {
+  height: 100px;
+  object-fit: contain;
+  margin: 100px 0 0;
+}
+#monochrome  .menu__button{
+  display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+  #monochrome  .footer {
+    margin: 70px 0 50px;
+  }
+  
+ #monochrome   .footer__text {
+    font-size: 16px;
+    margin: 40px 0 0;
+  }
+
+ #monochrome   .footer__names {
+   
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #monochrome  .footer {
+  gap: 20px;
+            margin: 0px 0 0px;
+            padding: 70px 0 50px 0;
+  }
+  
+ #monochrome   .footer__text {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  #monochrome  .footer__names {
+    
+    margin: 0;
+  }
+}
+
+
+ #monochrome .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: calc(100vh - 100px);
+    position: relative;
+}
+
+ #monochrome .header__desctop {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  max-height: 1400px;
+}
+
+ #monochrome .header__contain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+ #monochrome .header__date {
+  height: 40vh;
+  align-self: flex-end;
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
+  object-position: right;
+  max-height: 650px;
+}
+
+ 
+
+ #monochrome .header__names {
+  height: 40vh;
+  align-self: flex-start;
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
+  object-position: left;
+  max-height: 650px;
+}
+
+ #monochrome .header__width {
+  width: 550px;
+}
+
+
+@media screen and (max-width: 1700px) {
+  #monochrome  .header {
+    height: calc(100vh - 70px);
+  }
+
+  #monochrome  .header__desctop {
+    gap: 70px;
+  }
+
+  #monochrome  .header__contain {
+    gap: 70px;
+  }
+}
+
+@media screen and (max-width: 1300px) and (orientation:portrait) {
+  #monochrome  .header {
+    height: calc(100vh - 60px);
+  }
+
+   #monochrome .header__desctop {
+    height: 70vh;
+    gap: 50px;
+    max-height: 1100px;
+    margin: 0 50px;
+  }
+
+  #monochrome  .header__contain {
+    gap: 50px;
+  }
+  
+  #monochrome  .header__date {
+    height: 30vh;
+    max-height: 450px;
+  }
+  
+  #monochrome  .header__foto {
+    height: 70vh;
+    max-height: 1100px;
+  }
+  
+ #monochrome   .header__names {
+    display: none;
+  }
+  
+  #monochrome  .header__width {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 1300px) and (orientation:landscape){
+   #monochrome .header {
+    height: calc(100vh - 60px);
+  }
+
+  #monochrome  .header__desctop {
+    gap: 50px;
+  }
+
+  #monochrome  .header__contain {
+    gap: 50px;
+  }
+
+   #monochrome .header__date {
+    height: 35vh;
+    max-height: 450px;
+  }
+  
+   #monochrome .header__foto {
+    height: 80vh;
+  }
+  
+  #monochrome  .header__names {
+    height: 35vh;
+    max-height: 650px;
+  }
+  
+  #monochrome  .header__width {
+    width: 20vw;
+  }
+}
+
+@media screen and (max-width: 800px) and (orientation:landscape){
+  #monochrome  .header {
+    height: calc(100vh - 50px);
+  }
+
+   #monochrome .header__desctop {
+    gap: 30px;
+  }
+
+   #monochrome .header__contain {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) and (orientation:portrait){
+  #monochrome  .header {
+    height: calc(100vh - 100px);
+  }
+
+   
+  
+   #monochrome .header__desctop {
+    gap: 30px;
+  }
+
+  #monochrome  .header__contain {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) and (orientation:landscape){
+   #monochrome .header {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 700px) and (orientation:portrait){
+   #monochrome .header {
+    height: calc(100vh - 0px);
+    position: relative;
+    align-items: flex-start;
+  }
+
+  #monochrome  .header__desctop {
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+    gap: 20px;
+  }
+
+  #monochrome  .header__contain {
+    gap: 0;
+  }
+
+   #monochrome .header__names {
+    display: block;
+    width: 300px;
+    align-self: flex-end;
+    object-position: top;
+  }
+
+   #monochrome .header__date {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 100px;
+    height: 250px;
+  }
+
+  #monochrome  .header__foto {
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+  }
+}
+
+ 
+
+@media screen and (max-width: 1700px) {
+   #monochrome   .info-date__invitation {
+    padding: 0 0 70px;
+  }
+
+   #monochrome   .info-date__who {
+    width: 350px;
+    margin: 100px 0 0;
+  }
+  
+    #monochrome  .info-date__text {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0;
+  }
+
+    #monochrome  .info-date__wedding {
+    width: 350px;
+  }
+}
+
+#monochrome   .block-link{
+    font-size: 16px;
+    line-height: 20px;
+    width: 90%;
+    margin: 35px auto;
+    max-width: 600px;
+}
+@media screen and (max-width: 1300px) {
+   #monochrome   .info-date {
+    height: 100%;
+  }
+
+    #monochrome  .info-date__invitation {
+    gap: 40px;
+  }
+
+   #monochrome   .info-date__who {
+    width: 300px;
+  }
+
+    #monochrome  .info-date__wedding {
+    width: 300px;
+  }
+
+    #monochrome  .info-date__text {
+    font-size: 18px;
+    line-height: 26px;
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+    #monochrome  .info-date__invitation {
+    padding: 0 0 50px;
+  }
+
+   #monochrome   .info-date__who {
+    width: 270px;
+    margin: 90px 0 0;
+  }
+
+    #monochrome  .info-date__text, #monochrome  .info-date__our-wedding-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+   #monochrome   .info-date__wedding {
+    width: 270px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+   #monochrome   .info-date {
+  }
+
+   #monochrome   .info-date__who {
+    width: 250px;
+    margin: 70px 0 0;
+  }
+
+    #monochrome  .info-date__line {
+    display: block;
+  }
+
+    #monochrome  .info-date__text {
+    width: 90%;
+  }
+
+   #monochrome   .info-date__wedding {
+    width: 230px;
+  }
+}
+#monochrome .menu {
+  height: 100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  background-color: #fff;
+}
+
+#monochrome .menu__background {
+  background-color: #fff;
+}
+
+#monochrome .menu__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 70%;
+}
+
+#monochrome .menu__link {
+  list-style: none;
+  transition: transform .4s;
+  cursor: pointer;
+}
+
+#monochrome .menu__link:hover {
+  transform: scale(110%);
+}
+
+#monochrome .menu__ancor {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  transition: color .4s;
+}
+
+#monochrome .menu__ancor:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#monochrome .menu__button {
+  width: 40px;
+  height: 30px;
+  position: relative;
+  margin: 30px auto;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+} 
+
+#monochrome .menu__span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #48494a;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .3s ease-in-out;
+}
+#monochrome .menu__button .menu__span:nth-child(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+#monochrome .menu__button .menu__span:nth-child(2) {
+  top: 12px;
+  transform-origin: left center;
+}
+#monochrome .menu__button .menu__span:nth-child(3) {
+  top: 24px;
+  transform-origin: left center;
+}
+
+#monochrome .menu__button_open .menu__span:nth-child(1) {
+  transform: rotate(45deg);
+  top: -3px;
+  left: 8px;
+}
+#monochrome .menu__button_open .menu__span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+#monochrome .menu__button_open .menu__span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 25px;
+  left: 8px;
+}
+
+@media screen and (max-width: 1700px) {
+ #monochrome  .menu {
+    height: 70px;
+    margin: 0;
+  }
+
+  #monochrome .menu__ancor {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+ #monochrome  .menu {
+    height: 60px;
+  }
+
+  #monochrome .menu__ancor {
+    font-size: 20px;
+  }
+
+ #monochrome  .menu__links {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #monochrome .menu {
+    height: 50px;
+  }
+
+ #monochrome  .menu__links {
+    width: 80%;
+  }
+
+ #monochrome  .menu__ancor {
+    font-size: 18px;
+  }
+}
+#monochrome .question__form {
+  
+  margin: auto;
+}
+  
+@media screen and (max-width: 700px) {
+ #monochrome  .menu {
+    justify-content: flex-end;
+    width: 0;
+    height: 0;
+    padding: 0;
+  }
+
+ #monochrome  .menu__button {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 3;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+
+  @media screen and (max-width: 1700px) {
+    #monochrome  .question__container {
+        max-width: 50%;
+    }
+}
+  
+
+@media screen and (max-width: 800px) {
+ #monochrome  .question {
+    padding: 60px 0 0;
+  }
+
+  #monochrome .question__line {
+    margin: 60px 0 0;
+  }
+
+  #monochrome .question__bloks {
+    width: 100%;
+    gap: 0;
+  }
+
+
+
+ #monochrome  .question__container {
+    max-width: 100%;
+    align-items: center;
+  }
+
+ #monochrome  .question__header {
+    height: 60px;
+  }
+
+ #monochrome  .question__text {
+   font-size: 16px;
+            line-height: 20px;
+            width: 90%;
+            margin: 20px 0 0;
+  }
+
+ #monochrome  .question__text-span {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  
+ #monochrome  .question__form {
+    margin: 20px 0 0;
+            max-width: 350px;
+            width: 80%;
+  }
+
+ #monochrome  .question__string {
+    margin: 0 0 10px;
+            font-size: 16px;
+  }
+
+
+ #monochrome  .question__label {
+                margin: 0px 0 0;
+  }
+
+ #monochrome  .question__input {
+    height: 45px;
+    font-size: 16px;
+  }
+
+ #monochrome  .question__button {
+    width: 155px;
+    height: 40px;
+    font-size: 16px;
+    margin: 10px 0 0;
+  }
+
+ #monochrome  .question__answer {
+    min-width: 40%;
+    margin: 28px 0 0;
+  }
+}
+
+  @media screen and (max-width: 1300px) {
+     #monochrome .question__form {
+        margin: 40px auto 0;
+    }
+}
+
+ #monochrome .header__mobile .header__block {
+   overflow: hidden;
+    width: 100vw;
+ }
+   #monochrome .header__mobile img{
+     height: calc(100vh - 150px);
+     object-fit: cover;
+     width: 100%;
+   }
+#monochrome .header__info_names-mobile{
+                text-align: right;
+        font-size: 54px;
+        z-index: 2;
+        vertical-align: middle;
+        position: relative;
+        line-height: 100px;
+        padding-right: 10px;
+}
+ #monochrome .header__mobile-name-line{
+    text-align: right;
+    display: inline-block;
+  }
+  #monochrome .header__mobile-line{
+        display: inline-block;
+    width: 20%;
+    vertical-align: middle;
+    /* height: 75px; */
+    border-bottom: 1px solid black;
+  }
+  @media screen and (max-width: 1700px) {
+    #monochrome .timer__number {
+        font-size: 28px;
+        border-radius: 50%;
+        color: white;
+        width: 62px;
+        height: 62px;
+    }
+    
+  #monochrome .timer__block {
+    border-radius: 50%;
+    color: white;
+    width: 62px;
+    height: 62px;
+}
+  
+#monochrome .header__info-mobile{
+  height: 100px;
+  text-align: right;
+}
+
+ #monochrome  .title__trait{
+      
+    height: .75px;
+    width: 100px;
+    margin: 10px auto 50px auto;
+}
+ }
+
+
+ #monochrome  .rsvp__cloud {
+    width: 600px;
+    height: 600px;
+    bottom: -100px;
+    left: -100px;
+  }
+
+  #monochrome .rsvp__text {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 30px 0 0;
+  }
+
+  #monochrome .rsvp__return {
+    font-size: 10px;
+    line-height: 28px;
+  }
+
+ #monochrome  .rsvp__answer {
+    font-size: 14px;
+    line-height: 28px;
+    margin: 15px 0 5px 0;
+  }
+
+ #monochrome  .rsvp__form {
+    min-width: 40%;
+    margin: 30px 0 0;
+  }
+
+ #monochrome  .rsvp__string {
+    margin: 0 0 25px;
+  }
+
+  #monochrome .rsvp__label {
+    font-size: 18px;
+  }
+
+ #monochrome  .rsvp__input {
+    width: 300px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+ #monochrome  .rsvp__buttons {
+    gap: 20px;
+  }
+
+ #monochrome  .rsvp__button {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+
+@media screen and (max-width: 800px) {
+#monochrome   .rsvp {
+    padding: 60px 0 0;
+  }
+
+ #monochrome  .rsvp__line {
+    margin: 60px 0 0;
+  }
+
+#monochrome   .rsvp__header {
+    height: 40px;
+  }
+
+ #monochrome  .rsvp__cloud {
+    width: 400px;
+    height: 400px;
+    bottom: -70px;
+    left: -70px;
+  }
+
+  #monochrome .rsvp__text {
+    font-size: 16px;
+    line-height: 20px;
+    width: 90%;
+    margin: 20px 0 0;
+  }
+
+  #monochrome .rsvp__return {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+ #monochrome  .rsvp__answer {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+ #monochrome  .rsvp__form {
+    min-width: 40%;
+    margin: 28px 0 0;
+  }
+
+  #monochrome .rsvp__string {
+    margin: 0 0 15px;
+  }
+
+  #monochrome .rsvp__label {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 10px 0 0;
+  }
+
+ #monochrome  .rsvp__input {
+    width: 175px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+ #monochrome  .rsvp__buttons {
+    gap: 15px;
+  }
+
+ #monochrome  .rsvp__button {
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+/* Общие стили */
+
+
+
+#monochrome .timer__number_var_day {
+  background-color: #606161;
+}
+
+#monochrome .timer__number_var_hour {
+background-color: #7d7d7d;
+}
+
+#monochrome .timer__number_var_min {
+background-color: #a9a8a9;
+}
+
+#monochrome .timer__number_var_sec {
+background-color: #c5c4c4;
+}
+
+#monochrome .timer__text {
+  font-size: 28px;
+  margin: 10px 0 0;
+}
+
+
+@media screen and (max-width: 700px) {
+ #monochrome  .timer {
+    padding: 40px 0 0;
+  }
+#monochrome .header__desctop{
+  display: none;
+}
+  #monochrome .header__mobile{
+  display: block;
+}
+ #monochrome  .timer__title {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  #monochrome .timer__bloks {
+    gap: 13px;
+  }
+
+ #monochrome  .timer__number {
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+  }
+
+  #monochrome .timer__text {
+    font-size: 16px;
+  }
+
+  #monochrome .timer__block-info {
+    width: 55px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+    #monochrome .timetable {
+        padding: 40px 0;
+        height: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 750px) {
+ #monochrome  .timetable__header {
+    height: 70px;
+  }
+  
+ #monochrome  .rsvp-message{
+     width: 90%;
+     margin: 10px 0 0 0;
+ }
+ 
+        #monochrome .question-message {
+            width: 100%;
+            margin: 10px 0 10px 0;
+            line-height: 18px;
+            font-size: 14px;
+        }
+   #monochrome  .error-rsvp{
+       font-size: 14px;
+    color: var(--header-color);
+    text-align: center;
+    margin: 0px auto 10px;
+    display: block;
+}
+   }
+
+ #monochrome  .timetable {
+    padding: 0;
+  }
+
+ #monochrome  .timetable__text {
+    width: 120px;
+  }
+  
+#monochrome  .timetable__block {
+    width: calc(100% - 40px);
+   
+    border-radius: 10px;
+    box-sizing: border-box;
+    grid-template-rows: repeat(6, 99px);
+    grid-template-columns: 1fr 30px 1fr;
+    grid-template-areas:
+      "glasses line-rings text-rings"
+      "text-glasses line-glasses rings"
+      "plate line-plate text-plate"
+      "text-cake line-cake cake"
+      "music line-music text-music"
+      "text-car line-car car";
+    margin: 30px 0 50px;
+    column-gap: 15px;
+    row-gap: 0;
+    max-width: 470px;
+  }
+ #monochrome .timetable__block {
+    
+    border: 1px solid var(--header-color);
+   
+  }
+
+ #monochrome .timetable__line {
+    transform: rotate(90deg);
+    width: 115px;
+    justify-content: center;
+    align-items: center;
+        max-width: none;
+  }
+
+#monochrome .timetable__line-start {
+    height: 13px;
+    padding-right: 45px;
+    transform: rotate(90deg);
+    justify-self: center;
+    align-self: flex-end;
+    max-width: none;
+  }
+
+#monochrome .timetable__line-end {
+    height: 13px;
+    padding-left: 45px;
+    transform: rotate(90deg);
+    justify-self: center;
+    align-self: flex-start;
+    max-width: none;
+  }
+
+
+
+
+
+  @media screen and (max-width: 850px) and (orientation: portrait) {
+#monochrome .info-date__our-wedding-text-title {
+ font-size: 32px;
+  line-height: 62px;
+}
+#monochrome .info-date__our-wedding-text-font-beauty {
+ font-size: 36px;
+}
+}
+
+#monochrome  #answ_good{
+    font-size: 14px;
+    line-height: 100%;
+}
+@media screen and (max-width: 1300px) {
+    .question__button {
+        font-size: 18px;
+        height: 40px;
+        width: 180px;
+    }
+}
+
+#monochrome  .footer__names-big{
+  
+}
+#monochrome  .footer__names{
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+    #monochrome  .footer__names-big{
+  display: none;
+}
+#monochrome  .footer__names{
+  display: block;
+}
+}
+
+@media screen and (max-width: 750px) {
+     .timetable__line-start {
+    width: 115px;
+}
+   .timetable__line-end {
+   
+    width: 115px;
+}
+}
+}
+#monochrome .dresscode__row{
+    display: flex
+;justify-content: center;
+    gap: 5px;
+}
+#monochrome .info-date__our-wedding-text-font-beauty, #monochrome .info-date__our-wedding-text-title{
+        font-weight: 100;
+}
+#monochrome .info-date{
+    width: 90%;
+    margin: auto;
+}

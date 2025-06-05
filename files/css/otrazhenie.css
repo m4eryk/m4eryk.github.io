@@ -1,0 +1,498 @@
+@media screen and (max-width: 1700px) {
+ 
+}
+
+@media screen and (max-width: 1300px) {
+ 
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+@font-face {
+  font-family: "WonderScript";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/WonderGardenScript-Regular.woff2") format("woff2"),
+       /* Если браузер не поддерживает woff2, загрузит woff */
+       url("/fonts/WonderGardenScript-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: 'ALETHIANEXT';
+  src:  url(../../fonts/ALETHIANEXT-LIGHT.otf);
+       font-style: normal;
+       font-weight: normal;
+}
+@font-face {
+font-family: 'mak';
+src: url('../../fonts/MAK.otf');
+font-weight: normal;
+font-style: normal;
+}
+#otrazhenie {
+    /*--primary-color: #333;
+    --secondary-color: #eee;*/
+    --background-color: #e2c7d6;
+    --header-color: white;
+    --text-color: black;
+     --elemets-color: #ec1e84;
+    --main-font: 'ALETHIANEXT', sans-serif; /* Основной шрифт */
+    --beauty-font: 'mak', sans-serif; /* Шрифт для заголовков */
+    --secondary-font: 'WonderScript', sans-serif; /* Второй шрифт */
+}
+
+#otrazhenie{
+    font-family: var(--main-font);
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--text-color);
+    overflow: hidden;
+    background: var(--background-color);
+}
+ #otrazhenie .title_text{
+   font-size: 64px;
+        font-family: var(--beauty-font);
+        color: var(--header-color);
+        line-height: 100%;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+}
+ #otrazhenie .descr_text{
+    font-family: var(--main-font);
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--text-color);
+        text-align: center;
+}
+ 
+  #otrazhenie  #home{
+         min-height: 100vh;
+ }
+ #otrazhenie  .header-blocks {
+         display: flex
+;
+    flex-direction: column;
+    gap: 5vh;
+    justify-content: center;
+    min-height: 100vh;
+    color: var(--header-color);
+ }
+  #otrazhenie  .names-header{
+     display: block;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+ }
+  #otrazhenie .header-text-beauty{
+     font-family: var(--secondary-font);
+    font-size: 164px;
+    line-height: 50%;
+    opacity: 0.3;
+    display: flex
+;
+    flex-direction: column;
+ }
+ #otrazhenie  .header-text-simple{
+         font-family: var(--beauty-font);
+    font-size: 64px;
+    text-transform: uppercase;
+    display: flex
+;
+    justify-content: center;
+ }
+  #otrazhenie .header-text-date{
+     color: var(--text-color);
+    text-transform: uppercase;
+    font-family: var(--beauty-font);
+    font-size: 40px;
+ }
+ #otrazhenie .header-text-and{
+    font-family: var(--secondary-font);
+    font-size: 304px;
+    line-height: 20%;
+ }
+  #otrazhenie .header-block-bg-main{
+         padding-bottom: 5vh;
+ }
+  #otrazhenie  #playButton{
+         cursor: pointer;
+    max-width: 70px;
+    width: 15%;
+    margin: auto;
+    padding-bottom: 10px;
+ }
+  #otrazhenie  .header-block-small-heart{
+     padding-bottom: 30px;
+}
+  #otrazhenie .welcome_title_text{
+        text-transform: uppercase;
+    color: var(--header-color);
+    font-family: var(--beauty-font);
+}
+  #otrazhenie .info-date{
+      max-width: 600px;
+        width: 90%;
+    margin: auto;
+        padding: 30px 0;
+}
+  #otrazhenie .welcome_beauty_text{
+    color: var(--elemets-color);
+    font-family: var(--beauty-font);
+    font-size: 34px;
+    text-transform: uppercase;
+    line-height: 100%;
+}
+  #otrazhenie #places{
+    width: 80%;
+    margin: auto;
+    max-width: 600px;
+    padding: 50px 0 0px;
+}
+  #otrazhenie .place-wh-block .title_text{
+        font-size: 154px;
+    font-family: var(--secondary-font);
+    color: var(--header-color);
+    text-align: left;
+    text-transform: capitalize;
+    line-height: 0;
+}
+  #otrazhenie .place-when-block{
+        text-align: right;
+}
+  #otrazhenie .place-day-week{
+    color: var(--elemets-color);
+    font-family: var(--beauty-font);
+    font-size: 34px;
+    text-transform: uppercase;
+    line-height: 100%;
+}
+  #otrazhenie .place-day{
+        color: var(--text-color);
+    font-family: var(--beauty-font);
+    font-size: 34px;
+    text-transform: uppercase;
+    line-height: 100%;
+}
+#otrazhenie .place-wh-block{
+        padding: 50px 0 30px;
+}
+
+#otrazhenie  #place-one, #otrazhenie  #place-two{
+        text-align: right;
+        padding: 20px 0;
+}
+#otrazhenie  #registration-title, #otrazhenie  #banquet-title{
+        color: var(--elemets-color);
+    font-family: var(--beauty-font);
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 100%
+}
+#otrazhenie  .rsvp__button{
+    border: 1px solid var(--elemets-color);
+    background: var(--header-color);
+    border-radius: 8px;
+    color: var(--elemets-color);
+    text-transform: uppercase;
+    min-width: 200px;
+    margin: 10px 0;
+}
+
+#otrazhenie  .info-place__text{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+#otrazhenie  #plan{
+    padding: 50px 0;
+    width: 90%;
+    margin: auto;
+    max-width: 600px;
+}
+#otrazhenie  .timetable__block-stroke {
+    display: flex
+;
+    flex-direction: row;
+    gap: 10px;
+}
+#otrazhenie  .timetable__block-time {
+    width: 50%;
+    text-align: right;
+    color: var(--elemets-color);
+    font-size: 28px;
+    font-family: var(--beauty-font);
+}
+#otrazhenie  .timetable__block-lines {
+    display: grid
+;
+    width: 16px;
+    grid-template-rows: 15px 1fr;
+}
+#otrazhenie  .timetable__block-text {
+    width: 50%;
+    text-align: left;
+}
+
+#otrazhenie .timetable__circle {
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    background: var(--elemets-color);
+    border-radius: 50%;
+}
+#otrazhenie  .timetable__line {
+    border-left: 1px solid var(--elemets-color);
+    margin-left: 8px;
+}
+#otrazhenie .timetable__block-stroke-right {
+    flex-direction: row-reverse;
+}
+#otrazhenie .timetable__block-stroke-right .timetable__block-text {
+    text-align: right;
+}
+#otrazhenie .timetable__block-descr {
+    font-size: 14px;
+    line-height: 100%;
+    padding: 10px 0 40px;
+}
+#otrazhenie  .timetable__block-name{
+        text-transform: uppercase;
+}
+#otrazhenie .timetable__block-stroke-right .timetable__block-time {
+    text-align: left;
+}
+#otrazhenie .timetable__block {
+    padding: 20px 10px;
+}
+#otrazhenie  .question__text-mini{
+    font-size: 14px;
+    padding: 10px 0 15px;
+}
+#otrazhenie  #question{
+        display: flex
+;
+    text-align: left;
+    flex-direction: column;
+}
+#otrazhenie  .question__label {
+    display: flex
+;
+    align-items: center;
+    gap: 5px;
+}
+#otrazhenie  .question__string{
+    margin-bottom: 10px;
+}
+#otrazhenie  .question__label{
+        margin-bottom: 0px;
+}
+#otrazhenie   .question__unvisible {
+    display: none;
+}
+#otrazhenie  .question__visible-radio {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+   
+    vertical-align: middle;
+    box-sizing: border-box;
+    border: 1px solid var(--text-color);
+    border-radius: 50%;
+}
+#otrazhenie   .question__unvisible:checked + .question__visible-radio::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: var(--elemets-color);
+    border-radius: 50%;
+}
+#otrazhenie   .question__visible-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+   
+    vertical-align: middle;
+    box-sizing: border-box;
+    border: 1px solid var(--text-color);
+}
+#otrazhenie  .question__unvisible:checked + .question__visible-checkbox::before {
+    content: "✔";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: var(--elemets-color);
+}
+#otrazhenie  .question__string input[type="text"]{
+    border: 0;
+    background-color: var(--background-color);
+    border-bottom: 1px solid var(--elemets-color);
+    border-radius: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 5px 0 !important;
+}
+#otrazhenie #questions, #otrazhenie  .rsvp, #otrazhenie  #details{
+        width: 90%;
+    margin: auto;
+    max-width: 500px;
+    padding: 50px 0;
+}
+#otrazhenie  #dresscode{
+    padding: 50px 0; 
+}
+#otrazhenie  .dresscode_descr_text {
+       width: 90%;
+    margin: auto;
+    max-width: 500px;
+}
+#otrazhenie .opros-inside{
+    width: 90%;
+    margin: auto;
+}
+#otrazhenie .rsvp__buttons{
+    display: flex
+;
+    gap: 10px;
+}
+#otrazhenie .rsvp__buttons .rsvp__button {
+        min-width: 50%;
+}
+#otrazhenie .rsvp__string input{
+        width: 100%;
+    border: 1px solid var(--elemets-color);
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 10px !important;
+    line-height: 100%;
+}
+#otrazhenie .rsvp__form{
+    padding-top: 20px;
+}
+#otrazhenie .dresscode__colors {
+        margin: 20px 0;
+    padding: 20px 10px 10px;
+    background: white;
+    font-size: 64px;
+    font-weight: 800;
+    font-family: var(--beauty-font);
+    line-height: 100%;
+    text-align: center;
+    /* text-indent: 100px; */
+    letter-spacing: 5px;
+}
+#otrazhenie #clockdiv {
+    display: flex
+;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+#otrazhenie .timer__block-info {
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+}
+#otrazhenie .timer__block-inside {
+    display: flex
+;
+    gap: 5px;
+    flex-direction: column;
+}
+#otrazhenie .timer__number {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #ffffff80;
+    border-radius: 50%;
+    font-size: 18px;
+    border: 1px solid var(--elemets-color);
+}
+#otrazhenie .timer__text {
+   color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+#otrazhenie  .timer-title{
+        color: var(--elemets-color);
+    text-transform: uppercase;
+    font-family: var(--beauty-font);
+    font-size: 22px;
+    line-height: 100%;
+}
+#otrazhenie  .timer__block  span{
+        color: var(--elemets-color);
+    text-transform: uppercase;
+    font-family: var(--beauty-font);
+    font-size: 18px;
+    line-height: 100%;
+}
+#otrazhenie  .counter{
+    padding: 30px 0;
+}
+#otrazhenie  .footer {
+    padding: 30px 0 70px;
+}
+#otrazhenie  .names-footer{
+    font-size: 30px;
+    font-family: var(--beauty-font);
+    text-transform: uppercase;
+    color: var(--header-color);
+    line-height: 100%;
+    padding: 10px 0;
+}
+@media screen and (max-width: 1700px) {
+ 
+}
+
+@media screen and (max-width: 1300px) {
+ 
+}
+
+@media screen and (max-width: 800px) {
+#otrazhenie{
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--text-color);
+}
+#otrazhenie .title_text{
+   font-size: 54px;
+        font-family: var(--beauty-font);
+        color: var(--header-color);
+        line-height: 100%;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+}
+ #otrazhenie .descr_text{
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--text-color);
+}
+  #otrazhenie .place-wh-block .title_text{
+        font-size: 154px;
+    font-family: var(--secondary-font);
+    color: var(--header-color);
+    text-align: left;
+    line-height: 0;
+    text-transform: capitalize;
+}
+ #otrazhenie .rsvp_title_text{
+    font-size: 44px;
+}
+}
+

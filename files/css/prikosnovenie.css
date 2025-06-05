@@ -1,0 +1,454 @@
+@media screen and (max-width: 1700px) {
+ 
+}
+
+@media screen and (max-width: 1300px) {
+ 
+}
+
+@media screen and (max-width: 800px) {
+
+}
+@font-face{
+  font-family: "mozart";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/mozart.ttf");
+}
+@font-face {
+  font-family: 'CYGRE-THIN';
+  src:  url(../fonts/CYGRE-THIN.ttf);
+       font-style: normal;
+       font-weight: normal;
+}
+#prikosnovenie {
+    /*--primary-color: #333;
+    --secondary-color: #eee;*/
+    --background-color: #c6d1c3;
+    --header-color: #556842;
+    --text-color: black;
+    --main-font: 'CYGRE-THIN', sans-serif; /* Основной шрифт */
+    --beauty-font: 'mozart', sans-serif; /* Шрифт для заголовков */
+    --secondary-font: 'Hagin', sans-serif; /* Второй шрифт */
+}
+
+#prikosnovenie{
+    font-family: var(--main-font);
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--text-color);
+    overflow: hidden;
+    text-align: center;
+}
+#prikosnovenie .title_text{
+    font-family: var(--beauty-font);
+    font-size: 64px;
+    line-height: 120%;
+    text-align: center;
+        color: var(--header-color);
+}
+#prikosnovenie .descr_text{
+    font-family: var(--main-font);
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--text-color);
+text-align: center;
+    
+}
+  #prikosnovenie .header-text-name{
+     color: var(--header-color);
+    font-family: var(--beauty-font);
+    font-size: 64px;
+    line-height: 100%;
+ }
+#prikosnovenie .header-blocks{
+     min-height: 80vh;
+    display: flex
+;
+    align-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
+        margin: 8vh 0;
+    gap: 6vh;
+ }
+#prikosnovenie .header-text-simple{
+             font-size: 24px;
+    color: var(--header-color);
+ }
+#prikosnovenie .bow-header{
+         display: flex;
+gap: 5vh;
+    flex-direction: column;
+ }
+#prikosnovenie .header-block-bg-main{
+     width: 90%;
+    margin: auto;
+    max-width: 500px;
+ }
+#prikosnovenie .date-welcome{
+         font-size: 28px;
+ }
+ #prikosnovenie  #music-block {
+    padding: 20px 0 40px;
+}
+#prikosnovenie #playButton {
+    cursor: pointer;
+    width: 15%;
+    max-width: 100px;
+    margin: auto;
+}
+#prikosnovenie #music-text {
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+#prikosnovenie .info-date, #prikosnovenie .info-place, #prikosnovenie #plan, #prikosnovenie #dresscode, #prikosnovenie #details, #prikosnovenie #questions, #prikosnovenie .rsvp, #prikosnovenie .counter, #prikosnovenie .footer{
+        width: 90%;
+    margin: auto;
+    max-width: 500px;
+}
+#prikosnovenie h3{
+        color: white;
+    font-family: var(--beauty-font);
+    font-size: 44px;
+    padding-bottom: 20px;
+}
+#prikosnovenie .date-calendar{
+        padding: 30px 5%;
+    background: var(--background-color);
+    border-radius: 10px;
+    border: 1px solid var(--header-color);
+    margin: 30px 0 0;
+}
+#prikosnovenie .welcome_title_text{
+        font-size: 44px;
+    font-family: var(--beauty-font);
+    color: var(--header-color);
+    line-height: 100%;
+    padding-bottom: 20px;
+}
+#prikosnovenie th{
+        text-transform: uppercase;
+    font-weight: 100;
+}
+#prikosnovenie .separate-img{
+    padding: 70px 0;
+        margin: auto;
+}
+#prikosnovenie .separate-img img{
+    margin: auto;
+}
+#prikosnovenie table{
+    margin: auto;
+}
+#prikosnovenie tbody, #prikosnovenie td, #prikosnovenie tfoot, #prikosnovenie th, #prikosnovenie thead, #prikosnovenie tr {
+    padding: 5px 8px;
+}
+
+#prikosnovenie .wedding-day:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35px;
+    height: 30px;
+    background-image: url(https://wow-card.ru/images/sites/prikosnovenie/heart-01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -10;
+}
+#prikosnovenie .wedding-day {
+    position: relative;
+    padding-top: 10px;
+    text-align: center;
+    z-index: 10;
+}
+#prikosnovenie .separate-img-mini{
+        width: 6%;
+    margin: auto;
+    padding: 30px 0;
+}
+#prikosnovenie #registration-title, #prikosnovenie #banquet-title{
+    text-transform: uppercase;
+        margin: 10px 0;
+}
+#prikosnovenie #registration-title{
+       padding-top: 20px;
+}
+#prikosnovenie .info-place__text{
+        margin: 5px auto;
+}
+#prikosnovenie #plan, #prikosnovenie #details, #prikosnovenie #questions{
+    position: relative;
+}
+#prikosnovenie .header-block-bg-top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 25%;
+    transform: translate(20%, -29%);
+}
+#prikosnovenie .plan__place, #prikosnovenie .details-block, #prikosnovenie .question__bloks {
+        padding: 50px 10% 30px;
+    background: var(--background-color);
+    border-radius: 10px;
+    border: 1px solid var(--header-color);
+    margin: 30px 0 0;
+    position: relative;
+}
+#prikosnovenie .timetable_title_text, #prikosnovenie .details__header, #prikosnovenie .question_title_text {
+    color: white;
+    text-align: right;
+    padding-bottom: 20px;
+}
+#prikosnovenie .detail-stroke{
+        display: flex
+;
+    flex-direction: row-reverse;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+#prikosnovenie .details__text{
+        text-align: left;
+    width: 90%;
+}
+#prikosnovenie .separator-image-details{
+        width: calc(10% - 10px);
+        padding-top: 2px;
+}
+#prikosnovenie .dresscode__color {
+    border-radius: 100px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+#prikosnovenie .dresscode__colors {
+    display: flex
+;
+       padding: 20px 0 30px;
+    gap: 10px;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+}
+#prikosnovenie #dresscode, #prikosnovenie .info-place, #prikosnovenie .counter{
+    padding-bottom: 70px;
+}
+#prikosnovenie #clockdiv {
+    display: flex
+;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding-bottom: 30px;
+    padding-bottom: 30px;
+}
+#prikosnovenie .timer__block-info {
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+}
+#prikosnovenie .timer__block-inside {
+    display: flex
+;
+    gap: 5px;
+    flex-direction: column;
+}
+#prikosnovenie .timer__number {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: var(--background-color);
+    border-radius: 50%;
+    font-size: 18px;
+    border: 1px solid var(--elemets-color);
+}
+#prikosnovenie .timer__block span {
+    color: var(--elemets-color);
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 100%;
+}
+#prikosnovenie .timer__text {
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+#prikosnovenie .timetable__block-lines {
+            display: grid
+;
+            width: 16px;
+            grid-template-rows: 15px 1fr;
+        }
+        
+              #prikosnovenie  .timetable__block-circle {
+            text-align: center;
+            width: 16px;
+            height: 16px;
+            background: var(--header-color4);
+                     margin: auto;
+        }
+       #prikosnovenie .timetable__block-line {
+            border-left: 1px solid var(--header-color);
+            margin-left: 8px;
+        }
+      #prikosnovenie  .timetable__block-stroke {
+            display: flex
+;
+            gap: 15px;
+        }
+              #prikosnovenie  .timetable__block-texts {
+            width: 90%;
+            padding: 0px 0 40px 0;
+                text-align: left;
+        }
+       #prikosnovenie   .timetable__block-time{
+            padding-bottom: 8px;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 100%;
+        }
+        #prikosnovenie  .timetable__block-name{
+            padding-bottom: 6px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 100%;
+        }
+        #prikosnovenie .question__text-mini{
+    font-size: 16px;
+    padding: 10px 0 15px;
+}
+ #prikosnovenie #question{
+        display: flex
+;
+    text-align: left;
+    flex-direction: column;
+}
+ #prikosnovenie .question__label {
+    display: flex
+;
+    align-items: center;
+    gap: 5px;
+}
+ #prikosnovenie .question__string{
+    margin-bottom: 10px;
+}
+ #prikosnovenie .question__label{
+        margin-bottom: 0px;
+}
+ #prikosnovenie  .question__unvisible {
+    display: none;
+}
+ #prikosnovenie .question__visible-radio {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+   
+    vertical-align: middle;
+    box-sizing: border-box;
+    border: 1px solid var(--header-color);
+    border-radius: 50%;
+}
+ #prikosnovenie .question__unvisible:checked + .question__visible-radio::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: var(--header-color);
+    border-radius: 50%;
+}
+ #prikosnovenie .question__visible-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+   
+    vertical-align: middle;
+    box-sizing: border-box;
+    border: 1px solid var(--header-color);
+}
+ #prikosnovenie .question__unvisible:checked + .question__visible-checkbox::before {
+    content: "✔";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    color: var(--header-color);
+}
+ #prikosnovenie .question__string input[type="text"]{
+    border: 0;
+    background-color: var(--background-color);
+    border-bottom: 1px solid var(--header-color);
+    border-radius: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 5px 0 !important;
+}
+
+ #prikosnovenie  .rsvp__button{
+    background: var(--header-color);
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 100%;
+    color: var(--background-color);
+    padding: 15px 20px 10px;
+    min-width: 200px;
+    margin: 10px 0 0;
+    border-radius: 10px;
+}
+#prikosnovenie .names-footer{
+    font-family: var(--beauty-font);
+    color: var(--header-color);
+    font-size: 44px;
+    line-height: 100%;
+}
+#prikosnovenie .footer {
+    padding: 50px 0;
+}
+#prikosnovenie .footer-img{
+    padding: 30px 0 0;
+        width: 30%;
+    margin: auto;
+    max-width: 300px;
+}
+#prikosnovenie .question__string input[type="text"]::placeholder { /* Стандартный */
+    color: black;
+}
+@media screen and (max-width: 1700px) {
+ 
+}
+
+@media screen and (max-width: 1300px) {
+ 
+}
+
+@media screen and (max-width: 800px) {
+#prikosnovenie{
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--text-color);
+}
+ #prikosnovenie .title_text{
+    font-family: var(--beauty-font);
+    font-size: 44px;
+    line-height: 130%;
+}
+ #prikosnovenie .descr_text{
+    font-family: var(--main-font);
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--text-color);
+}
+}
+

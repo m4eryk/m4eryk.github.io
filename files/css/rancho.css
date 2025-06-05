@@ -1,0 +1,2498 @@
+
+#rancho {  font-family: "Romul", "Arial", sans-serif;}
+#rancho h2,#rancho .header__info_names-mobile, #rancho .header__info_names,#rancho .info-date__who,#rancho .info-date__our-wedding-text, #rancho .info-date__what, #rancho .dresscode__title,#rancho .title__title,#rancho .details__title,#rancho .rsvp__title,#rancho .question__title,#rancho .footer__name, #rancho .photo__title{
+  font-family: "Caravan", "Arial", sans-serif;}
+
+#rancho { background-color: #f7ebdf;}
+#rancho .timetable{
+    padding-top: 150px;
+}
+#rancho .timetable__pic, #rancho .timetable__line,#rancho .timetable__line-end, #rancho .timetable__line-start{
+  filter: brightness(0) saturate(100%) invert(64%) sepia(4%) saturate(2249%) hue-rotate(354deg) brightness(85%) contrast(81%);
+}
+
+#rancho .menu__span, #rancho .header__info,#rancho .info-date__our-wedding,
+#rancho .burger-menu, #rancho .burger-menu_visible {
+  background-color: #e0c7af;
+}
+#rancho .dresscode__color_var_one {
+  background-color: #5b071f;
+}
+
+#rancho .timetable__block {
+    display: grid
+;
+    grid-template-columns: repeat(5, 150px);
+    grid-template-rows: repeat(3, max-content);
+    grid-template-areas:
+        "glasses text-glasses plate text-cake car"
+        "line-rings line-glasses line-plate line-cake line-car"
+        "text-rings rings text-plate cake text-car";
+    margin-top: 70px;
+    align-items: center;
+    justify-items: center;
+    column-gap: 0;
+    row-gap: 15px;
+    margin: 60px 0 60px;
+    justify-content: center;
+}
+@media screen and (max-width: 800px) {#rancho .timetable__block {
+grid-template-areas:
+        "rings line-rings text-rings"
+        "text-glasses line-glasses glasses"
+        "plate line-plate text-plate"
+        "text-cake line-cake cake"
+        "car line-car text-car";
+    grid-template-columns: 1fr 30px 1fr;
+    grid-template-rows: repeat(5, 109px);
+    margin-top: 30px;
+    row-gap: 0;
+            margin: auto;
+}}
+  #rancho  .days, #rancho .hours, #rancho .minutes, #rancho .seconds {
+        width: 70px;
+        height: 70px;
+        display: block;
+        line-height: 70px;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+#rancho .dresscode__color_var_two {
+  background-color: #e0b8c7;
+}
+
+#rancho .dresscode__color_var_three {
+  background-color: #fcf3ed;
+}
+
+#rancho .dresscode__color_var_four {
+  background-color: #cebcaa;
+}
+
+#rancho .dresscode__color_var_five {
+  background-color: #5b3410;
+}
+#rancho .timer__number_var_seconds {
+  background-color: #9b8870;
+}
+
+#rancho .timer__number_var_days {
+background-color: #ad9a87;
+}
+
+#rancho .timer__number_var_hours {
+background-color: #7f776f;
+}
+
+#rancho .timer__number_var_minutes {
+background-color: #5b3f21;
+}
+
+#rancho .question__unvisible:checked + .question__visible-radio {
+  background-color: gray;
+}
+
+#rancho .question__unvisible:disabled + .question__visible-radio {
+  border: 1px solid #5b3f21;
+  background-color: #fbf8ec;
+}
+
+#rancho .question__unvisible:disabled:checked+ .question__visible-radio {
+  background-color: #fbf8ec;
+}
+
+#rancho .question__unvisible:focus + .question__visible-radio {
+    box-shadow: 0 0 5px #f8f7f0;
+}
+
+#rancho .question__unvisible:checked + .question__visible-checkbox {
+  background-color: #5b3f21;
+}
+
+#rancho .question__unvisible:disabled + .question__visible-checkbox {
+  border: 1px solid #5b3f21;
+  background-color: #fbf8ec;
+}
+
+#rancho .question__unvisible:disabled:checked+ .question__visible-checkbox {
+  background-color: #fbf8ec;
+}
+
+#rancho .question__unvisible:focus + .question__visible-checkbox {
+    box-shadow: 0 0 5px #f8f7f0;
+}
+
+
+#rancho .timer__block {
+    border-radius: 50%;
+    color: #f7ebdf;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+   
+#rancho .timer__bloks {
+        display: flex
+;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0 0 0;
+        gap: 15px;
+    }
+
+#rancho .burger-menu{
+  padding:0;
+}
+#rancho .header__info_date-mobile{
+    align-self: flex-end;
+    display: flex;
+    margin: 13px 13px 0 0;
+}
+#rancho .header__image{
+  position:relative;
+}
+#rancho .header{
+  height: auto;
+}
+
+#rancho .menu_site {
+  height: 100px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: #f7ebdf;
+  z-index: 4;
+}
+
+#rancho .menu__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 90%;
+}
+#rancho .burger-menu__links{
+  padding-top:70px;
+}
+
+#rancho .menu__link {
+  list-style: none;
+  transition: transform .4s;
+  cursor: pointer;
+}
+
+#rancho .menu__link:hover {
+  transform: scale(110%);
+}
+
+#rancho .menu__ancor {
+  color: black;
+  transition: color .4s;
+}
+
+#rancho .menu__ancor:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#rancho .menu__burger-btn {
+  border: none;
+  background-color: transparent;
+  background-image: url(../../images/burger.svg);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.button-fix:hover {
+  transform: scale(110%);
+}
+
+#rancho .menu__burger-btn_visible {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1700px) {
+  #rancho .menu_site {
+    height: 70px;
+    margin: 0;
+  }
+
+  #rancho .menu__links {
+    width: 70%;
+  }
+
+  #rancho .menu__ancor, #rancho .timer__text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #rancho .menu__ancor, #rancho .timer__text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #rancho .menu_site {
+    height: 50px;
+  }
+
+  #rancho .menu__links {
+    width: 80%;
+  }
+
+  #rancho .menu__ancor, #rancho .timer__text {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #rancho .menu_site {
+    justify-content: flex-end;
+    width: 0;
+    height: 0;
+    padding: 0;
+    display: none;
+  }
+
+  #rancho .menu__burger-btn {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 3;
+  }
+}
+
+#rancho .header__mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  overflow: hidden;
+}
+
+#rancho .header__info-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 0;
+}
+
+#rancho .header__info_names-mobile {
+  font-size: 80px;
+  line-height: 65px;
+  margin: 0;
+  transform: translateX(-40px);
+}
+  #rancho .header__mobile {
+    display:none;
+  }
+
+#rancho .header__title {
+  font-family: "Romul", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  writing-mode:  vertical-rl;
+  transform: rotate(180deg);
+  height: max-content;
+  margin: 0 25px;
+  align-self: flex-end;
+}
+
+#rancho .header__image {
+  width: 700px;
+  height: 1100px;
+  object-fit: cover;
+  z-index: 2;
+}
+
+#rancho .header__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+  width: 100%;
+  border-bottom-right-radius: 120px;
+  border-top-right-radius: 120px;
+  box-sizing: border-box;
+}
+
+#rancho .header__info_names {
+  font-size: 140px;
+  line-height: 110pt;
+  margin: 0;
+  transform: translateX(-40px);
+}
+
+#rancho .header__info_date {
+  margin-top: 180px;
+  font-family: "Romul", "Arial", sans-serif;
+  font-size: 35px;
+  line-height: 42pt;
+}
+
+#rancho .info-date {
+  margin-top: 100px;
+      height: auto;
+    align-items: stretch;
+    padding: 0;
+}
+
+#rancho .info-date__invitation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#rancho .info-date__who {
+  font-size: 120px;
+  line-height: 100px;
+  margin: 0;
+}
+
+#rancho .info-date__text {
+  font-family: "Romul", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  width: calc(100% - 150px);
+  margin: 120px 0 50px;
+  text-align: center;
+}
+
+#rancho .info-date__our-wedding {
+  
+  width: 600px;
+  height: 200px;
+  border-radius: 50px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#rancho .info-date__our-wedding-text {
+  font-size: 120px;
+  line-height: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+#rancho .info-date__place {
+  display: grid;
+  grid-template-columns: 7fr 5fr 7fr;
+  grid-template-rows: repeat(3, max-content);
+  grid-template-areas:
+    "line1 day-week banquet"
+    "check-in day banquet"
+    "check-in time line2";
+  padding-top: 150px;
+  align-items: center;
+  row-gap: 50px;
+  column-gap: 20px;
+  position: relative;
+}
+
+#rancho .info-date__line1 {
+  grid-area: line1;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  align-items: center;
+  align-self: center;
+  z-index: 2;
+}
+
+#rancho .info-date__line2 {
+  grid-area: line2;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  align-items: center;
+  align-self: center;
+  z-index: 2;
+}
+
+#rancho .info-date__check-in {
+  grid-area: check-in;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0 50px;
+}
+
+#rancho .info-date__what {
+  font-size: 80px;
+  line-height: 42px;
+  margin: 0 0 60px;
+}
+
+#rancho .info-date__where {
+  font-family: "Romul", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 29px;
+  margin: 0;
+}
+
+#rancho .info-date__day-week {
+  grid-area: day-week;
+  font-family: "Romul", "Arial", sans-serif;
+  font-size: 30px;
+  margin: 0;
+  justify-self: start;
+}
+
+#rancho .info-date__day {
+  grid-area: day;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#rancho .info-date__number {
+  font-family: "Romul", "Arial", sans-serif;
+  font-size: 60px;
+  font-weight: 2;
+  margin: 0;
+}
+
+#rancho .info-date__vertical-line {
+  height: 80px;
+  width: 1px;
+  background-color: black;
+  margin: 0 15px;
+}
+
+#rancho .info-date__time {
+  grid-area: time;
+  font-family: "Romul", "Arial", sans-serif;
+  font-size: 30px;
+  margin: 0;
+  justify-self: end;
+}
+
+#rancho .info-date__banquet {
+  grid-area: banquet;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+#rancho .info-date__figure-left {
+  background-image: url(/images/sites/rancho/figure-halfcircle.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 30px;
+  width: 100px;
+  height: 300px;
+}
+
+#rancho .info-date__figure-right {
+  background-image: url(/images/sites/rancho/figure-halfcircle.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 0;
+  bottom: -105px;
+  width: 100px;
+  height: 300px;
+  transform: rotate(180deg);
+}
+
+
+#rancho .dresscode, #rancho .photosection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  position: relative;
+}
+
+#rancho .dresscode__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+#rancho .dresscode__title {
+  font-size: 120px;
+  font-weight: 200;
+  margin: 0;
+  padding-bottom: 60px;
+}
+
+#rancho .dresscode__trait {
+  width: 27%;
+  height: 50px;
+  border-top: 2px solid black;
+  margin: 80px 0 0 50px;
+  z-index: 2;
+  text-align: start;
+  font-family: "Romul", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  padding-top: 10px;
+}
+
+#rancho .dresscode__description {
+  font-family: "Romul", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 37px;
+  width: 60%;
+  margin: 60px 0 0;
+}
+
+#rancho .dresscode__colors {
+  display: flex;
+  flex-direction: row;
+ justify-content: center;
+  margin: 50px 0;
+  gap: 30px;
+}
+
+#rancho .dresscode__color {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid rgba(53, 53, 53, 0.259);
+  max-width: 80px;
+    max-height: 80px;
+}
+
+#rancho #answ_good{
+  color:#198754;
+  display:none; 
+  width:300px;
+}
+#rancho #answ_null{
+  color:#871919;
+  display:none; 
+   width:300px;
+    }
+   #rancho .timer__block-info{
+            display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+#rancho .dresscode__figure, #rancho .photosection__figure {
+  background-image: url(/images/sites/rancho/figure-halfcircle.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100px;
+  height: 300px;
+  transform: rotate(180deg);
+}
+
+#rancho .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 0;
+  position: relative;
+}
+
+#rancho .details__header {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  align-items: center;
+  margin-bottom: 70px;
+  width: 100%;
+}
+
+#rancho .details__title {
+  font-size: 120px;
+  font-weight: 200;
+  margin: 0;
+}
+
+#rancho .details__figure {
+  background-image: url(/images/sites/rancho/figure-halfcircle.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100px;
+  height: 300px;
+}
+
+#rancho .details__trait {
+  width: 27%;
+  height: 2px;
+  background-color: black;
+  margin: 80px 50px 0 0;
+  z-index: 2;
+}
+
+#rancho .details__text {
+  font-family: "Romul", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 37px;
+  width: 60%;
+  margin: 30px auto 30px;
+}
+
+#rancho .details__line {
+  background-color: black;
+  height: 1px;
+      margin: auto;
+  width: 3%;
+}
+
+#rancho .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  align-self: flex-start;
+  width: 100%;
+  height: 140px;
+}
+
+#rancho .title__header {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#rancho .title__title {
+  font-size: 120px;
+  font-weight: 200;
+  margin: 0;
+  line-height: 0.8;
+  align-self: flex-start;
+  text-align: start;
+}
+
+#rancho .title__figure {
+  background-image: url(/images/sites/rancho/figure-halfcircle.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 100px;
+  height: 300px;
+}
+
+#rancho .title__trait {
+  width: 27%;
+  height: 2px;
+  background-color: black;
+  margin: 0 50px 0 0;
+  z-index: 2;
+}
+#rancho .header__desctop{
+  display: flex;
+  justify-content: center;
+}
+
+#rancho .counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 0;
+  position: relative;
+}
+
+#rancho .counter__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 70px;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+#rancho .counter__figure {
+  background-image: url(/images/sites/rancho/figure-halfcircle.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -50px;
+  right: 0;
+  width: 100px;
+  height: 300px;
+  transform: rotate(180deg);
+}
+
+#rancho .counter__trait {
+  width: 27%;
+  height: 2px;
+  background-color: black;
+  margin: 0;
+  z-index: 2;
+}
+
+#rancho .counter__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#rancho .counter__title {
+  font-family: "Romul", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 37px;
+}
+
+#rancho .counter__bloks {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.dresscode__block-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#rancho .counter__number {
+  font-family: "Romul", "Arial", sans-serif;
+  font-size: 22px;
+  color: #f7ebdf;
+  width: 72px;
+  height: 72px;
+  margin: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+}
+
+#rancho .counter__number_var_month {
+  background-color: #9b8870;
+}
+
+#rancho .counter__number_var_day {
+background-color: #ad9a87;
+}
+
+#rancho .counter__number_var_hour {
+background-color: #7f776f;
+}
+
+#rancho .counter__number_var_min {
+background-color: #5b3f21;
+}
+
+#rancho .counter__text {
+  font-family: "Romul", "Arial", sans-serif;
+  font-size: 20px;
+}
+#rancho .rsvp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 0;
+  position: relative;
+}
+
+#rancho .rsvp__header {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  align-items: center;
+  margin-bottom: 70px;
+  width: 100%;
+}
+
+#rancho .rsvp__title {
+  font-size: 120px;
+  font-weight: 200;
+  margin: 0;
+}
+
+#rancho .rsvp__trait {
+  width: 27%;
+  height: 2px;
+  background-color: black;
+  margin: 80px 50px 0 0;
+  z-index: 2;
+}
+
+#rancho .rsvp__text {
+      font-family: "Romul", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 37px;
+    /* width: 60%; */
+    margin: 30px auto 30px;
+}
+#rancho .rsvp__container{
+    margin: auto;
+    max-width: 1000px;
+    width: 100%;
+}
+
+#rancho .rsvp__string {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 30px;
+}
+
+#rancho .rsvp__label {
+  font-family: "Romul", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 37px;
+  margin: 0 15px 0 0;
+  display: flex;
+  align-items: center;
+}
+
+#rancho .rsvp__input {
+  width: 340px;
+  height: 55px;
+  border-radius: 3.5px;
+  border: .5px solid #ad9a8780;
+  font-family: "Romul", "Arial", sans-serif;
+  font-size: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+#rancho .rsvp__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+  align-self: center;
+  margin: 30px auto;
+}
+
+#rancho .rsvp__button {
+  width: 200px;
+  height: 50px;
+  background-color: #ad9a8780;
+  font-family: "Romul", "Arial", sans-serif;
+  font-size: 12pt;
+  border: none;
+  align-self: center;
+  border-radius: 3.5px;
+  cursor: pointer;
+  color: black;
+  font-weight: 200;
+}
+
+#rancho .rsvp__figure {
+  background-image: url(/images/sites/rancho/figure-halfcircle.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100px;
+  height: 300px;
+}
+
+#rancho .question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 0;
+  position: relative;
+}
+
+#rancho .question__dop{
+  margin-bottom: 20px;
+  font-size: small!important;
+}
+#rancho .question__header {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  align-items: center;
+  margin-bottom: 70px;
+  width: 100%;
+}
+
+#rancho .question__title {
+  font-size: 120px;
+  font-weight: 200;
+  margin: 0;
+}
+
+#rancho .question__trait {
+  width: 27%;
+  height: 2px;
+  background-color: black;
+  margin: 80px 50px 0 0;
+  z-index: 2;
+}
+
+#rancho .question__text {
+  font-family: "Romul", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 37px;
+  margin: 30px 0 0;
+  width: 60%;
+}
+
+#rancho .question__text-span {
+  font-family: "Romul", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 37px;
+  margin: 30px 0 0;
+}
+
+#rancho .question__form {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 0;
+}
+
+#rancho .question__string {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 30px;
+  border: none;
+  font-family: "Romul", "Arial", sans-serif;
+  font-size: 22px;
+  align-items: flex-start;
+  padding: 0;
+}
+
+#rancho .question__label {
+  margin: 20px 0 0 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#rancho .question__label-input {
+  margin: 0 0 20px 0;
+}
+
+#rancho .question__text-span {
+  font-family: "Romul", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 37px;
+  margin: 0;
+}
+
+#rancho .question__input {
+  width: 100%;
+  height: 55px;
+  border-radius: 3.5px;
+  border: .5px solid #ad9a8780;
+  font-family: "Romul", "Arial", sans-serif;
+  font-size: 15pt;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+#rancho .question__button {
+  width: 200px;
+  height: 50px;
+  background-color: #ad9a8780;
+  font-family: "Romul", "Arial", sans-serif;
+  font-size: 12pt;
+  border: none;
+  align-self: center;
+  border-radius: 3.5px;
+  cursor: pointer;
+  color: black;
+  font-weight: 200;
+}
+
+#rancho .question__unvisible {
+  font-family: inherit;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(0 0 0 0);
+}
+
+#rancho .question__visible-radio {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.645);
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+#rancho .question__unvisible:checked + #rancho .question__visible-radio {
+  background-color: gray;
+}
+
+#rancho .question__unvisible:disabled + #rancho .question__visible-radio {
+  border: 1px solid #5b3f21;
+  background-color: #fbf8ec;
+}
+
+#rancho .question__unvisible:disabled:checked+ #rancho .question__visible-radio {
+  background-color: #fbf8ec;
+}
+
+#rancho .question__unvisible:focus + #rancho .question__visible-radio {
+    box-shadow: 0 0 5px #f8f7f0;
+}
+
+#rancho .question__visible-checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.645);
+  cursor: pointer;
+  background-color: #fff;
+}
+
+#rancho .question__unvisible:checked + #rancho .question__visible-checkbox {
+  background-color: #5b3f21;
+}
+
+#rancho .question__unvisible:disabled + #rancho .question__visible-checkbox {
+  border: 1px solid #5b3f21;
+  background-color: #fbf8ec;
+}
+
+#rancho .question__unvisible:disabled:checked+ #rancho .question__visible-checkbox {
+  background-color: #fbf8ec;
+}
+
+#rancho .question__unvisible:focus + #rancho .question__visible-checkbox {
+    box-shadow: 0 0 5px #f8f7f0;
+}
+
+#rancho .question__figure {
+  background-image: url(/images/sites/rancho/figure-halfcircle.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100px;
+  height: 300px;
+}
+#rancho .footer {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin: 100px 0 0;
+}
+
+#rancho .footer__text {
+  font-family: "Romul", "Arial", sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+#rancho .footer__names {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 450px;
+  align-items: flex-start;
+}
+
+#rancho .footer__name {
+  font-size: 120px;
+  font-weight: 200;
+  line-height: 80pt;
+  margin: 0;
+}
+
+#rancho .footer__name-end {
+  align-self: flex-end;
+}
+#rancho .timetable__text {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.burger-menu__links {
+  /*list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  box-sizing: border-box;
+  gap: 20px;*/
+}
+
+#rancho .burger-menu__ancor {
+   font-size: 14px;
+  color: black;
+ /*  text-decoration: none;
+ font-family: "Romul", "Arial", sans-serif;
+ 
+  transition: color .4s;*/
+}
+
+#rancho .burger-menu__close {
+   font-size: 14px;
+  color: black;
+   background-color: inherit;
+ /* text-decoration: none;
+  font-family: "Romul", "Arial", sans-serif;
+   transition: color .4s;
+ 
+  border: none;*/
+ 
+ 
+}
+
+
+@media screen and (max-width: 1700px) {
+  #rancho .footer {
+    margin: 50px 0 0px;
+        padding-bottom: 100px;
+  }
+
+  #rancho .footer__text {
+    font-size: 18px;
+  }
+
+  #rancho .footer__names {
+    width: 400px;
+  }
+
+  #rancho .footer__name {
+    font-size: 100px;
+    line-height: 60pt;
+  }
+  #rancho .timetable__text {
+    font-size: 14px;
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #rancho .footer {
+    margin: 50px 0 0;
+  }
+
+  #rancho .footer__text {
+    font-size: 14px;
+  }
+
+  #rancho .footer__names {
+    width: 250px;
+  }
+
+  #rancho .footer__name {
+    font-size: 70px;
+    line-height: 55px;
+  }
+   #rancho .timetable__text {
+    font-size: 12px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #rancho .footer {
+    flex-direction: column;
+    gap: 5px;
+    margin: 50px 0 0;
+  }
+
+  #rancho .footer__text {
+    font-size: 12px;
+  }
+
+  #rancho .footer__names {
+    width: 200px;
+    margin-top: 15px;
+  }
+
+  #rancho .footer__name {
+    font-size: 50px;
+    line-height: 40px;
+    margin: 0;
+  }
+
+  #rancho .footer__name-end {
+    align-self: flex-end;
+  }
+  #rancho .timetable__text {
+    font-size: 12px;
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  #rancho .question {
+    padding: 70px 0 0;
+  }
+
+  #rancho .question__header {
+    margin-bottom: 60px;
+  }
+
+  #rancho .question__title {
+    font-size: 100px;
+  }
+
+  #rancho .question__trait {
+    margin: 60px 50px 0 0;
+  }
+
+  #rancho .question__figure {
+    top: -40px;
+    width: 90px;
+    height: 250px;
+  }
+
+  #rancho .question__text {
+    font-size: 18px;
+    line-height: 33px;
+  }
+
+  #rancho .question__text-span {
+    font-size: 18px;
+    line-height: 33px;
+  }
+
+  #rancho .question__string {
+    margin: 0 0 30px;
+    font-size: 18px;
+  }
+
+  #rancho .question__label {
+    margin: 15px 0 0 0;
+  }
+
+  #rancho .question__label-input {
+    margin: 0 0 15px 0;
+  }
+
+  #rancho .question__input {
+    padding: 7px;
+  }
+
+  #rancho .question__button {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #rancho .question {
+    padding: 50px 0 0;
+  }
+
+  #rancho .question__title {
+    font-size: 70px;
+  }
+
+  #rancho .question__trait {
+    margin: 40px 50px 0 0;
+  }
+
+  #rancho .question__e {
+    top: -40px;
+    width: 70px;
+    height: 200px;
+  }
+
+  #rancho .question__text {
+    font-size: 14px;
+  }
+
+  #rancho .question__text-span {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  #rancho .question__form {
+    margin: 40px 0 0;
+  }
+
+  #rancho .question__string {
+    margin: 0 0 20px;
+    font-size: 16px;
+    padding: 0;
+  }
+
+  #rancho .question__label {
+    margin: 10px 0 0;
+  }
+
+  #rancho .question__label-input {
+    margin: 0 0 10px 0;
+  }
+
+  #rancho .question__button {
+    width: 180px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #rancho .question {
+    padding: 30px 0 0;
+  }
+
+  #rancho .question__header {
+    margin-bottom: 30px;
+  }
+
+  #rancho .question__title {
+    font-size: 60px;
+    line-height: 50px;
+    text-align: start;
+  }
+
+  #rancho .question__trait {
+    height: 1px;
+    margin: 0;
+  }
+
+  #rancho .question__e {
+    opacity: 0;
+  }
+
+  #rancho .question__text {
+    font-size: 12px;
+    line-height: 23px;
+    width: 80%;
+    margin: 20px 0 0;
+  }
+
+  #rancho .question__text-span {
+    font-size: 12px;
+    line-height: 23px;
+  }
+
+  #rancho .question__visible-radio {
+    width: 10px;
+    height: 10px;
+  }
+
+  #rancho .question__visible-checkbox {
+    width: 10px;
+    height: 10px;
+  }
+
+  #rancho .question__form {
+    margin: 30px 0 0;
+  }
+
+  #rancho .question__string {
+    margin: 0 0 15px;
+    font-size: 12px;
+  }
+
+  #rancho .question__label {
+    margin: 10px 0 0 0;
+  }
+
+  #rancho .question__input {
+    height: 45px;
+    font-size: 12px;
+  }
+
+  #rancho .question__button {
+    width: 155px;
+    height: 40px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  #rancho .rsvp {
+    padding: 70px 0 0;
+  }
+
+  #rancho .rsvp__header {
+    margin-bottom: 60px;
+  }
+
+  #rancho .rsvp__title {
+    font-size: 100px;
+  }
+
+  #rancho .rsvp__trait {
+    margin: 60px 50px 0 0;
+  }
+
+  #rancho .rsvp__e {
+    top: -30px;
+    width: 90px;
+    height: 250px;
+  }
+
+  #rancho .rsvp__text {
+    font-size: 18px;
+    line-height: 33px;
+  }
+
+  #rancho .rsvp__string {
+   display: flex;
+        flex-direction: row;
+        margin: 0 0 10px;
+        justify-content: flex-end;
+        width: 620px;
+        margin: auto;
+  }
+
+  #rancho .rsvp__label {
+    font-size: 18px;
+    line-height: 33px;
+  }
+
+  #rancho .rsvp__input {
+    font-size: 18px;
+    padding: 7px;
+  }
+  #rancho .rsvp__button {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #rancho .rsvp {
+    padding: 50px 0 0;
+  }
+
+  #rancho .rsvp__header {
+    margin-bottom: 50px;
+  }
+
+  #rancho .rsvp__e {
+    top: -40px;
+    width: 70px;
+    height: 200px;
+  }
+
+  #rancho .rsvp__title {
+    font-size: 70px;
+  }
+
+  #rancho .rsvp__trait {
+    margin: 40px 50px 0 0;
+  }
+
+  #rancho .rsvp__text {
+    font-size: 14px;
+    line-height: 28px;
+    width: 60%;
+    margin: 0;
+  }
+
+  #rancho .rsvp__form {
+    min-width: 40%;
+    margin: 30px 0 0;
+  }
+
+  #rancho .rsvp__string {
+    margin: 0 0 25px;
+  }
+
+  #rancho .rsvp__label {
+    font-size: 14px;
+  }
+
+  #rancho .rsvp__input {
+    width: 300px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  #rancho .rsvp__buttons {
+    gap: 20px;
+  }
+
+  #rancho .rsvp__button {
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #rancho .rsvp {
+    padding: 30px 0 0;
+  }
+      #rancho .rsvp__string {
+        display: flex
+;
+        flex-direction: row;
+        margin: 0 0 10px;
+        justify-content: flex-end;
+        width: 360px;
+        max-width: 100%;
+        margin: auto;
+    }
+
+  #rancho .rsvp__header {
+    margin-bottom: 30px;
+    height: 1px;
+  }
+
+  #rancho .rsvp__title {
+    font-size: 60px;
+    text-align: start;
+  }
+
+  #rancho .rsvp__trait {
+    height: 1px;
+    margin: 40px 30px 0 0;
+  }
+
+  #rancho .rsvp__e {
+    opacity: 0;
+  }
+
+  #rancho .rsvp__text {
+            font-size: 12px;
+        line-height: 22px;
+        width: 80%;
+        margin: 20px auto 0;
+  }
+
+  #rancho .rsvp__form {
+        width: 90%;
+        margin: 20px auto 0;
+  }
+
+  #rancho .rsvp__string {
+    margin: 0 0 0px;
+  }
+
+  #rancho .rsvp__label {
+    font-size: 8pt;
+    line-height: 20px;
+    margin: 0 10px 0 0;
+  }
+
+  #rancho .rsvp__input {
+    width: 175px;
+    height: 35px;
+    font-size: 12px;
+  }
+
+  #rancho .rsvp__buttons {
+    gap: 15px;
+  }
+
+  #rancho .rsvp__button {
+    width: 130px;
+    height: 35px;
+    font-size: 12px;
+  }
+}
+
+
+@media screen and (max-width: 1700px) {
+  #rancho .counter {
+    padding: 70px 0 0;
+  }
+
+  #rancho .counter__header {
+    margin-bottom: 60px;
+  }
+
+  #rancho .counter__e {
+    top: -50px;
+    width: 90px;
+    height: 250px;
+  }
+
+  #rancho .counter__trait {
+    margin: 0;
+  }
+
+  #rancho .counter__title {
+    font-size: 18px;
+  }
+
+  #rancho .counter__text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #rancho .counter {
+    padding: 50px 0 0;
+  }
+
+  #rancho .counter__header {
+    margin-bottom: 50px;
+  }
+
+  #rancho .counter__figure {
+    top: -10px;
+    width: 70px;
+    height: 200px;
+  }
+
+  #rancho .counter__trait {
+    margin: 40px 0 0;
+  }
+
+  #rancho .counter__title {
+    font-size: 16px;
+  }
+
+  #rancho .counter__text {
+    font-size: 16px;
+  }
+
+  #rancho .counter__number {
+    font-size: 18px;
+    color: #f7ebdf;
+    width: 60px;
+    height: 60px;
+  }
+
+  #rancho .counter__bloks {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #rancho .counter {
+    padding: 30px 0 0;
+  }
+
+  #rancho .counter__header {
+    margin-bottom: 30px;
+    height: 1px;
+    align-self: flex-start;
+  }
+
+  #rancho .counter__figure {
+    opacity: 0;
+  }
+
+  #rancho .counter__trait {
+    height: 1px;
+    margin: 0;
+  }
+
+  #rancho .counter__title {
+    font-size: 12px;
+    line-height: 25px;
+  }
+
+  #rancho .counter__bloks {
+    gap: 10px;
+  }
+
+  #rancho .counter__number {
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+  }
+
+  #rancho .counter__text {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  #rancho .title {
+    height: 120px;
+  }
+
+  #rancho .title__title {
+    font-size: 100px;
+  }
+
+  #rancho .title__figure {
+    top: -65px;
+    width: 90px;
+    height: 250px;
+  }
+
+  #rancho .title__trait {
+    margin: 0 40px 0 0;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #rancho .title {
+    height: 90px;
+  }
+
+  #rancho .title__title {
+    font-size: 70px;
+  }
+
+  #rancho .title__figure {
+    top: -55px;
+    width: 70px;
+    height: 200px;
+  }
+
+  #rancho .title__trait {
+    margin: 0 30px 0 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #rancho .title {
+    height: 80px;
+  }
+
+  #rancho .title__title {
+    font-size: 60px;
+    align-self: center;
+  }
+
+  #rancho .title__figure {
+    opacity: 0;
+  }
+
+  #rancho .title__trait {
+    height: 1px;
+    margin: 0 20px 0 0;
+  }
+}
+
+
+@media screen and (max-width: 1700px) {
+  #rancho .details {
+    padding: 70px 0 0;
+  }
+  
+  #rancho .timetable{
+    padding-top: 100px;
+}
+
+  #rancho .details__header {
+    margin-bottom: 50px;
+  }
+
+  #rancho .details__title {
+    font-size: 100px;
+  }
+
+  #rancho .details__figure {
+    top: 20px;
+    width: 90px;
+    height: 250px;
+  }
+
+  #rancho .details__trait {
+    margin: 60px 50px 0 0;
+  }
+
+  #rancho .details__text {
+    font-size: 18px;
+    line-height: 33px;
+    margin: 20px auto 20px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #rancho .details {
+    padding: 50px 0 0;
+  }
+
+  #rancho .details__header {
+    margin-bottom: 50px;
+  }
+
+  #rancho .details__title {
+    font-size: 70px;
+  }
+
+  #rancho .details__figure {
+    top: 10px;
+    width: 70px;
+    height: 200px;
+  }
+
+  #rancho .details__trait {
+    margin: 30px 50px 0 0;
+  }
+
+  #rancho .details__text {
+    font-size: 14px;
+    line-height: 28px;
+    width: 60%;
+    margin: 10px auto 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  #rancho .timetable{
+    padding-top: 70px;
+}
+  #rancho .details {
+    padding: 30px 0 0;
+  }
+
+  #rancho .details__header {
+    margin-bottom: 30px;
+  }
+
+  #rancho .details__title {
+    font-size: 60px;
+  }
+
+  #rancho .details__figure {
+    opacity: 0;
+  }
+
+  #rancho .details__trait {
+    height: 1px;
+    margin: 30px 30px 0 0;
+  }
+
+  #rancho .details__text {
+    font-size: 12px;
+    line-height: 25px;
+    width: 80%;
+    margin: 7px auto;
+  }
+}
+
+
+@media screen and (max-width: 1700px) {
+  #rancho .dresscode {
+    padding-top: 70px;
+  }
+
+  #rancho .dresscode__title {
+    font-size: 100px;
+    padding-bottom: 50px;
+  }
+
+  #rancho .dresscode__trait {
+    margin: 60px 0 0 50px;
+    font-size: 16px;
+  }
+
+  #rancho .dresscode__description {
+    font-size: 18px;
+    width: 50%;
+    margin: 40px 0 0;
+  }
+
+  #rancho .dresscode__colors {
+    margin: 50px 0;
+  }
+
+  #rancho .dresscode__figure {
+    top: 30px;
+    width: 90px;
+    height: 250px;
+  }
+  #rancho .photosection__figure {
+    top: 50px;
+    width: 90px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #rancho .dresscode {
+    padding-top: 50px;
+  }
+
+  #rancho .dresscode__title {
+    font-size: 70px;
+  }
+
+  #rancho .dresscode__trait {
+    margin: 50px 0 0 50px;
+    font-size: 12px;
+    line-height: 10px;
+    padding-top: 7px;
+  }
+
+  #rancho .dresscode__figure {
+    top: 10px;
+    width: 70px;
+    height: 200px;
+  }
+   #rancho .photosection__figure {
+    top: 50px;
+    width: 70px;
+    height: 200px;
+  }
+
+  #rancho .dresscode__description {
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  #rancho .dresscode__colors {
+    margin: 40px 0 0;
+    gap: 20px;
+  }
+
+  #rancho .dresscode__color {
+    width: 62px;
+    height: 62px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #rancho .dresscode {
+    padding-top: 30px;
+  }
+
+  #rancho .dresscode__header {
+    flex-direction: row-reverse;
+    align-self: flex-start;
+  }
+
+  #rancho .dresscode__title {
+    font-size: 60px;
+    width: 250px;
+    padding-bottom: 30px;
+    line-height: 30px;
+    text-align: start;
+  }
+
+  #rancho .dresscode__trait {
+    border-top: 1px solid black;
+    margin: 35px 20px 0 0;
+    z-index: 2;
+    text-align: end;
+    font-size: 12px;
+  }
+
+  #rancho .dresscode__figure, #rancho .photosection__figure {
+    opacity: 0;
+  }
+
+  #rancho .dresscode__description {
+    font-size: 12px;
+    line-height: 23px;
+    width: 80%;
+    margin: 0;
+  }
+
+  #rancho .dresscode__colors,#rancho .timer__blocks  {
+    margin: 30px 0 0;
+    gap: 10px;
+  }
+
+  #rancho .dresscode__color,#rancho .timer__block {
+    width: 45px;
+    height: 45px;  
+    max-width: 60px;
+        max-height: 60px;
+  }
+  #rancho .days, #rancho .hours, #rancho .minutes, #rancho .seconds {
+    width: 45px;
+    height: 45px;
+    display: block;
+    line-height: 45px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+}
+@media screen and (max-width: 1700px) {
+  #rancho .info-date {
+    margin-top: 75px;
+  }
+
+  #rancho .info-date__our-wedding {
+    width: 500px;
+    height: 160px;
+  }
+
+  #rancho .info-date__our-wedding-text {
+    font-size: 100px;
+  }
+
+  #rancho .info-date__text {
+    font-size: 18px;
+    line-height: 35px;
+    width: 75%;
+    margin: 110px 0 50px;
+  }
+
+  #rancho .info-date__who {
+    font-size: 100px;
+    line-height: 90px;
+  }
+
+  #rancho .info-date__day-week {
+    font-size: 28px;
+  }
+
+  #rancho .info-date__number {
+    font-size: 55px;
+  }
+
+  #rancho .info-date__time {
+    font-size: 28px;
+  }
+
+  #rancho .info-date__what {
+    font-size: 70px;
+  }
+
+  #rancho .info-date__where {
+    font-size: 18px;
+  }
+
+  #rancho .info-date__vertical-line {
+    height: 70px;
+    margin: 0 13px;
+  }
+
+  #rancho .info-date__figure-left {
+    top: 0px;
+    width: 90px;
+    height: 250px;
+  }
+
+  #rancho .info-date__figure-right {
+    bottom: -100px;
+    width: 90px;
+    height: 250px;
+  }
+
+  #rancho .info-date__place {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #rancho .info-date {
+    margin-top: 50px;
+  }
+
+  #rancho .info-date__who {
+    font-size: 70px;
+    line-height: 65px;
+  }
+
+  #rancho .info-date__text {
+    font-size: 14px;
+    line-height: 30px;
+    width: calc(100% - 150px);
+    margin: 70px 0 50px;
+  }
+
+  #rancho .info-date__our-wedding {
+    width: 350px;
+    height: 110px;
+    border-radius: 50px;
+  }
+
+  #rancho .info-date__our-wedding-text {
+    font-size: 70px;
+  }
+
+  #rancho .info-date__place {
+    column-gap: 10px;
+  }
+
+  #rancho .info-date__check-in {
+    padding: 0 30px;
+  }
+
+  #rancho .info-date__what {
+    font-size: 50px;
+    line-height: 42px;
+    margin: 0 0 40px;
+  }
+
+  #rancho .info-date__where {
+    font-size: 12px;
+    line-height: 25px;
+  }
+
+  #rancho .info-date__day-week {
+    font-size: 24px;
+  }
+
+  #rancho .info-date__number {
+    font-size: 50px;
+    font-weight: 2;
+    margin: 0;
+  }
+
+  #rancho .info-date__vertical-line {
+    height: 70px;
+    margin: 0 13px;
+  }
+
+  #rancho .info-date__time {
+    font-size: 24px;
+  }
+
+  #rancho .info-date__figure-left {
+    top: 20px;
+    width: 70px;
+    height: 200px;
+  }
+
+  #rancho .info-date__figure-right {
+    bottom: -70px;
+    width: 70px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #rancho .info-date__our-wedding {
+    width: 350px;
+    height: 100px;
+    border-radius: 50px;
+  }
+
+  #rancho .info-date__our-wedding-text {
+    font-size: 50pt;
+  }
+
+  #rancho .info-date__place {
+    padding-top: 80px;
+    row-gap: 40px;
+  }
+
+  #rancho .info-date__check-in {
+    padding: 0 30px;
+  }
+
+  #rancho .info-date__what {
+    font-size: 50px;
+    margin: 0 0 50px;
+  }
+
+  #rancho .info-date__where {
+    font-size: 10pt;
+  }
+
+  #rancho .info-date__day-week {
+    font-size: 18pt;
+  }
+
+  #rancho .info-date__number {
+    font-size: 30pt;
+  }
+
+  #rancho .info-date__vertical-line {
+    height: 50px;
+    margin: 0 10px;
+  }
+
+  #rancho .info-date__time {
+    font-size: 18pt;
+  }
+
+  #rancho .info-date__figure-left {
+    top: 10px;
+    width: 70px;
+    height: 200px;
+  }
+
+  #rancho .info-date__figure-right {
+    bottom: -55px;
+    width: 70px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #rancho .info-date__who {
+    font-size: 60px;
+    line-height: 50px;
+  }
+
+  #rancho .info-date__text {
+    font-size: 12px;
+    line-height: 20px;
+    width: calc(100% - 50px);
+    margin: 50px 0 15px;
+  }
+
+  #rancho .info-date__our-wedding {
+    text-align: center;
+    background-color: inherit;
+    width: 100%;
+  }
+
+  #rancho .info-date__our-wedding-text {
+    font-size: 60px;
+    line-height: 50px;
+  }
+
+  #rancho .info-date__place {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(5, max-content);
+    grid-template-areas:
+      "line1 day-week ."
+      "day day day"
+      ". time line2"
+      "check-in check-in check-in"
+      "banquet banquet banquet";
+    padding-top: 30px;
+    row-gap: 20px;
+    column-gap: 15px;
+  }
+
+  #rancho .info-date__line1 {
+    height: 1px;
+  }
+
+  #rancho .info-date__line2 {
+    height: 1px;
+  }
+
+  #rancho .info-date__check-in {
+    margin: 0;
+  }
+
+ #rancho .info-date__what {
+    font-size: 50px;
+    line-height: 38px;
+    margin: 0 0 35px;
+  }
+
+  #rancho .info-date__where {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  #rancho .info-date__day-week {
+    font-size: 16px;
+  }
+
+  #rancho .info-date__number {
+    font-size: 30px;
+    font-weight: 2;
+    margin: 0;
+  }
+
+  #rancho .info-date__vertical-line {
+    height: 50px;
+    margin: 0 10px;
+  }
+
+  #rancho .info-date__time {
+    font-size: 16px;
+  }
+
+  #rancho .info-date__figure-left {
+    opacity: 0;
+  }
+
+  #rancho .info-date__figure-right {
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 1700px) {
+  #rancho .header__desctop {
+    padding: 30px;
+  }
+
+ #rancho .header__image {
+    width: 420px;
+    height: 600px;
+  }
+
+  #rancho .header__info_date {
+    margin-top: 100px;
+    font-size: 28px;
+  }
+
+  #rancho .header__info {
+    max-width: 600px;
+  }
+
+  #rancho .header__info_names {
+    font-size: 120px;
+    line-height: 90pt;
+  }
+
+  #rancho .header__title {
+    font-size: 18px;
+    margin: 0 25px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  #rancho .header__image {
+    width: 380px;
+    height: 580px;
+  }
+
+ #rancho  .header__info {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+ #rancho  .header__desctop {
+    padding: 40px;
+  }
+
+ #rancho  .header__info_date {
+    font-size: 24px;
+  }
+
+ #rancho  .header__info_names {
+    font-size: 90px;
+    line-height: 70pt;
+  }
+
+ #rancho  .header__title {
+    font-size: 14px;
+    margin: 0 10px;
+  }
+
+ #rancho  .header__info {
+    margin: 20px 0;
+    width: 100%;
+    border-bottom-right-radius: 80px;
+    border-top-right-radius: 80px;
+    max-width: 400px;
+    padding: 0 30px;
+  }
+}
+
+
+@media screen and (max-width: 850px) {
+  #rancho .header__mobile {
+    display:flex;
+  }
+  #rancho .header__desctop {
+    display:none;
+  }
+  
+  #rancho .header__info_date {
+    font-size: 20px;
+  }
+
+ #rancho  .header__info_names {
+    font-size: 80px;
+    line-height: 60pt;
+  }
+
+ #rancho  .header__title {
+    font-size: 14px;
+    margin: 0 10px;
+  }
+
+#rancho   .header__image {
+    width: 300px;
+    height: 480px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+ #rancho  .header__image-mobile {
+    height: 62vh;
+    object-fit: cover;
+    margin: 45px 0 0;
+    position: relative;
+    align-self: center;
+  }
+
+ #rancho  .header__info_date-mobile {
+    display: none;
+    font-family: "Romul", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+  }
+
+  #rancho .header__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  #rancho .header__title {
+    position: relative;
+    right: -50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #rancho .header__image-mobile {
+    position: relative;
+    right: -50px;
+    align-self: flex-end;
+  }
+
+ #rancho  .header__info_date-mobile {
+    align-self: flex-end;
+    margin: 13px 13px 0 0;
+    display: flex;
+  }
+
+ #rancho  .header__title {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 850px) and (orientation: portrait) {
+    #rancho .timetable__line {
+        transform: rotate(90deg);
+        width: 115px;
+        justify-content: center;
+        align-items: center;
+        max-width: none;
+    }
+        #rancho .timetable__line-start {
+        height: 13px;
+        padding-right: 45px;
+        transform: rotate(90deg);
+        justify-self: center;
+        align-self: flex-end;
+        max-width: none;
+    }
+    #rancho .timetable__line-end {
+        height: 13px;
+        padding-left: 45px;
+        transform: rotate(90deg);
+        justify-self: center;
+        align-self: flex-start;
+        max-width: none;
+    }
+}
+ #rancho #rsvp-answ-yes,  #rancho #rsvp-answ-no{
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    font-size: 14px;
+}

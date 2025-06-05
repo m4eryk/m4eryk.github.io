@@ -1,0 +1,238 @@
+/* Base styles and variables */
+@font-face {
+    font-family: 'MANEGEDEMO';
+    src: url('MANEGEDEMO-LIGHT.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --primary-color: #4a4a4a;
+    --secondary-color: #6c757d;
+    --accent-color: #ff6b6b;
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --font-family: 'MANEGEDEMO', 'Segoe UI', Arial, sans-serif;
+    --spacing-unit: 1rem;
+    --border-radius: 4px;
+    --transition-speed: 0.3s;
+}
+
+.invite-container {
+    max-width: 480px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+    padding: 24px 8px 32px 8px;
+}
+.invite-header, .invite-footer {
+    text-align: center;
+    margin-bottom: 24px;
+}
+.invite-logo, .footer-logo {
+    width: 80px;
+    margin-bottom: 12px;
+}
+.invite-header h1, .footer-names {
+    font-family: 'MANEGEDEMO';
+    font-size: 1.7em;
+    margin: 0 0 8px 0;
+    font-weight: 400;
+}
+.invite-subtitle {
+    font-size: 1em;
+    color: #a0a0a0;
+    margin-bottom: 0;
+}
+.calendar-box {
+    border: 1px dashed #aaa;
+    border-radius: 12px;
+    padding: 16px;
+    margin: 0 auto 24px auto;
+    max-width: 260px;
+    background: #fafafa;
+}
+.calendar-title {
+    font-family: 'MANEGEDEMO';
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+.calendar-days, .calendar-dates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    justify-content: center;
+    font-size: 0.95em;
+}
+.calendar-days span {
+    width: 28px;
+    text-align: center;
+    color: #888;
+}
+.calendar-dates span {
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 50%;
+    margin-bottom: 2px;
+}
+.calendar-date-active {
+    background: #222;
+    color: #fff;
+    font-weight: bold;
+}
+.invite-place {
+    text-align: center;
+    margin-bottom: 24px;
+}
+.place-title {
+    font-family: 'MANEGEDEMO';
+    font-size: 1.1em;
+    margin-bottom: 4px;
+}
+.place-address {
+    font-size: 1em;
+}
+.invite-plan {
+    border: 1px dashed #aaa;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 24px;
+    background: #fafafa;
+}
+.plan-title {
+    font-family: 'MANEGEDEMO';
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+.plan-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.plan-list li {
+    margin-bottom: 6px;
+    font-size: 1em;
+}
+.plan-time {
+    font-weight: bold;
+    font-family: monospace;
+    margin-right: 6px;
+}
+.invite-dresscode {
+    text-align: center;
+    margin-bottom: 24px;
+}
+.dresscode-title {
+    font-family: 'MANEGEDEMO';
+    font-size: 1.1em;
+    margin-bottom: 4px;
+}
+.dresscode-desc {
+    font-size: 0.98em;
+    color: #444;
+    margin-bottom: 8px;
+}
+.dresscode-colors {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 0;
+}
+.dresscode-colors span {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #bbb;
+}
+.invite-details {
+    border: 1px dashed #aaa;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 24px;
+    background: #fafafa;
+    text-align: center;
+}
+.details-title {
+    font-family: 'MANEGEDEMO';
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+.details-text {
+    font-size: 1em;
+    color: #444;
+}
+.invite-timer {
+    text-align: center;
+    margin-bottom: 24px;
+}
+.timer-title {
+    font-family: 'MANEGEDEMO';
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+.timer {
+    font-size: 1.5em;
+    font-family: monospace;
+    color: #222;
+    letter-spacing: 2px;
+}
+.invite-form {
+    border: 1px dashed #aaa;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 24px;
+    background: #fafafa;
+}
+.form-title {
+    font-family: 'MANEGEDEMO';
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    text-align: center;
+}
+#guestForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+#guestForm label {
+    font-size: 1em;
+    color: #222;
+}
+#guestForm input[type="text"] {
+    padding: 4px 8px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 1em;
+}
+#guestForm button {
+    margin-top: 8px;
+    padding: 6px 18px;
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#guestForm button:hover {
+    background: #444;
+}
+@media (max-width: 600px) {
+    .invite-container {
+        max-width: 98vw;
+        padding: 8px 2vw 24px 2vw;
+    }
+    .calendar-box, .invite-plan, .invite-details, .invite-form {
+        padding: 10px;
+    }
+    .invite-logo, .footer-logo {
+        width: 60px;
+    }
+} 

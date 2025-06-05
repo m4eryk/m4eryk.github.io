@@ -1,0 +1,179 @@
+.elenavictor_2508 .timetable__block {
+  display: grid;
+  grid-template-columns: repeat(6, 150px);
+  grid-template-rows: repeat(3, max-content);
+  grid-template-areas:
+    "text-glasses rings text-plate cake text-music car"
+    "line-rings line-glasses line-plate line-cake line-music line-car"
+    "glasses text-rings plate text-cake music text-car";
+  margin-top: 70px;
+  align-items: center;
+  justify-items: center;
+  column-gap: 0;
+  row-gap: 15px;
+}
+.elenavictor_2508 { background-color: #fac798!important;}
+
+.elenavictor_2508 .menu__span,.elenavictor_2508 .menu_site, .elenavictor_2508 .header__info, .elenavictor_2508 .info-date__our-wedding, .elenavictor_2508 .burger-menu, .elenavictor_2508 .burger-menu_visible
+{ background-color: #ffdfc0!important;}
+
+
+.elenavictor_2508 h2,.elenavictor_2508 .header__info_names-mobile, .elenavictor_2508 .header__info_names,.elenavictor_2508 .info-date__who,.elenavictor_2508 .info-date__our-wedding-text, .elenavictor_2508 .info-date__what, .elenavictor_2508 .dresscode__title,.elenavictor_2508 .title__title,.elenavictor_2508 .details__title,.elenavictor_2508 .rsvp__title,.elenavictor_2508 .question__title,.elenavictor_2508 .footer__name{
+font-family: "Marianna", "Arial", sans-serif!important;}
+
+.elenavictor_2508 .info-date__figure-left, .elenavictor_2508 .info-date__figure-right, .elenavictor_2508 .title__figure, .elenavictor_2508 .dresscode__figure,.elenavictor_2508 .counter__figure,.elenavictor_2508 .photosection__figure{
+filter: brightness(0) saturate(100%) invert(92%) sepia(15%) saturate(2061%) hue-rotate(301deg) brightness(123%) contrast(102%);
+}
+ .elenavictor_2508 .timetable__pic, .elenavictor_2508 .timetable__line, .elenavictor_2508 .timetable__line-end, .elenavictor_2508 .timetable__line-start, .elenavictor_2508 .block-plan__img{
+     filter: brightness(0) saturate(100%) invert(43%) sepia(73%) saturate(423%) hue-rotate(348deg) brightness(93%) contrast(88%)!important;
+ }
+ .elenavictor_2508 .row-plan__column::after,.elenavictor_2508 .plan-top::after{
+      background-color: #AA6D33;
+ }
+ .elenavictor_2508 .rsvp__button,.elenavictor_2508 .question__button
+ {
+   background-color: #ffdfc0!important;  
+ }
+
+.elenavictor_2508 .dresscode__color_var_one {
+  background-color: #bab98b!important;
+}
+
+.elenavictor_2508 .dresscode__color_var_two {
+  background-color: #ffc192!important;
+}
+
+.elenavictor_2508 .dresscode__color_var_three {
+  background-color: #ffaeb4!important;
+}
+
+.elenavictor_2508 .dresscode__color_var_four {
+  background-color: #c3dbff!important;
+}
+
+.elenavictor_2508 .dresscode__color_var_five {
+  background-color: #fee7b3!important;
+}
+
+.elenavictor_2508 .timer__number_var_seconds {
+  background-color: #e6717a!important;
+}
+
+.elenavictor_2508 .timer__number_var_days {
+background-color: #AA6D33!important;
+}
+
+.elenavictor_2508 .timer__number_var_hours {
+background-color: #ffaeb4!important;
+}
+
+.elenavictor_2508 .timer__number_var_minutes {
+background-color: #bab98d!important;
+}
+.elenavictor_2508 a{
+  color: #AA6D33;
+}
+.elenavictor_2508 a:hover, .elenavictor_2508 a:focus,.elenavictor_2508 a:click{
+  color: #bab98d;
+}
+
+.elenavictor_2508 .dresscode__colors{
+       margin-top:0px!important;
+}
+.elenavictor_2508 .dresscode__miniheader{
+    margin-top:50px!important;
+}
+.elenavictor_2508 .bant_image{
+  margin: 30px;
+  width: 500px;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.bant-img{
+    /*filter: brightness(0) saturate(100%) invert(78%) sepia(4%) saturate(2860%) hue-rotate(308deg) brightness(98%) contrast(115%);*/
+}
+.burger-menu{
+        padding-top: 80px;
+}
+.elenavictor_2508 li.burger-menu__link:last-child {
+    padding-top:100px;
+}
+.elenavictor_2508 .timeline_blockscale{
+    transform: scale(0.8);
+}
+/*.row-plan__column::after{
+        top: 50%!important;
+}*/
+.elenavictor_2508 .dresscode__figure, .elenavictor_2508 .photosection__figure {
+top:50px!important;  
+}
+
+.elenavictor_2508 .dresscode__title {
+    padding-bottom: 25px!important;}
+
+/*.elenavictor_2508 .info-date__day-week, .elenavictor_2508 .info-date__time{
+        font-size: 18px;
+}*/
+
+.elenavictor_2508 .info-date__day-week,.elenavictor_2508 .info-date__time {
+  font-size: 25px!important;
+}
+@media (max-width: 75em) {
+.elenavictor_2508 .row-plan__column::after {
+     height:88%; 
+    }}
+
+@media screen and (max-width: 750px) {
+.elenavictor_2508 .timetable__block {
+    grid-template-rows: repeat(6, 99px);
+    grid-template-columns: 1fr 30px 1fr;
+    grid-template-areas:
+        "text-glasses line-rings glasses"
+        "rings line-glasses text-rings"
+        "text-plate line-plate plate"
+        "cake line-cake text-cake"
+        "text-music line-music music"
+        "car line-car text-car";
+    margin-top: 30px;
+    column-gap: 15px;
+    row-gap: 0;
+  }
+}
+
+.elenavictor_2508 .details_image {
+    margin: 8px;
+    width: 100px;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 1300px) {
+.elenavictor_2508 .info-date__day-week,.elenavictor_2508 .info-date__time {
+    font-size: 18px!important;
+  }
+
+}
+
+.elenavictor_2508 .details {
+        height: max-content;
+    }
+.elenavictor_2508 .info-date__place{
+     row-gap: 10px!important;
+    column-gap: 70px!important;
+  padding: 70px 0!important;
+}
+
+.elenavictor_2508 .info-date__figure-left{
+  top:-58px!important;
+}
+.elenavictor_2508 .info-date__figure-right{
+  bottom:-58px!important;
+}
+
+.elenavictor_2508 .info-date__time{
+  width:250px!important;
+}
