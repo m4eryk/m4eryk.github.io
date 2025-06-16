@@ -419,7 +419,7 @@ text-align: left;
 }
 .info-place__text{
    transform: scaleY(0.5);
-            font-size: 36px;
+            font-size: 72px;
             line-height: 100%;
 }
 .line-two .place-one-right{
@@ -823,7 +823,7 @@ text-align: left;
     overflow: hidden;
 }
 .timer-title{
-    font-size: 36px;
+    font-size: 72px;
     line-height: 100%;
     transform: scaleX(1.5);
     text-transform: uppercase;
