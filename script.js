@@ -75,7 +75,7 @@ class WeddingTimer {
         
         const timeLeft = utils.calculateTimeLeft(this.config.weddingDate);
         this.timerElement.textContent = 
-            `${timeLeft.days} дн ${utils.formatTime(timeLeft.hours)} ч ${utils.formatTime(timeLeft.minutes)} м ${utils.formatTime(timeLeft.seconds)} с`;
+            `${timeLeft.days} дн ${utils.formatTime(timeLeft.hours)} ч ${utils.formatTime(timeLeft.minutes)} м`;
         
         this.lastUpdate = now;
     }
