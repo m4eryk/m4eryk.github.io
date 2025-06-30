@@ -24,6 +24,59 @@
     font-weight: normal;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* На всю высоту экрана */
+
+    /* Основной фон (цвет бумаги) */
+    background-color: red;
+
+}
+
+.heart {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    /* Анимация биения */
+    animation: heartbeat 2s infinite;
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    15% {
+        transform: scale(1.15);
+    }
+    30% {
+        transform: scale(1);
+    }
+    45% {
+        transform: scale(1.15);
+    }
+    70% {
+        transform: scale(1);
+    }
+}
+
+.typewriter {
+    overflow: hidden; /* Скрываем текст, который ещё не появился */
+    white-space: nowrap; /* Запрещаем перенос строк */
+    margin: 0 auto;
+    animation: typing 2s steps(30, end);
+    height: 72px;
+}
+
+/* Анимация печати */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+
 #semejnyj-albom {
     /*--primary-color: #333;
     --secondary-color: #eee;*/
@@ -61,6 +114,14 @@
 #semejnyj-albom .descr_text {
     font-family: var(--main-font);
     font-size: 24px;
+    line-height: 120%;
+    color: var(--text-color);
+    text-align: center;
+}
+
+#semejnyj-albom .descr_sub-text {
+    font-family: var(--main-font);
+    font-size: 28px;
     line-height: 120%;
     color: var(--text-color);
     text-align: center;
@@ -181,8 +242,7 @@
 }
 
 #semejnyj-albom .welcome_title_text {
-    font-size: 54px;
-    /* text-transform: uppercase; */
+    font-size: 48px;
     font-family: var(--beauty-font);
 }
 
@@ -522,7 +582,8 @@
 
 #semejnyj-albom .timer__block {
     position: relative;
-    width: 220px;
+    width: 230px;
+    height: 72px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -653,11 +714,12 @@
 }
 
 #semejnyj-albom .footer {
-    padding: 30px 0;
+    padding: 15px 0;
 }
 
 #semejnyj-albom .footer__text {
-    font-size: 24px;
+    font-family: var(--beauty-font);
+    font-size: 36px;
     padding-bottom: 20px;
 }
 
@@ -721,6 +783,27 @@
     gap: 5px;;
 }
 
+.playButton {
+    position: fixed; /* Фиксированное позиционирование */
+    right: 1em;     /* Отступ справа */
+    bottom: 1em;    /* Отступ снизу */
+    z-index: 1000;   /* Чтобы кнопка была поверх других элементов */
+
+    /* Стили кнопки */
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.playButton:hover {
+    transform: scale(1.1);
+}
+
+
 @media screen and (max-width: 1700px) {
 
 }
@@ -747,7 +830,7 @@
 
     #semejnyj-albom .descr_text {
         font-family: var(--main-font);
-        font-size: 20px;
+        font-size: 32px;
         line-height: 120%;
         color: var(--text-color);
     }

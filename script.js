@@ -81,121 +81,52 @@ class WeddingTimer {
     }
 }
 
-// Форма
-class GuestForm {
-    constructor(config) {
-        this.config = config;
-        this.form = document.getElementById(config.formElement);
-        
+class Music {
+    constructor() {
+        this.audio = new Audio('./files/music/Instrumental.mp3');
+        this.audio.loop = true;
+        this.audio.volume = 0.1;
         this.init();
     }
-    
+
     init() {
-        if (!this.form) return;
-        
-        this.form.addEventListener('submit', this.handleSubmit.bind(this));
-        this.setupValidation();
+        const playPromise = this.audio.play();
+
+        if (playPromise !== undefined) {
+            playPromise
+              .then(() => {
+                  // Успешное воспроизведение
+                  console.log('Музыка играет');
+                  const button = document.getElementById('playButton');
+                  button.src = './files/images/music-on.png';
+              })
+              .catch(error => {
+                  // Браузер заблокировал автовоспроизведение
+                  console.log('Автовоспроизведение заблокировано:', error);
+                  this.showPlayButton();
+              });
+        }
     }
-    
-    setupValidation() {
-        const inputs = this.form.querySelectorAll('input, textarea');
-        inputs.forEach(input => {
-            input.addEventListener('input', utils.debounce(() => {
-                this.validateInput(input);
-            }, 300));
+
+    showPlayButton() {
+        const button = document.getElementById('playButton');
+
+        button.addEventListener('click', () => {
+            if (this.audio.paused) {
+                button.src = 'files/images/music-on.png';
+                this.audio.play();
+
+                return;
+            }
+
+            button.src = 'files/images/music-off.png';
+            this.audio.pause();
         });
-    }
-    
-    validateInput(input) {
-        const value = input.value.trim();
-        let isValid = true;
-        let errorMessage = '';
-        
-        switch (input.type) {
-            case 'text':
-                isValid = value.length >= 2;
-                errorMessage = 'Минимум 2 символа';
-                break;
-            case 'number':
-                isValid = value >= 1 && value <= 5;
-                errorMessage = 'От 1 до 5 гостей';
-                break;
-            case 'textarea':
-                isValid = value.length <= 500;
-                errorMessage = 'Максимум 500 символов';
-                break;
-        }
-        
-        this.updateInputStatus(input, isValid, errorMessage);
-        return isValid;
-    }
-    
-    updateInputStatus(input, isValid, errorMessage) {
-        const container = input.parentElement;
-        const existingError = container.querySelector('.error-message');
-        
-        if (!isValid) {
-            input.classList.add('invalid');
-            if (!existingError) {
-                const error = document.createElement('div');
-                error.className = 'error-message';
-                error.textContent = errorMessage;
-                container.appendChild(error);
-            }
-        } else {
-            input.classList.remove('invalid');
-            if (existingError) {
-                existingError.remove();
-            }
-        }
-    }
-    
-    async handleSubmit(e) {
-        e.preventDefault();
-        
-        const inputs = this.form.querySelectorAll('input, textarea');
-        let isValid = true;
-        
-        inputs.forEach(input => {
-            if (!this.validateInput(input)) {
-                isValid = false;
-            }
-        });
-        
-        if (!isValid) {
-            this.showMessage('Пожалуйста, исправьте ошибки в форме', 'error');
-            return;
-        }
-        
-        try {
-            const formData = new FormData(this.form);
-            const data = Object.fromEntries(formData.entries());
-            
-            // Здесь можно добавить отправку данных на сервер
-            console.log('Анкета гостя:', data);
-            
-            this.showMessage('Спасибо за ответ!');
-            this.form.reset();
-            
-        } catch (error) {
-            console.error('Ошибка при отправке формы:', error);
-            this.showMessage('Произошла ошибка. Пожалуйста, попробуйте позже.', 'error');
-        }
-    }
-    
-    showMessage(text, type = 'success') {
-        const message = document.createElement('div');
-        message.className = `form-message ${type}`;
-        message.textContent = text;
-        
-        this.form.parentNode.insertBefore(message, this.form.nextSibling);
-        
-        setTimeout(() => message.remove(), 3000);
     }
 }
 
 // Инициализация при загрузке страницы
 document.addEventListener('DOMContentLoaded', () => {
     new WeddingTimer(CONFIG);
-    new GuestForm(CONFIG);
-}); 
+    new Music();
+});
